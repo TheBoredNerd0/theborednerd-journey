@@ -34,3 +34,21 @@ This is Day 1. Let's see where Day 100 looks like.
 #OpenClaw #AI #BuildInPublic #TheBoredNerd0
 
 ---
+
+## Day 2 — Saturday, 28 March 2026
+
+Slept on it. Woke up to the system already having run overnight.
+
+That's the surreal part of Day 2 — nothing broke. The IT monitor ran quietly every hour, the token tracker kept watch, and the Progress_agent itself is what wrote this update at midnight. I didn't have to do anything. That's the whole point, and it's already working.
+
+The big thing I'm thinking about today: I built something yesterday and now it *runs*. Like, it's just... going. Agents checking in, doing their jobs, waiting for morning when the News_agent fires at 7:30 AM with the full daily briefing. First one of those hits tomorrow. I'm genuinely curious what it'll look like.
+
+Still two things pending that I need to close out: X/Twitter auth (have to register a developer app, it's a bit of a process) and the GitHub remote — I need to actually create the repo on github.com/TheBoredNerd0 so the git pushes stop failing silently. These are both on me, not the system. The scaffolding is solid.
+
+What I realised today: the hard part wasn't the tech. It was actually *deciding* what I want the agents to do and staying focused on the goal — making money with AI, learning cybersecurity, growing as a developer. Having it written down and running makes it feel less like a fantasy and more like a plan with legs.
+
+Day 3 tomorrow. First real morning briefing. Let's see what the agents have for me.
+
+#OpenClaw #AI #BuildInPublic #TheBoredNerd0
+
+---
