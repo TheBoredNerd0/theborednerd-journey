@@ -15,12 +15,13 @@ Usage:
     --output ~/Videos/ai-video.mp4
 
 The pipeline:
-  1. Generate script (TopicResearcher + ScriptWriter)
-  2. Download stock footage from Pexels (free API)
-  3. Generate voiceover using macOS 'say' TTS
-  4. Download thumbnail from Unsplash
-  5. Assemble video clips + voiceover using MoviePy
-  6. Output YouTube-ready MP4 + thumbnail
+  1. Generate script (fallback template — MiniMax API integration pending)
+  2. Generate TTS voiceover using macOS 'say' (Samantha voice)
+  3. Download stock footage from Pexels + Pixabay (free APIs)
+  4. Generate AI video clips via Kling AI (if available)
+  5. Download thumbnail from Pixabay (image API)
+  6. Assemble video clips + voiceover using MoviePy
+  7. Output YouTube-ready MP4 + thumbnail
 """
 
 import argparse
@@ -30,6 +31,7 @@ import sys
 import subprocess
 import time
 import re
+import io
 from pathlib import Path
 
 # Add virtual env paths
@@ -47,6 +49,9 @@ import urllib.request
 # ─── CONFIG ──────────────────────────────────────────────────────────────────
 
 PEXELS_API_KEY = os.environ.get("PEXELS_API_KEY", "")
+PIXABAY_API_KEY = os.environ.get("PIXABAY_API_KEY", "")
+KLING_ACCESS_KEY = os.environ.get("KLING_ACCESS_KEY", "")
+KLING_SECRET_KEY = os.environ.get("KLING_SECRET_KEY", "")
 OUTPUT_DIR = Path.home() / "Videos" / "YouTube"
 THUMBNAIL_DIR = Path.home() / "Videos" / "Thumbnails"
 TTS_VOICE = "Samantha"  # macOS voice — run `say -v '?'` to see all voices
@@ -220,130 +225,223 @@ def generate_voiceover(script: str, output_path: str, speed_wpm: int = 165):
     os.unlink(text_file)
     return m4a_path, duration or 60
 
-# ─── STOCK FOOTAGE ───────────────────────────────────────────────────────────
+# ─── STOCK FOOTAGE — MULTI-SOURCE ───────────────────────────────────────────
 
-def search_pexels_videos(query: str, per_page: int = 5):
-    """Search Pexels for free stock videos."""
+def search_pexels_videos(query: str, per_page: int = 5) -> list:
+    """Search Pexels for free stock videos. Returns list of video dicts."""
     if not PEXELS_API_KEY:
-        print("⚠️  PEXELS_API_KEY not set — using fallback stock footage")
         return []
-    
     headers = {"Authorization": PEXELS_API_KEY}
     params = {"query": query, "per_page": per_page, "orientation": "landscape"}
-    
     try:
-        resp = requests.get(
-            "https://api.pexels.com/videos/search",
-            headers=headers, params=params, timeout=10
-        )
+        resp = requests.get("https://api.pexels.com/videos/search",
+                            headers=headers, params=params, timeout=10)
         resp.raise_for_status()
-        data = resp.json()
-        return data.get("videos", [])[:per_page]
+        return resp.json().get("videos", [])[:per_page]
     except Exception as e:
-        print(f"⚠️  Pexels search failed: {e}")
+        print(f"  ⚠️  Pexels error: {e}")
         return []
 
-def download_pexels_video(video_url: str, output_path: str) -> bool:
-    """Download a Pexels video file."""
+def search_pixabay_videos(query: str, per_page: int = 5) -> list:
+    """Search Pixabay for free stock videos. Returns list of video dicts."""
+    if not PIXABAY_API_KEY:
+        return []
+    params = {
+        "key": PIXABAY_API_KEY,
+        "q": query,
+        "video_type": "film",
+        "safesearch": "true"
+    }
     try:
-        resp = requests.get(video_url, stream=True, timeout=60)
+        resp = requests.get("https://pixabay.com/api/videos/",
+                            params=params, timeout=10)
+        resp.raise_for_status()
+        return resp.json().get("hits", [])[:per_page]
+    except Exception as e:
+        print(f"  ⚠️  Pixabay error: {e}")
+        return []
+
+def download_video_file(url: str, output_path: str) -> bool:
+    """Download a video file to disk."""
+    try:
+        resp = requests.get(url, stream=True, timeout=60)
         resp.raise_for_status()
         with open(output_path, 'wb') as f:
             for chunk in resp.iter_content(65536):
                 f.write(chunk)
         return True
     except Exception as e:
-        print(f"⚠️  Download failed: {e}")
+        print(f"  ⚠️  Download failed: {e}")
         return False
 
 def get_stock_clips(topic: str, duration_sec: int, clip_dir: Path) -> list:
     """
-    Get stock video clips for the topic.
+    Get stock video clips from multiple sources.
+    Searches Pexels → Pixabay → falls back gracefully.
     Returns list of (clip_path, duration) tuples.
     """
     print(f"\n🎬 Fetching stock footage for: {topic}")
     clip_dir.mkdir(parents=True, exist_ok=True)
-    
     clips = []
-    
-    # Search Pexels for relevant videos
     searches = [
         topic,
         f"{topic} technology",
         f"{topic} abstract",
-        "tech abstract futuristic",
+        "technology circuit",
         "artificial intelligence",
-        "data flow network"
+        "data network"
     ]
-    
+
     for query in searches[:3]:
-        videos = search_pexels_videos(query, per_page=3)
-        for v in videos:
-            video_id = v["id"]
-            # Get the HD video files
+        found = False
+        # Try Pexels first
+        for v in search_pexels_videos(query, per_page=4):
             video_files = v.get("video_files", [])
-            # Pick the best quality available (prefer 1280x720 or similar)
-            best = None
-            for vf in video_files:
-                if vf.get("width", 0) >= 1280:
-                    best = vf
-                    break
+            best = next((vf for vf in video_files if vf.get("width", 0) >= 1280), None)
             if not best and video_files:
-                best = video_files[-1]  # fallback to smallest
-            
+                best = video_files[-1]
             if not best:
                 continue
-            
-            filepath = clip_dir / f"clip_{video_id}.mp4"
-            
-            if download_pexels_video(best["link"], str(filepath)):
-                # Get actual duration
+            filepath = clip_dir / f"pexels_{v['id']}.mp4"
+            if download_video_file(best["link"], str(filepath)):
                 try:
                     clip = VideoFileClip(str(filepath))
                     dur = clip.duration
                     clips.append((str(filepath), dur))
                     clip.close()
-                    print(f"  ✓ Downloaded: {filepath.name} ({dur:.1f}s)")
+                    print(f"  ✓ Pexels: {filepath.name} ({dur:.1f}s)")
+                    found = True
                 except Exception as e:
                     print(f"  ⚠️  Can't read clip: {e}")
                     filepath.unlink()
-            
-            if sum(d for _, d in clips) >= duration_sec + 10:
+            if sum(d for _, d in clips) >= duration_sec + 15:
                 break
-        
-        if sum(d for _, d in clips) >= duration_sec + 10:
+
+        # Try Pixabay
+        for v in search_pixabay_videos(query, per_page=4):
+            # Pixabay videos structure:
+            # "videos": {"large":{...}, "medium":{"240p":{...},"360p":{...}}, "small":{...}, "tiny":{...}}
+            # Prefer largest available quality
+            videos_dict = v.get("videos", {})
+            best_url = None
+            best_width = 0
+            
+            # Try quality tiers in order
+            for quality_key in ["large", "medium"]:
+                qdata = videos_dict.get(quality_key, {})
+                if isinstance(qdata, dict):
+                    # medium/large is a dict of quality levels
+                    for level_url in qdata.values():
+                        if isinstance(level_url, dict):
+                            w = level_url.get("width", 0)
+                            url = level_url.get("url", "")
+                            if w >= best_width and url:
+                                best_width = w
+                                best_url = url
+                elif isinstance(qdata, str):  # direct URL
+                    best_url = qdata
+                    break
+            
+            # Fallback: try any available URL
+            if not best_url:
+                for qdata in videos_dict.values():
+                    if isinstance(qdata, str):
+                        best_url = qdata
+                        break
+                    elif isinstance(qdata, dict):
+                        best_url = qdata.get("url", "")
+                        if best_url:
+                            break
+            
+            if not best_url:
+                continue
+            filepath = clip_dir / f"pixabay_{v['id']}.mp4"
+            if download_video_file(best_url, str(filepath)):
+                try:
+                    clip = VideoFileClip(str(filepath))
+                    dur = clip.duration
+                    clips.append((str(filepath), dur))
+                    clip.close()
+                    print(f"  ✓ Pixabay: {filepath.name} ({dur:.1f}s)")
+                    found = True
+                except Exception as e:
+                    print(f"  ⚠️  Can't read clip: {e}")
+                    filepath.unlink()
+            if sum(d for _, d in clips) >= duration_sec + 15:
+                break
+
+        if sum(d for _, d in clips) >= duration_sec + 15:
             break
-    
+
+    total = sum(d for _, d in clips)
+    print(f"  📊 Total footage: {len(clips)} clips, {total:.0f}s")
     return clips
 
 # ─── THUMBNAIL ────────────────────────────────────────────────────────────────
 
 def download_thumbnail(topic: str, output_path: str):
-    """Download a thumbnail image from Unsplash."""
+    """Download thumbnail image from Pixabay (free image API), fallback to PIL."""
     print(f"\n🖼️  Fetching thumbnail for: {topic}")
     
-    # Use Unsplash Source API (random image based on topic)
-    url = f"https://source.unsplash.com/1280x720/?{topic.replace(' ', ',')}"
-    
-    try:
-        resp = requests.get(url, timeout=15, allow_redirects=True)
-        resp.raise_for_status()
-        with open(output_path, 'wb') as f:
-            f.write(resp.content)
-        print(f"✅ Thumbnail saved: {output_path}")
-    except Exception as e:
-        print(f"⚠️  Thumbnail fetch failed: {e}")
-        # Create a placeholder with PIL
+    # Try Pixabay Images API first
+    if PIXABAY_API_KEY:
+        params = {
+            "key": PIXABAY_API_KEY,
+            "q": topic,
+            "per_page": 5,
+            "image_type": "photo",
+            "orientation": "horizontal",
+            "safesearch": "true"
+        }
         try:
-            img = Image.new('RGB', (1280, 720), color=(20, 20, 40))
-            from PIL import ImageDraw, ImageFont
-            draw = ImageDraw.Draw(img)
-            draw.text((640, 350), f"TheBoredNerd\n{topic}", 
-                     fill=(255, 255, 255), anchor='mm')
-            img.save(output_path)
-            print(f"✅ Placeholder thumbnail created")
+            resp = requests.get("https://pixabay.com/api/",
+                               params=params, timeout=10)
+            resp.raise_for_status()
+            hits = resp.json().get("hits", [])
+            if hits:
+                img_url = hits[0].get("largeImageURL") or hits[0].get("webformatURL")
+                if img_url:
+                    img_resp = requests.get(img_url, timeout=15)
+                    img_resp.raise_for_status()
+                    img = Image.open(io.BytesIO(img_resp.content)).convert('RGB')
+                    img = img.resize((1280, 720), Image.LANCZOS)
+                    img.save(output_path, 'JPEG')
+                    print(f"✅ Thumbnail saved from Pixabay: {output_path}")
+                    return
+        except Exception as e:
+            print(f"  ⚠️  Pixabay image failed: {e}")
+    
+    # Fallback: create a branded placeholder with PIL
+    try:
+        from PIL import ImageDraw
+        img = Image.new('RGB', (1280, 720), color=(10, 10, 25))
+        draw = ImageDraw.Draw(img)
+        
+        # Add gradient-like background bands
+        for i in range(720):
+            alpha = int(20 + (i / 720) * 30)
+            draw.line([(0, i), (1280, i)], fill=(30, 30, 60))
+        
+        # Title text
+        draw.rectangle([(0, 280), (1280, 440)], fill=(20, 20, 40))
+        
+        # Use default font
+        try:
+            from PIL import ImageFont
+            font_large = ImageFont.truetype("/Library/Fonts/Helvetica.ttc", 52)
+            font_small = ImageFont.truetype("/Library/Fonts/Helvetica.ttc", 28)
         except:
-            pass
+            font_large = font_small = None
+        
+        draw.text((640, 340), "TheBoredNerd", fill=(255, 255, 255),
+                 font=font_large, anchor='mm')
+        draw.text((640, 400), topic[:60], fill=(150, 150, 200),
+                 font=font_small, anchor='mm')
+        
+        img.save(output_path)
+        print(f"✅ Branded placeholder thumbnail created")
+    except Exception as e:
+        print(f"  ⚠️  Thumbnail creation failed: {e}")
 
 # ─── VIDEO ASSEMBLER ──────────────────────────────────────────────────────────
 
@@ -397,13 +495,11 @@ def assemble_video(
         
         try:
             clip = VideoFileClip(clip_path)
-            clip = clip.subclip(0, use_dur)
+            clip = clip.subclipped(0, use_dur)
             
             # Resize to 1280x720 if needed
             if clip.size[0] != 1280 or clip.size[1] != 720:
-                clip = clip.resize((1280, 720))
-            
-            # Clip is already resized below — just use as-is
+                clip = clip.resized((1280, 720))
             
             clips_needed.append(clip)
             remaining -= use_dur
