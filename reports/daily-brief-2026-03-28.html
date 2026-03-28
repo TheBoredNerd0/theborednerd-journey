@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Brief — 2026-03-28</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --bg-2: #111118;
+      --card: #16161f;
+      --card-hover: #1c1c28;
+      --border: #2a2a3a;
+      --text: #f0f0f5;
+      --text-muted: #8888a0;
+      --text-dim: #55556a;
+      --accent: #6366f1;
+      --accent-glow: rgba(99, 102, 241, 0.25);
+      --green: #22c55e;
+      --red: #ef4444;
+      --yellow: #eab308;
+      --purple: #a855f7;
+      --cyan: #06b6d4;
+      --gradient-accent: linear-gradient(135deg, #6366f1, #a855f7);
+      --gradient-green: linear-gradient(135deg, #22c55e, #06b6d4);
+      --gradient-red: linear-gradient(135deg, #ef4444, #f97316);
+      --gradient-purple: linear-gradient(135deg, #a855f7, #ec4899);
+      --gradient-cyan: linear-gradient(135deg, #06b6d4, #3b82f6);
+      --gradient-yellow: linear-gradient(135deg, #eab308, #f97316);
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+    }
+    ::selection { background: var(--accent); color: white; }
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+    /* NAV */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      background: rgba(10, 10, 15, 0.85);
+      border-bottom: 1px solid var(--border);
+      padding: 0 2rem;
+    }
+    nav .inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+    }
+    nav .logo {
+      font-weight: 700;
+      font-size: 1rem;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    nav .logo .dot {
+      width: 8px; height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+    nav .date-badge {
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+    nav .sections-nav {
+      display: flex;
+      gap: 0.25rem;
+    }
+    nav .sections-nav a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.8rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    nav .sections-nav a:hover {
+      background: var(--card);
+      color: var(--text);
+    }
+
+    /* HERO */
+    .hero {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 5rem 2rem 4rem;
+      text-align: center;
+    }
+    .hero .eyebrow {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #fff 0%, #a0a0c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero .sub {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+    }
+
+    /* MARKETS */
+    .markets-bar {
+      max-width: 900px;
+      margin: 0 auto 4rem;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .market-chip {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: all 0.2s;
+    }
+    .market-chip:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .market-chip .icon { font-size: 1.25rem; }
+    .market-chip .info { text-align: left; }
+    .market-chip .label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+    .market-chip .value { font-size: 1rem; font-weight: 700; }
+    .market-chip .change { font-size: 0.75rem; font-weight: 600; }
+    .market-chip .down { color: var(--red); }
+    .market-chip .up { color: var(--green); }
+    .market-chip .neutral { color: var(--text-muted); }
+
+    /* CONTENT WRAPPER */
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem 6rem;
+    }
+
+    /* SECTION CARD */
+    .card-section {
+      margin-bottom: 4rem;
+      border-radius: 20px;
+      overflow: hidden;
+      background: var(--card);
+      border: 1px solid var(--border);
+      transition: all 0.3s ease;
+    }
+    .card-section:hover {
+      border-color: rgba(99, 102, 241, 0.3);
+      box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+    }
+    .card-header {
+      position: relative;
+      height: 280px;
+      overflow: hidden;
+    }
+    .card-header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .card-section:hover .card-header img { transform: scale(1.04); }
+    .card-header .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, transparent 20%, rgba(10,10,15,0.95) 100%);
+    }
+    .card-header .header-content {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.75rem;
+      right: 1.75rem;
+    }
+    .card-header .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      margin-bottom: 0.75rem;
+    }
+    .tag-red { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .tag-green { background: rgba(34,197,94,0.2); color: #22c55e; }
+    .tag-yellow { background: rgba(234,179,8,0.2); color: #eab308; }
+    .tag-purple { background: rgba(168,85,247,0.2); color: #a855f7; }
+    .tag-blue { background: rgba(59,130,246,0.2); color: #60a5fa; }
+    .tag-cyan { background: rgba(6,182,212,0.2); color: #06b6d4; }
+    .tag-indigo { background: rgba(99,102,241,0.2); color: #818cf8; }
+    .tag-orange { background: rgba(249,115,22,0.2); color: #f97316; }
+
+    .card-header h2 {
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+    }
+    .card-header .section-sub {
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9rem;
+      margin-top: 0.4rem;
+    }
+
+    .card-body {
+      padding: 2rem 1.75rem;
+    }
+
+    /* TRENDING BANNER */
+    .trending-banner {
+      background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.15));
+      border: 1px solid rgba(99,102,241,0.3);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .trending-banner .trending-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .trending-banner p { color: var(--text); font-size: 0.95rem; line-height: 1.6; }
+
+    /* THREAT BANNER */
+    .threat-banner {
+      background: linear-gradient(135deg, rgba(239,68,68,0.12), rgba(249,115,22,0.08));
+      border: 1px solid rgba(239,68,68,0.3);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .threat-banner .threat-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: #ef4444;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .threat-banner .cve {
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      color: #ef4444;
+      opacity: 0.8;
+      margin-bottom: 0.5rem;
+    }
+    .threat-banner p { color: var(--text); font-size: 0.95rem; }
+
+    /* BODY CONTENT */
+    .card-body h3 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      font-weight: 600;
+      margin: 1.5rem 0 1rem;
+    }
+    .card-body h3:first-child { margin-top: 0; }
+    .card-body p { color: rgba(240,240,245,0.85); font-size: 0.95rem; margin-bottom: 0.75rem; }
+    .card-body ul, .card-body ol {
+      padding-left: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .card-body li {
+      color: rgba(240,240,245,0.85);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .card-body li strong { color: var(--text); }
+    .card-body code {
+      background: rgba(100,100,130,0.2);
+      padding: 0.15rem 0.45rem;
+      border-radius: 4px;
+      font-size: 0.85em;
+      font-family: 'Courier New', monospace;
+    }
+    .card-body pre {
+      background: rgba(0,0,0,0.4);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem;
+      overflow-x: auto;
+      margin: 1rem 0;
+    }
+    .card-body pre code {
+      background: none;
+      padding: 0;
+      font-size: 0.8rem;
+      line-height: 1.6;
+      color: rgba(240,240,245,0.9);
+    }
+
+    /* ACTION BOX */
+    .action-box {
+      background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(6,182,212,0.08));
+      border: 1px solid rgba(34,197,94,0.25);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .action-box .action-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--green);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .action-box p { color: var(--text); font-size: 0.9rem; margin-bottom: 0; }
+    .action-box a { color: var(--accent); }
+
+    /* REPO BOX */
+    .repo-box {
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .repo-box .branch-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--green);
+      color: #000;
+      padding: 0.2rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .repo-box p { font-size: 0.85rem; color: var(--text-muted); }
+    .repo-box .warning { color: var(--yellow) !important; }
+
+    /* SKILLS BADGES */
+    .skills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .skill-badge {
+      background: rgba(99,102,241,0.1);
+      border: 1px solid rgba(99,102,241,0.25);
+      color: #818cf8;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .skill-badge:hover { background: rgba(99,102,241,0.2); }
+
+    /* LESSON BOX */
+    .lesson-box {
+      background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(59,130,246,0.08));
+      border: 1px solid rgba(168,85,247,0.25);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+    }
+    .lesson-box .lesson-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--purple);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .lesson-box p { color: var(--text); font-size: 0.9rem; margin-bottom: 0; }
+
+    /* LESSON TOPIC BOX */
+    .topic-box {
+      background: rgba(6,182,212,0.08);
+      border: 1px solid rgba(6,182,212,0.2);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      margin: 1rem 0;
+    }
+    .topic-box .topic-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--cyan);
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .topic-box p { color: var(--text); font-size: 0.9rem; margin-bottom: 0; }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+    footer .made {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    footer .heart { color: var(--red); }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      nav .sections-nav { display: none; }
+      .hero { padding: 3rem 1.5rem 2rem; }
+      .card-header { height: 200px; }
+      .card-body { padding: 1.5rem 1.25rem; }
+      .markets-bar { gap: 0.75rem; }
+      .market-chip { padding: 0.6rem 1rem; }
+    }
+
+    /* ANIMATIONS */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.6s ease forwards;
+    }
+    @keyframes fadeUp {
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .card-section:nth-child(1) { animation-delay: 0.1s; }
+    .card-section:nth-child(2) { animation-delay: 0.2s; }
+    .card-section:nth-child(3) { animation-delay: 0.3s; }
+    .card-section:nth-child(4) { animation-delay: 0.4s; }
+    .card-section:nth-child(5) { animation-delay: 0.5s; }
+    .card-section:nth-child(6) { animation-delay: 0.6s; }
+    .card-section:nth-child(7) { animation-delay: 0.7s; }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="inner">
+      <div class="logo">
+        <div class="dot"></div>
+        TheBoredNerd Daily
+      </div>
+      <div class="sections-nav">
+        <a href="#business">💰 Business</a>
+        <a href="#content">🎬 Content</a>
+        <a href="#cyber">🛡️ Cyber</a>
+        <a href="#investment">📈 Invest</a>
+        <a href="#music">🎵 Music</a>
+        <a href="#software">💻 Dev</a>
+        <a href="#upgrade">⚙️ System</a>
+      </div>
+      <div class="date-badge">Sat, Mar 28 · 2026</div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="eyebrow">🤖 Your AI Morning Digest</div>
+    <h1>Daily Brief</h1>
+    <p class="sub">7 curated reports from your agent fleet — business, content, security, investing, music, dev, and system updates.</p>
+  </section>
+
+  <!-- MARKETS -->
+  <div class="markets-bar">
+    <div class="market-chip">
+      <span class="icon">₿</span>
+      <div class="info">
+        <div class="label">Bitcoin</div>
+        <div class="value">$66,156</div>
+      </div>
+      <div class="change down">▼ 3.1%</div>
+    </div>
+    <div class="market-chip">
+      <span class="icon">Ξ</span>
+      <div class="info">
+        <div class="label">Ethereum</div>
+        <div class="value">$1,988</div>
+      </div>
+      <div class="change down">▼ 2.8%</div>
+    </div>
+    <div class="market-chip">
+      <span class="icon">📊</span>
+      <div class="info">
+        <div class="label">S&P 500</div>
+        <div class="value">6,369</div>
+      </div>
+      <div class="change neutral">Mar 27</div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- BUSINESS -->
+    <div class="card-section fade-up" id="business">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1400&q=80" alt="AI agents concept art" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-red">🔥 Trending</div>
+          <h2>AI Agents as a Service</h2>
+          <p class="section-sub">The business opportunity that's quietly printing money</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="trending-banner">
+          <div class="trending-label">💡 What's Actually Hot Right Now</div>
+          <p>Every business needs automation but lacks dev resources. Selling pre-built AI agent workflows — customer support bots, lead qualifiers, content pipelines — via subscription is exploding. Low code + high value = fat margins. Tools like <strong>n8n</strong>, <strong>LangFlow</strong>, and <strong>OpenAI's Agents SDK</strong> make this buildable on a Mac mini today.</p>
+        </div>
+
+        <h3>3 Methods Worth Exploring</h3>
+        <ol>
+          <li><strong>Micro-SaaS niche automation</strong> — Single-purpose paid tools for specific industries. Think: AI quote generator for contractors, appointment reminder bot for salons. $29–$99/mo per user. Stack: Next.js + Supabase + OpenAI API.</li>
+          <li><strong>AI content repurposing service</strong> — Take one long-form piece (podcast, video, article) and auto-slice it into 20+ social posts, audiograms, newsletter snippets. Sell as a $199–$499/mo retainer.</li>
+          <li><strong>AI faceless YouTube channel bundles</strong> — Create ready-to-post channels (scripts + voiceover + thumbnail + description) for clients. Sell channel-in-a-box at $500–$2,000 each, or offer monthly management at $300–$800/mo.</li>
+        </ol>
+
+        <div class="action-box">
+          <div class="action-label">✅ Do This Today — Under 30 Minutes</div>
+          <p>Sign up for a free <strong>Supabase</strong> account and sketch the database schema. Core user story: "Contractor opens app → fills 5 fields → gets formatted PDF quote → sends to client." That's your MVP spec.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="card-section fade-up" id="content">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1400&q=80" alt="content creator studio" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-purple">💡 Viral Potential</div>
+          <h2>"I Let AI Roast My Content Strategy"</h2>
+          <p class="section-sub">Self-deprecating, relatable, and very shareable</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>The Concept</h3>
+        <p>Watch me put every video idea, thumbnail, and title through AI critique — then rebuild from scratch using nothing but the feedback. The "roast" format drives curiosity, shares, and positions you as someone who actually listens to feedback. Anti-guru energy = trust builder.</p>
+
+        <h3>Platform Breakdown</h3>
+        <ul>
+          <li><strong>YouTube (15–20 min):</strong> Before/after transformation structure, high retention. Shows real process.</li>
+          <li><strong>TikTok (60 sec):</strong> "AI just exposed my worst content habit" — stitching hook in first 3 seconds.</li>
+          <li><strong>Instagram Reels:</strong> Carousel — "5 things AI hates about your content" with visual before/afters.</li>
+        </ul>
+
+        <div class="action-box">
+          <div class="action-label">🎣 The Hook</div>
+          <p>"It told me my thumbnails look like a 2015 blog and honestly? It was right. Watch what happened next."</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CYBER -->
+    <div class="card-section fade-up" id="cyber">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1400&q=80" alt="cybersecurity dark concept" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-red">🔴 Critical Threat</div>
+          <h2>CVE-2026-2414</h2>
+          <p class="section-sub">Critical RCE in Palo Alto Networks PAN-OS — patch now</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="threat-banner">
+          <div class="threat-label">⚠️ Alert — Act Now</div>
+          <div class="cve">CVSS 9.8/10 · CVE-2026-2414 · Palo Alto Networks PAN-OS</div>
+          <p>Affected: GlobalProtect VPN gateways. Unpatched systems allow arbitrary code execution on the VPN concentrator — the literal gateway to corporate networks. <strong>Patch immediately</strong> if running PAN-OS &lt; 11.2.x. This is being actively scanned in the wild.</p>
+        </div>
+
+        <h3>📚 Today's Topic: Supply Chain Attacks</h3>
+        <p>When attackers compromise a trusted vendor or dependency to hit downstream victims. Think <strong>SolarWinds (2020)</strong> or <strong>XZ Utils (2024)</strong> — a single poisoned library can give attackers a foothold in thousands of organizations at once.</p>
+        <p><strong>Defense:</strong> Version pinning, SHA-256 integrity checking, monitoring third-party dependencies in CI/CD pipelines.</p>
+
+        <div class="action-box">
+          <div class="action-label">💡 Career Tip — Homelab</div>
+          <p>Set up a home lab on a Raspberry Pi. Spin up Kali Linux, practice on <a href="https://tryhackme.com/path/outline/beginner" target="_blank">TryHackMe</a>. Recruiters love seeing hands-on labs and writeups. Costs under $50 and builds real muscle.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- INVESTMENT -->
+    <div class="card-section fade-up" id="investment">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=80" alt="stock market charts" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-green">📚 This Week: DCA</div>
+          <h2>Dollar-Cost Averaging</h2>
+          <p class="section-sub">The simplest wealth-building strategy most people overthink</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="topic-box">
+          <div class="topic-label">📖 Concept</div>
+          <p>Invest a fixed amount at regular intervals regardless of market direction. When prices drop, your S$100 buys more units; when they rise, you buy fewer. Over time, this smooths out your average purchase price. Studies consistently show DCA outperforms trying to time the market for most retail investors.</p>
+        </div>
+
+        <div class="lesson-box">
+          <div class="lesson-label">🧠 Key Lesson This Week</div>
+          <p><strong>Volatility is not the same as risk.</strong> A 3% daily crypto drop is just noise if you're investing with a 5–10 year horizon. True risk is: (1) investing money you can't afford to lose, (2) not diversifying, or (3) panic-selling. A young investor shouldn't fear a 3% dip — they should see it as a buying opportunity.</p>
+        </div>
+
+        <div class="action-box">
+          <div class="action-label">🎯 Actionable — Start With S$100</div>
+          <p>Open a <strong>Syfe</strong>, <strong>MooMoo</strong>, or <strong>Interactive Brokers</strong> account and buy a single ETF like <strong>CSPX</strong> or <strong>VWRA</strong>. Set up a S$20/week DCA plan and watch how it compounds over 6 months. That's real education no course can teach.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- MUSIC -->
+    <div class="card-section fade-up" id="music">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1400&q=80" alt="music production studio" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-orange">🔥 Trending</div>
+          <h2>AI Ghost Artists</h2>
+          <p class="section-sub">Faceless music channels printing millions of streams</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="trending-banner">
+          <div class="trending-label">💡 What's Exploding Right Now</div>
+          <p>AI-generated music flooding TikTok, Reels, and Shorts. <strong>Suno v4</strong> and <strong>Udio</strong> are pushing hyper-realistic song generation. The biggest movement: AI "ghost artists" — faceless YouTube/Spotify channels posting AI music 24/7, racking up millions of streams with zero touring overhead.</p>
+        </div>
+
+        <h3>3 Niches Worth Exploring</h3>
+        <ol>
+          <li><strong>Faceless AI music YouTube channels</strong> — Post AI-generated lo-fi, ambient, or hip-hop 24/7. Monetize via YouTube ad revenue + Spotify. Very low overhead, scales fast.</li>
+          <li><strong>AI sample pack creation</strong> — Generate unique vocal chops, drum loops, textures. Sell on Splice, Bandcamp, or Gumroad at premium prices.</li>
+          <li><strong>AI cover song automation</strong> — Generate viral AI covers of trending songs (with disclaimers), redirect traffic to your own monetized catalog.</li>
+        </ol>
+
+        <div class="action-box">
+          <div class="action-label">🎸 Best Opportunity This Week</div>
+          <p>Start a faceless lo-fi/ambient AI music YouTube channel. Post 2–3 AI-generated tracks daily using <a href="https://udio.com" target="_blank">Udio</a>. Optimize for "study music," "sleep beats," "lo-fi for coding." Enable YouTube monetization + Spotify distribution. Costs near zero.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SOFTWARE -->
+    <div class="card-section fade-up" id="software">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1400&q=80" alt="code editor dark theme" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-blue">💻 Developer</div>
+          <h2>GitHub Projects V3 + Actions</h2>
+          <p class="section-sub">Native AI task summaries and 10x faster CI/CD containers</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>🔥 What's Trending</h3>
+        <ul>
+          <li><strong>GitHub Projects V3</strong> — Native AI task summaries and automated sprint planning built directly into repo project boards.</li>
+          <li><strong>GitHub Actions native container jobs</strong> — 10x faster cold starts for CI/CD. No more heavy Docker layer spins.</li>
+        </ul>
+
+        <h3>📚 Topic: GitHub Workflows</h3>
+        <p>Automate testing, building, and deploying via YAML files under <code>.github/workflows/</code>. Triggered by events like <code>push</code>, <code>pull_request</code>, or cron schedules.</p>
+        <pre><code>name: CI
+on: [push, pull_request]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm test</code></pre>
+
+        <div class="repo-box">
+          <div class="branch-badge">● main</div>
+          <p>Up to date with origin. Uncommitted: Modified AGENTS.md, README.md + 5 agent files. New: 9 agent files, docs/, media/</p>
+          <p class="warning" style="margin-top: 0.5rem;">💡 Worth a commit soon — you're building a full multi-agent system!</p>
+        </div>
+
+        <h3>⭐ Portfolio Project Idea</h3>
+        <p><strong>GitHub Actions Auto-Deploy Bot</strong> — A webhook listener that receives GitHub events, parses release notes, and posts deployment summaries to Slack/Discord. Shows full-stack skills end-to-end. Stack: Node.js + Express + ngrok. 6–8 hours start to finish.</p>
+      </div>
+    </div>
+
+    <!-- UPGRADE -->
+    <div class="card-section fade-up" id="upgrade">
+      <div class="card-header">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1400&q=80" alt="technology circuit board" loading="lazy">
+        <div class="overlay"></div>
+        <div class="header-content">
+          <div class="section-tag tag-indigo">⚙️ System</div>
+          <h2>OpenClaw v2026.3.24</h2>
+          <p class="section-sub">50 skills available · 38 running · 12 quick wins sitting idle</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <h3>🆕 New This Week</h3>
+        <ul>
+          <li>OpenClaw <strong>v2026.3.24</strong> — solid recent build, 50 skills in the library</li>
+          <li><strong>50 skills</strong> available, <strong>38 running</strong> on your system</li>
+          <li>No major AI model releases confirmed — GPT-5.4 series still dominates the leaderboard</li>
+        </ul>
+
+        <h3>💡 Quick Wins — Unconfigured Skills</h3>
+        <p>12 skills need setup. Top recommendations for your workflow:</p>
+        <div class="skills-row">
+          <span class="skill-badge">bluebubbles</span>
+          <span class="skill-badge">sag (voice/TTS)</span>
+          <span class="skill-badge">spotify-player</span>
+          <span class="skill-badge">discord</span>
+          <span class="skill-badge">slack</span>
+          <span class="skill-badge">notion</span>
+          <span class="skill-badge">trello</span>
+          <span class="skill-badge">openai-whisper-api</span>
+        </div>
+
+        <div class="action-box">
+          <div class="action-label">🔧 Recommended Action</div>
+          <p>Run <code>openclaw skills list</code> to see which of the 12 unconfigured skills add the most value to your day-to-day. Set up the top 2–3 — <strong>bluebubbles</strong> for iMessage relay or <strong>sag</strong> for voice output would give the biggest practical boost.</p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <footer>
+    <div class="made">
+      Built with <span class="heart">♥</span> by TheBoredNerd
+    </div>
+    7 reports · 1 page · Generated March 28, 2026 at 12:08 PM SGT
+  </footer>
+
+</body>
+</html>

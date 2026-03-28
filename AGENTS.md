@@ -207,6 +207,71 @@ Think of it like a human reviewing their journal and updating their mental model
 
 The goal: Be helpful without being annoying. Check in a few times a day, do useful background work, but respect quiet time.
 
+## The Agent System
+
+14 specialized cron agents run automatically. For full details see:
+- `agents/` — individual agent specs and output formats
+- `docs/ARCHITECTURE.md` — how the whole system fits together
+
+### Quick Reference
+
+| Agent | Schedule (GMT+8) | Purpose |
+|-------|-------------------|---------|
+| IT_agent | Every 1 hour | System health monitoring |
+| Token_agent | Every 30 min | Usage cost alerts |
+| Progress_agent | Midnight | Daily diary + git commit |
+| Upgrade_agent | 6:50 AM | OpenClaw updates + new skills |
+| Business_agent | 6:52 AM | Money-making opportunities |
+| ContentCreator_agent | 6:54 AM | Daily content plans + video ideas |
+| Music_agent | 6:56 AM | AI music trends + monetisation |
+| Cyber_agent | 6:58 AM | Security intel + career roadmap |
+| Investment_agent | 7:00 AM | Markets + investing education |
+| Law_agent | 7:02 AM | Legal compliance for online business |
+| SoftwareEngineer_agent | 7:04 AM | Dev tools + repo maintenance |
+| **YouTube_video_agent** | **8:30 AM** | **AI video generation + upload draft** |
+| News_agent | 7:30 AM | Master HTML digest → GitHub Pages + Telegram link |
+
+### Agent Responsibilities
+
+**💰 Business_agent**
+Researches real money-making opportunities. Micro-SaaS, AI services, content monetisation. Delivers actionable first steps.
+
+**🎬 ContentCreator_agent**
+Daily content plan for YouTube, TikTok, Instagram. Real hooks, outlines, posting times. Reads live trending data.
+
+**🎬 YouTube_video_agent** *(NEW)*
+Reads the content plan, runs the AI video pipeline (stock footage + TTS voiceover + MoviePy assembly), delivers draft video to A via Telegram for review before upload.
+
+**🎵 Music_agent**
+Tracks AI music trends. Suno/Udio platform updates. Faceless music channel strategies. Licensing and copyright guidance.
+
+**🛡️ Cyber_agent**
+Daily CVE/threat intel + rotating cybersecurity career curriculum (networking → Linux → Web → CTFs over 4 weeks).
+
+**📈 Investment_agent**
+Daily market snapshot (BTC/ETH/S&P) + investing lesson. DCA, risk management, Singapore-context brokerage guidance.
+
+**⚖️ Law_agent**
+AI content copyright, YouTube/TikTok monetisation policies, Singapore digital business compliance.
+
+**💻 SoftwareEngineer_agent**
+Dev tool trends, GitHub repo maintenance, coding curriculum rotating through web/python/shell/git.
+
+**🔧 Upgrade_agent**
+OpenClaw version checks, new skills from ClawHub, AI model news, system health.
+
+**🌅 News_agent**
+Master 7:30 AM digest. Reads all sub-agent reports, generates beautiful HTML page, pushes to GitHub Pages, sends link to Telegram.
+
+**🖥️ IT_agent**
+Hourly system health check. Only wakes A if something is actually wrong (CPU, RAM, disk, gateway).
+
+**💸 Token_agent**
+Every $5 of AI usage threshold crossed → Telegram alert so A stays aware of costs.
+
+**📓 Progress_agent**
+Midnight diary entry written in first person, committed to git, pushed to GitHub. The build-in-public journal.
+
 ## Make It Yours
 
 This is a starting point. Add your own conventions, style, and rules as you figure out what works.

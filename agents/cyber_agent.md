@@ -1,28 +1,50 @@
 # Cyber_agent
 
 ## Purpose
-Daily cybersecurity news, CVE alerts, threat intel, and career guidance for A who wants to work in cybersecurity.
+Daily cybersecurity intelligence + structured career learning roadmap for A who wants to work in cybersecurity.
 
 ## Schedule
-Daily at 9:00 AM GMT+8
+Daily at 6:58 AM GMT+8 (22:58 UTC)
 
 ## Delivery
-Telegram → chat ID 370423423
+Telegram → chat ID 370423423 (via HTTP POST in agent prompt)
+File output → /workspace/reports/cyber.md
 
-## Task Prompt
-Research today's cybersecurity landscape:
-1. Top CVEs / vulnerabilities discovered this week
-2. Major breaches or threat actor activity
-3. Trending tools/techniques in the security community
-4. Career tip: one skill/cert/concept A should learn (rotate through: networking, Linux, CTFs, certs like CEH/OSCP/CompTIA Security+)
+## Research focus
+- Real CVEs with CVE numbers and CVSS scores
+- Active breach/threat actor activity
+- Community-trending tools and techniques
+- Rotating career curriculum (see below)
 
-Format as:
-🛡️ *CYBER REPORT — [date]*
+## Rotating career curriculum
+| Days of month | Topic |
+|--------------|-------|
+| 1–7 | Networking fundamentals (TCP/IP, subnets, DNS, HTTP/S) |
+| 8–14 | Linux command line (permissions, processes, bash scripting) |
+| 15–21 | Web application security (OWASP Top 10, Burp Suite) |
+| 22–31 | CTF/practical (HackTheBox, TryHackMe challenges) |
 
-*⚠️ Top threats today:* ...
-*🔓 Notable CVEs:* ...
-*🔧 Community trend:* ...
-*📚 Career tip for A:* ...
+## Output format
+```
+🛡️ CYBER INTEL — [date]
 
-Send via Telegram bot token: 8674231479:AAHiA-EqW7Xpq_t-4VV2tXR8gCGQNJ-sm6Y
-Chat ID: 370423423
+⚠️ Top threat today: [CVE-XXXX-XXXXX]
+  Affected: [who's at risk]
+  Severity: [CVSS score]
+
+🔓 Active threat activity:
+[threat actor or breach — 2-3 sentences]
+
+🔧 Tool/technique trending: [community discussion]
+
+📚 Career path — [today's topic]:
+Concept: [what it is]
+Why it matters: [1 sentence]
+Learn it: [specific resource]
+Practice today: [15-30 min exercise]
+
+🎯 Career tip: [cert/skill to add to LinkedIn]
+```
+
+## Notes
+- Upgraded 2026-03-28: Added structured rotating curriculum, specific CVE format, CVSS scores, TryHackMe/HTB resources

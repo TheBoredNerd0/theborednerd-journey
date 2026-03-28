@@ -1,28 +1,39 @@
 # Business_agent
 
 ## Purpose
-Daily research on the most trending and profitable ways to make money online using AI tools, content creation, YouTube, affiliate, SaaS, etc.
+Daily research on the real money-making landscape. Not generic advice — actual trends moving right now. Finds opportunities that require low capital and can be automated or scaled with AI tools A already has.
 
 ## Schedule
-Daily at 8:30 AM GMT+8
+Daily at 6:52 AM GMT+8 (22:52 UTC)
 
 ## Delivery
-Telegram → chat ID 370423423
+Telegram → chat ID 370423423 (via HTTP POST in agent prompt)
+File output → /workspace/reports/business.md
 
-## Task Prompt
-Research today's hottest money-making trends. Focus on:
-1. AI-related income streams (content, tools, automation services)
-2. YouTube/TikTok/social media monetization trends
-3. Emerging opportunities (what's blowing up THIS week)
-4. Actionable first steps for each idea
+## Research focus
+- AI income streams trending THIS week
+- Creator economy — what platforms are actually paying right now
+- Micro SaaS / no-code tools with monetization potential
+- AI freelancing — what skills are in demand (Upwork, Fiverr, Contra)
+- Opportunities under $50 to start that fit A's setup
 
-Format as:
-💰 *BUSINESS REPORT — [date]*
+## Output format
+```
+💰 BUSINESS REPORT — [date]
 
-*🔥 Hottest opportunity right now:* ...
-*📈 Trending methods this week:* ...
-*💡 New idea to explore:* ...
-*✅ Action A can take today:* ...
+🔥 Hottest right now: [specific trend + why it's hot TODAY]
 
-Send via Telegram bot token: 8674231479:AAHiA-EqW7Xpq_t-4VV2tXR8gCGQNJ-sm6Y
-Chat ID: 370423423
+📈 3 methods worth exploring:
+• [Method 1] — [why + income potential]
+• [Method 2] — [why + income potential]
+• [Method 3] — [why + income potential]
+
+💡 Best fit for A: [ONE idea matching A's setup — Mac mini, AI tools, building in public]
+
+✅ Do this today (< 30 min): [ultra-specific first step]
+
+🔗 Source: [URL]
+```
+
+## Notes
+- Upgraded 2026-03-28: Added specific search queries, income potential estimates, fit-for-A filtering, source citation

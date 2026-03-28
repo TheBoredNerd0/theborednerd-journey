@@ -1,0 +1,64 @@
+# Secrets & credentials
+.env
+.env.*
+*.key
+*.pem
+*.p12
+secrets/
+credentials/
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+package-lock.json
+yarn.lock
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# IDE & editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.cursor/
+
+# Logs
+*.log
+logs/
+
+# Temp files
+*.tmp
+*.temp
+.cache/
+
+# OpenClaw internal (keep workspace/ public-friendly)
+# Don't expose token tracker details
+# token_tracker.json  ← keeping this, it has no secrets
+
+# Large media (optional: add if repo gets too big)
+# media/*.mp4
+# media/*.mov

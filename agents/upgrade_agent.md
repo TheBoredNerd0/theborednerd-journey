@@ -1,28 +1,39 @@
 # Upgrade_agent
 
 ## Purpose
-Daily scan of OpenClaw updates, new skills on ClawHub, GitHub releases, and Discord community discussions. Surface the most interesting improvements A can apply.
+Daily scan of OpenClaw updates, new ClawHub skills, community highlights, and AI model improvements. Also runs system diagnostics and reports cron job health.
 
 ## Schedule
-Daily at 8:00 AM GMT+8
+Daily at 6:50 AM GMT+8 (22:50 UTC) — fires FIRST
 
 ## Delivery
-Telegram → chat ID 370423423
+Telegram → chat ID 370423423 (via HTTP POST in agent prompt)
+File output → /workspace/reports/upgrade.md
 
-## Task Prompt
-Search for:
-1. Latest OpenClaw releases and changelog (https://github.com/openclaw/openclaw)
-2. New skills on https://clawhub.ai
-3. OpenClaw Discord community highlights (https://discord.com/invite/clawd)
-4. Any interesting AI assistant/agent news that could make TheBoredNerd more powerful
+## Research focus
+- OpenClaw GitHub releases (latest version vs installed)
+- New skills on clawhub.ai
+- Claude/model improvements
+- AI agent tool comparisons
+- System diagnostics: cron job status, gateway health, installed version
 
-Format the report as:
-🔧 *UPGRADE REPORT — [date]*
+## Output format
+```
+🔧 SYSTEM UPGRADE — [date]
 
-*New OpenClaw updates:* ...
-*New skills available:* ...
-*Community highlights:* ...
-*Recommendation for A:* ...
+📦 OpenClaw: v[installed] — [up to date / update available: v[new]]
 
-Send via Telegram bot token: 8674231479:AAHiA-EqW7Xpq_t-4VV2tXR8gCGQNJ-sm6Y
-Chat ID: 370423423
+🧩 New skills worth installing:
+• [skill] — [what it does] — clawhub install [name]
+
+🤖 AI model news: [Claude/model improvements]
+
+⚠️ System health:
+• Cron jobs: [X ok, Y idle, Z errors]
+• Gateway: [status]
+
+💡 Recommendation: [ONE concrete improvement]
+```
+
+## Notes
+- Upgraded 2026-03-28: Added version checking, system diagnostics, cron job health, actual clawhub install commands

@@ -1,0 +1,69 @@
+====================================================
+YOUTUBE VIDEO: "I gave an AI full control of my Mac for 24 hours" (Day 1)
+====================================================
+
+TITLE OPTIONS (pick one):
+1. I Built a Personal AI System That Works While I Sleep (Day 1)
+2. How I Set Up 12 AI Agents in One Evening — And What Happened Overnight
+3. Day 1: Building an AI-Powered Life From Scratch | TheBoredNerd Journey
+
+----------------------------------------------------
+DESCRIPTION:
+----------------------------------------------------
+
+Day 1 of building an AI system that runs my life 24/7 — documenting everything publicly.
+
+In this video I set up 12 specialized AI agents using OpenClaw that now work for me around the clock:
+- A morning briefing that lands in my Telegram every day at 7:30 AM
+- A cybersecurity agent tracking threats and teaching me the field daily
+- A business intelligence agent finding money-making opportunities every morning
+- Content planning, music research, investment education, legal compliance checks
+- System monitoring that alerts me if anything breaks
+- A diary agent that writes this public log at midnight every night
+
+And here's the wild part — while I was sleeping, the AI worked overnight and improved itself.
+
+This is Day 1. I don't know where Day 100 will be. Let's find out together.
+
+📂 Full code & logs: https://github.com/TheBoredNerd0/theborednerd-journey
+🐦 X/Twitter: @TheBoredNerd0
+💬 Telegram community: (coming soon)
+
+----------------------------------------------------
+TIMESTAMPS:
+----------------------------------------------------
+0:00 — What is this project?
+0:20 — The 12 agents explained
+0:45 — Watching it run live
+1:10 — What the AI did overnight
+1:30 — What's next
+
+----------------------------------------------------
+TAGS:
+----------------------------------------------------
+OpenClaw, AI agents, build in public, AI automation, personal AI, Claude AI, 
+AI system, Mac mini, Telegram bot, AI tools 2026, make money with AI, 
+cybersecurity learning, AI journey, coding journey, AI productivity, 
+passive income AI, content creation AI, TheBoredNerd
+
+----------------------------------------------------
+THUMBNAIL IDEAS:
+----------------------------------------------------
+Option A: Split screen — phone showing Telegram messages rolling in / terminal with agents running
+Option B: "12 AI agents. 1 night. Here's what they built." white text on dark background, face in corner looking at screen
+Option C: Before/After — messy desk (Day 0) vs. clean setup with screens showing dashboards (Day 1)
+
+----------------------------------------------------
+CATEGORY: Science & Technology
+AUDIENCE: Not made for kids
+LANGUAGE: English
+----------------------------------------------------
+
+YouTube UPLOAD NOTE:
+- yt-dlp and youtube-dl are NOT installed on this machine
+- No YouTube API key was found in the environment
+- Manual upload required via YouTube Studio (studio.youtube.com)
+- Video file: /Users/bored/.openclaw/workspace/media/day1_demo.mp4
+- Recommended: also upload the TikTok version as a YouTube Short
+
+====================================================
