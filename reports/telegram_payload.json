@@ -1,0 +1,5 @@
+{
+  "chat_id": 370423423,
+  "parse_mode": "Markdown",
+  "text": "DEV BRIEFING - Mar 29, 2026\n\nTrending in dev:\nAI-native coding tools shifting from chat-only to agentic. Aider and Claude Code handle multi-file refactors autonomously now.\n\nTodays topic: Git/GitHub Workflows\nGitHub Actions is GitHubs free CI platform. Push to main -> tests run -> app deploys.\n\nTry it: Enable Dependabot for automated dependency updates. Add .github/dependabot.yml with weekly npm schedule.\n\nRepo update:\n6 agent reports modified + 2 new files. Recommend: git add -A && git commit -m daily reports && git push\n\nProject idea for A:\nBuild a Git Commit Message Formatter CLI - reads your diff, suggests conventional commit format, auto-commits. Node.js + commander. Great weekend portfolio project.\n\nFull report at /workspace/reports/software.md"
+}
