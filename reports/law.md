@@ -1,62 +1,67 @@
-# Legal Corner — Sunday, 29 March 2026
+# Legal Corner — Week of March 30, 2026
 
-## Today's Topic: Data Privacy & Consumer Protection for Online Businesses
-
----
-
-## What You Need to Know
-
-When you collect any data from people — an email address, a YouTube comment, a newsletter subscriber, a Telegram follower — you're subject to privacy laws. In Singapore, that's the **PDPA (Personal Data Protection Act)**. If you have international viewers/customers, the **EU AI Act** and **FTC guidelines** may also apply. The basics are straightforward: collect only what you need, protect it, and don't sell it without consent.
+## Today's Topic: Data Privacy & Consumer Protection for AI Content Businesses
 
 ---
 
-## You're Fine If You:
+### AI Content Copyright — Where Things Stand (March 2026)
 
-- **Only collect what's necessary** — email for a newsletter, view counts for analytics. Don't ask for birthday or NRIC unless you genuinely need it.
-- **Use reputable platforms** — Gmail, Telegram, YouTube already have PDPA-compliant infrastructure. You're mostly covered if you're not rolling your own databases.
-- **Don't buy or sell email lists** — this is the fastest way to run into trouble. Never purchase a " Singapore business leads" list.
-- **Give people a way to opt out** — every email/newsletter should have an unsubscribe link. Telegram bots should respond to "unsubscribe."
-- **Secure your accounts** — 2FA on Gmail, Telegram, any dashboard you use. A breach from your end is still your responsibility.
-
----
-
-## Watch Out For:
-
-- **"AI-generated content" + personal data** — if your AI tools process personal data (e.g., scraping public profiles, analyzing subscriber data), you need a privacy policy and may need a Data Protection Officer (DPO) if your volume is commercial-scale.
-- **EU viewers/customers = EU AI Act applies** — even if you're in Singapore, if you have EU audience members, you must disclose when content is AI-generated (AI Act, Article 50). Label AI music, AI voiceovers, AI script content.
-- **FTC affiliate disclosures** — if you promote products for commission (YouTube affiliate links, sponsorships), the FTC requires clear disclosure. "Contains affiliate links" in the video description or pinned comment is the minimum.
-- **Overseas data transfers** — if you use US-based tools (Google Analytics, ConvertKit, Mailchimp), data may be stored in the US. Check your platform's data residency settings. Singapore's PDPA requires you to ensure "adequate protection" for transferred data.
+**Key developments:**
+- The U.S. Copyright Office continues to hold that AI-generated content without human authorship cannot be copyrighted (per the *Thaler v. Perlmutter* 2023 ruling and subsequent guidance).
+- The EU AI Act is in force and requires **transparency** — AI-generated content disclosed to users (especially for commercial purposes).
+- Singapore's **Personal Data Protection Act (PDPA)** applies to any business collecting personal data of Singapore residents, including email subscribers, followers, and viewers.
 
 ---
 
-## Singapore Note 🇸🇬
+### What This Means for A
 
-**PDPA is enforced by the Personal Data Protection Commission (PDPC).** Fines can go up to **S$1 million or 10% of annual turnover**, whichever is higher. For a solo creator, the maximum is lower (~S$100,000 for individuals), but the reputational damage is worse.
+**You're fine if you:**
+- Clearly label AI-generated content (voiceovers, scripts, music, video) in the video description or content itself.
+- Don't claim copyright over purely AI-generated assets — you CAN claim copyright over the human-curated selection, arrangement, and commentary.
+- Have a basic privacy policy if you're collecting emails (e.g., newsletter signup, waitlist).
+- Disclose when you're using audience data to personalize content or recommendations.
 
-**Practical steps for A:**
-- If using a mailing list tool (ConvertKit, Mailchimp), check its DPA (Data Processing Agreement) — most major platforms are already PDPA-compliant
-- Keep a simple privacy policy page on any website you run (Template: PrivacyPolicies.com or Termify)
-- Don't screenshot/store people's Telegram messages publicly without consent
-
----
-
-## Quick Reference
-
-| Law | Applies When | Key Rule |
-|-----|-------------|----------|
-| Singapore PDPA | Anyone collecting personal data in SG | Minimize collection, get consent, allow opt-out |
-| EU AI Act | AI content seen by EU users | Must disclose "AI-generated" label |
-| FTC Act (US) | Sponsored/affiliate content | Clear, conspicuous disclosure |
-| Consumer Protection (E-Commerce) Regulations | Selling to Singapore consumers | Display true price, include GST if >S$400k revenue |
+**Watch out for:**
+- **Re-uploading others' AI-generated content** — even if the original was AI-made, platform terms and copyright still apply to the specific expression.
+- **Subscriber/follower data** — if you're building a database of emails or phone numbers (e.g., via Telegram group, WhatsApp broadcast), PDPA requires you to tell them why you're collecting it and let them opt out.
+- **Cross-border data flows** — if your tools (e.g., email service providers) store data outside Singapore, you need to ensure those providers meet PDPA standards.
 
 ---
 
-## Sources
+### Singapore-Specific: PDPA Basics for Content Creators
 
-- PDPC Singapore: https://www.pdpc.gov.sg
-- EU AI Act Overview: https://artificialintelligenceact.eu
-- FTC Endorsement Guides: https://www.ftc.gov/business-guidance/guides
+Singapore's Personal Data Protection Commission (PDPC) has fined businesses for:
+- Collecting more data than needed
+- Not having a clear purpose for data collection
+- Failing to honour opt-out requests
+
+**Practical minimum for A:**
+1. If using email newsletters (e.g., through a mailing service), include a one-liner: "Your email won't be shared. Unsubscribe anytime."
+2. If running Telegram/WhatsApp broadcasts, let people know what they'll receive and how to leave.
+3. No need for a full legal privacy policy until you're at significant scale — just be transparent.
 
 ---
 
-_Law_agent | Report generated 29 March 2026_
+### Platform Policy Watch
+
+**YouTube (March 2026):**
+- AI-generated content must be disclosed using the "AI-Generated" label when applicable.
+- Creator responsibility for AI content applies even if you used an AI tool.
+- Music policies: if using AI music (Suno/Udio), ensure the platform you publish to allows it.
+
+**TikTok:**
+- AI-generated content disclosures are now mandatory in many regions.
+- Branded content and sponsored posts still require clear labelling regardless of how the content was made.
+
+---
+
+### Sources & Links to Verify
+
+- U.S. Copyright Office AI guidance: copyright.gov/ai
+- EU AI Act transparency requirements: europa.eu/ai-act
+- Singapore PDPC: pdpc.gov.sg
+- YouTube Community Guidelines (AI content): support.google.com/youtube
+
+---
+
+*Note: Laws evolve rapidly. For significant business decisions, consult a Singapore-licensed lawyer. This report is awareness, not legal advice.*

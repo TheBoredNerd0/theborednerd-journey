@@ -1,107 +1,98 @@
 # Content Plan — TheBoredNerd0
-**Date:** Sunday, March 29, 2026 (GMT+8)
+**Monday, March 30, 2026**
 
 ---
 
-## 📱 Short #1 (TikTok / Reels / Shorts)
-**Title:** I let AI run my whole morning — here's what happened
+## 📱 Short #1 (TikTok/Reels/Shorts)
 
-**Hook (first 3 sec):**
-*"I programmed my AI to handle my entire morning, and it was chaos."*
+**Title:** "7 Open Source AI Tools That Are Actually Better Than ChatGPT"
+
+**Hook (first 3 sec):** *"Everyone's paying for AI tools. Here's 7 free ones that might replace them."*
 
 **Structure:**
-• Show the setup — what tasks you assigned (calendar, email, news summary)
-• The failures — funny moments where AI misunderstood something
-• The wins — what actually worked perfectly
-• Rate the AI out of 10
+- [0-5s] Hook — bold claim, people ARE paying for ChatGPT/Claude
+- [5-20s] Tool #1-3 rapid fire (name + what it does + why it's free)
+- [20-35s] Tool #4-6, emphasize "open source = your data stays yours"
+- [35-45s] The plot twist: one of them is actually better for coding
+- [45-55s] Personal callout — "I've been running these on my Mac mini 24/7 via agents"
 
-**CTA:** "Would you let AI run your life? Drop it in comments 👇"
+**CTA:** *"Save this post, follow for more build-in-public AI setups every week."*
 
 ---
 
 ## 📱 Short #2
-**Title:** ChatGPT just did my job in 30 seconds — and I'm not even mad
 
-**Hook:**
-*"My 4-hour task took ChatGPT 30 seconds. Here's the real talk."*
+**Title:** "DeepSeek Fixed The Biggest AI Problem and Nobody's Talking About It"
+
+**Hook (first 3 sec):** *"AI has a lying problem. DeepSeek just quietly fixed it."*
 
 **Structure:**
-• Set the scene — what the task was (writing, research, whatever fits A's day)
-• Show the comparison — before/after or side by side
-• The honest reaction — mixed feelings, what surprised you
-• Why this is actually good news for you
+- [0-5s] The problem: AI confidently gives wrong answers (citation hallucination)
+- [5-20s] What DeepSeek changed — better reasoning trails, sources cited
+- [20-35s] Why this matters for real-world use (coding, research, learning)
+- [35-50s] "This is why I track what's actually being fixed vs. what's just marketed"
 
-**CTA:** "Follow for more real AI experiments 👀"
+**CTA:** *"Follow for the AI updates that actually matter, not the hype."*
 
 ---
 
 ## 🎥 YouTube Video
-**Title:** I Built 14 AI Agents That Work While I Sleep — Full Setup Tour
 
-**Thumbnail idea:** Screenshot of terminal showing 14 agents running + sleepy emoji + laptop glow
+**Title:** "I Let AI Agents Run My Life For 30 Days — Here's What Actually Broke"
+
+**Thumbnail idea:** Split screen — left side: calm organized desk setup, right side: chaotic whiteboard with crossed-out plans. Bold text overlay: "30 DAYS OF AI AGENTS."
 
 **Outline:**
-• **Intro (0:00):** "I set up 14 agents to run automatically every morning. This is everything that happened." — hook with one surprising stat
-• **Section 1 (1:00):** The setup — which agents, what they do, how they connect (keep it visual, screen recording)
-• **Section 2 (4:00):** Best results this week — specific wins, real data
-• **Section 3 (7:00):** What broke — honest failures, what you'd change
-• **Section 4 (9:00):** How to replicate this for free (basic version)
-• **CTA (10:30):** "Subscribe and drop a comment — what's one task you'd automate first?"
+- **Intro (0-30s):** Hook — "I set up 14 AI agents to run my life. Month 1 was... a ride." Promise: real results, real failures, real setup details
+- **Section 1 (30s-2min):** What worked — email summarization, calendar alerts, content pipeline agents
+- **Section 2 (2-4min):** What broke — the agents that went off-track, the costs that surprised me, the "hallucination moments"
+- **Section 3 (4-6min):** The fix — what I changed in week 3-4, prompt adjustments, which agents I killed
+- **Section 4 (6-8min):** Month 2 preview — what I'm keeping, what's next
+- **CTA (8-9min):** "Drop a comment — what would YOU automate first? I'll pick 5 to build live."
 
-**SEO tags:** AI agents, automation, AI tools, productivity, ChatGPT, build in public
-
----
-
-## ✍️ Instagram / TikTok Caption (Post 1)
-**Caption:**
-POV: You wake up and your AI already did your homework 🧠
-
-I set up agents to handle my morning — news, emails, content ideas, all before I touch my laptop.
-
-Some worked. Some didn't. But honestly?
-
-The stuff that worked made me feel like I have a team.
-
-This is what "build in public" actually looks like — raw, real, no filter.
-
-What's one thing you'd automate tomorrow if you could?
-
-#AI #BuildInPublic #AIAgents #TechTwitter #Productivity #ArtificialIntelligence #MorningRoutine #Automation #ChatGPT #AINews
+**Tags:** AI agents, automation, build in public, productivity, AI tools 2026
 
 ---
 
-## ✍️ Caption (Post 2 — Storytime style)
-**Caption:**
-I asked AI to summarize 50 articles for me.
+## ✍️ Posts (copy-paste ready)
 
-It took 3 minutes.
+### Post 1 (Instagram/TikTok caption)
+> Everyone told me to "just use AI for everything."
+>
+> So I did. 14 agents running 24/7.
+>
+> Month 1 truth: it's not magic. It's maintenance.
+> Some broke. Some surprised me.
+>
+> Documenting the whole messy journey 👇
+> #AI #buildinpublic #aitools #productivity #tech #automation
 
-I would've taken 5 hours.
-
-But here's the thing that actually blew my mind 👇
-
-It didn't just summarize — it found patterns I missed. It connected ideas across articles I hadn't thought to compare.
-
-That's when I realized: AI isn't replacing my brain.
-
-It's giving my brain a bigger playground.
-
-#TechLife #AI #LearningInPublic #ContentCreator #StudyTok #AINews
+### Post 2 (Twitter/X style)
+> hot take: the real AI skill isn't knowing how to use ChatGPT.
+>
+> it's knowing which 5 tools to run in parallel, how to connect them, and when to turn them off before they burn your budget.
+>
+> (that last part took me 3 weeks to learn)
+>
+> #AI #tools #automation
 
 ---
 
 ## ⏰ Best Times to Post (GMT+8)
 
-| Platform | Best Time | Why |
-|----------|-----------|-----|
-| TikTok | 12:00 PM, 7:00 PM | Lunch break scroll + evening unwind |
-| Instagram Reels | 1:00 PM, 8:00 PM | Similar scroll patterns |
-| YouTube Shorts | 3:00 PM, 9:00 PM | Afternoon boredom + night scroll |
-| YouTube Long | Saturday 2:00 PM, Sunday 10:00 AM | Weekend viewing |
-
-**Today = Sunday** → Great for long-form YouTube upload + 1 short in the afternoon
+| Platform | Best Time | Rationale |
+|---|---|---|
+| TikTok | 12:00 PM, 7:00 PM | Lunch break scroll, evening wind-down |
+| Instagram Reels | 1:00 PM, 8:00 PM | Slightly later than TikTok |
+| YouTube Shorts | 2:00 PM, 9:00 PM | Afternoon algorithm boost |
+| YouTube Long | Saturday 3:00 PM, Sunday 10:00 AM | Weekend binge viewing |
+| Twitter/X | 8:00 AM, 9:00 PM | Morning check, late-night scroll |
 
 ---
 
-## 🔥 News-Jacking Angle (if applicable today)
-Check for any major AI announcements this week. If something dropped, lead with it — "Breaking: [News] — here's what it means for you" format always pulls views fast.
+## 🎯 This Week's Angle
+
+**Core theme:** "The AI Hype vs. Reality Gap" — lots of people talking about AI changing everything, fewer people showing the actual messy middle. Lean into being the honest, learning-out-loud creator. The "cracks in AI narrative" content is trending — that's your lane.
+
+## 📦 Batch Content Tip
+Shoot/edit both shorts on the same day. YouTube long-form can be recorded in one take (40 min) and broken into clips later for shorts repurposing.

@@ -1,63 +1,64 @@
-# 📈 Investment Report — March 29, 2026
+# Investment Report — March 30, 2026
 
-## Market Snapshot
+## 📊 Market Snapshot
 
-| Asset | Price | 24h Change |
-|-------|-------|-----------|
-| Bitcoin (BTC) | $66,370.80 | Needs refresh* |
-| Ethereum (ETH) | $1,994.05 | Needs refresh* |
-| S&P 500 | 6,368.85 (Mar 27 close) | -0.9% on the week |
+| Asset | Price | 24h | 7d |
+|-------|-------|-----|----|
+| BTC | $66,026.34 | +0.91% | +3.42% |
+| ETH | $1,983.68 | +1.15% | +3.99% |
+| S&P 500 | 6,368.85 | ⚠️ Correction | -5 straight weeks |
 
-*As of last data pull. Check live prices at [CoinMarketCap](https://coinmarketcap.com) or Yahoo Finance.
-
----
-
-## Market Vibe
-
-**Risk-off vibes.** The S&P 500 just posted its **5th consecutive losing week** — the longest stretch since 2022. The Dow shed ~800 points and entered official correction territory. "Magnificent 7" tech stocks lost a combined $300 billion in a single session. Oil is surging (geopolitical tension again), which adds inflationary pressure — the last thing markets want right now. Sentiment is cautious, not catastrophic. Think "late-cycle jitters" rather than collapse.
+**Source:** CoinMarketCap + Google Finance (Mar 29 close)
 
 ---
 
-## 📚 Today's Lesson — Week 4: Alternative Income
+## 💬 Market Vibe
 
-### Topic: High-Yield Savings Accounts & Singapore Treasury Bills (T-Bills)
+Risk-off environment. The S&P 500 has dropped ~20% from recent highs and is now in **correction territory**. Geopolitical tension (Iran conflict) is pushing oil prices higher, adding inflation pressure. Tech stocks are getting hit hard. Crypto has held up relatively better this week but is not immune — BTC bounced off recent lows but sentiment is still fearful.
 
-When people think "investing," they often skip straight to stocks. But the foundation of a solid financial start is actually **cash-adjacent instruments** — and right now, they're paying surprisingly well.
-
-**What they are:**
-- **High-yield savings accounts (HYSAs):** Bank accounts that pay significantly more interest than standard savings (think 3-4% vs 0.05% in Singapore's standard banks). Your money is accessible anytime, FDIC/MAS-protected, and there's zero risk of losing principal.
-- **Singapore T-Bills:** Short-term government debt instruments issued by the Monetary Authority of Singapore (MAS). You lend the government money for a fixed term (6 months or 1 year), and they pay you back with interest. Currently yielding around 3.2-3.5% — and that rate moves with interest rates.
-
-**Why this matters for someone starting from zero:**
-Before you invest a single dollar, you need a **financial foundation**. That means:
-1. An emergency fund (3-6 months of expenses) in a HYSA — liquid and safe
-2. A separate "investment capital" sitting in T-Bills or SRS account earning risk-free returns while you learn
-
-In Singapore specifically: your **CPF OA** earns ~2.5% risk-free automatically — that's already beating most savings accounts. Don't ignore it. For those with SRS contributions, T-Bills are a low-risk vehicle that complements CPF investing.
-
-**The key insight:** High yields right now are *temporary*. As central banks cut rates, HYSA and T-Bill rates will fall. Lock in while you can.
+**Crypto Fear & Greed Index:** Extreme Fear
 
 ---
 
-## 💡 Why This Matters Practically
+## 📚 Today's Lesson — Alternatives Week: T-Bills (Treasury Bills)
 
-If you had $10,000 sitting in a standard Singapore bank savings account earning 0.05%, you'd make **$5/year**. Put that same $10,000 in a HYSA at 3.5%, you'd make **$350/year** — 70x more, with the same liquidity and zero risk. That's the power of just *putting your cash in the right place* before you even touch the stock market.
+**Topic: The safest investment most beginners forget exists**
+
+Treasury Bills (T-Bills) are government bonds you can buy with terms as short as 4 weeks. You lend money to the government, they pay you back with interest. They're considered one of the safest investments on the planet because the US (or Singapore) government backing them is extremely unlikely to default.
+
+**How they work:** You buy at a discount (e.g., $98 for a $100 bill) and get the full $100 when it matures. The difference is your return.
+
+**Why today matters:** With markets this volatile, T-Bills are paying ~4.5-5% right now. That's better than most savings accounts and zero risk to your principal.
+
+**Singapore context:** Singapore Savings Bonds (SSB) are the SG equivalent — no capital loss risk, flexible redemption, backed by Singapore government. Great first step for a beginner with zero investing experience.
 
 ---
 
-## 🛠️ Try This (Free / Low Barrier)
+## 💡 Why This Matters for Someone Starting Out
 
-1. **Compare HYSA rates:** Use [Depositrate.com.sg](https://www.depositrate.com.sg) to see current rates across Singapore banks. Citibank, UOB, and digital banks like GXS often have the best rates.
-2. **Practice T-Bill bidding:** Visit MAS T-Bills page and use their calculator to see what you'd earn at current yields. No money required to play with the simulator.
-   → https://www.mas.gov.sg/valuation/t-bills
-3. **Read one thing:** The CPF website's explanation of OA vs SA vs MA — understanding this is genuinely one of the most valuable financial literacy things a Singapore resident can do.
+Before you invest a single dollar in stocks or crypto, you should know about the **risk-free rate**. Right now that rate is ~4.5-5%. 
+
+This means: if someone offers you "8% returns on a hot new stock tip" — you can immediately ask yourself, "is the extra 3-4% above T-Bills worth the risk I'm taking?" That question alone will save you from many bad decisions.
+
+Having cash parked in T-Bills or SSBs while you learn is *productive patience* — you're earning safe returns while studying the market.
+
+---
+
+## 🛠️ Try This
+
+1. **SSB simulator:** Go to [MAS Singapore Savings Bonds](https://www.mas.gov.sg) — use their calculator to see how much $1,000 invested in an SSB would earn over 1, 3, or 10 years.
+
+2. **US T-Bills:** Check [TreasuryDirect.gov](https://www.treasurydirect.gov) — even non-US residents can buy US T-Bills. See current yields for 4-week, 8-week, and 52-week terms.
+
+3. **Mental model:** Set a rule — "I won't take investment risk until I've compared it to the risk-free rate." Write it down.
 
 ---
 
 ## 📅 Coming Up
 
-- **Next week (Week 1 — Basics):** Compound interest — the math behind why time in the market beats timing the market.
+- Week 1 (Apr 1-7): Back to basics — compound interest, why time is your biggest edge
+- Markets update daily — same time, same place
 
 ---
 
-*Note: Prices pulled from Binance API at report generation. Crypto markets are 24/7; S&P 500 data reflects Friday March 27 close. Markets are closed on Sundays. No capital needed to learn — start with knowledge.*
+*Not financial advice. You're learning. When you have capital to deploy, consider speaking to a licensed financial advisor in Singapore (CISI-regulated).*

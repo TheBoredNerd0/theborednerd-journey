@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Brief — 2026-03-28</title>
+  <title>Daily Brief — 2026-03-30</title>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -505,7 +505,7 @@
         <a href="#software">💻 Dev</a>
         <a href="#upgrade">⚙️ System</a>
       </div>
-      <div class="date-badge">Sat, Mar 28 · 2026</div>
+      <div class="date-badge">Mon, Mar 30 · 2026</div>
     </div>
   </nav>
 
@@ -746,34 +746,31 @@ jobs:
         <div class="overlay"></div>
         <div class="header-content">
           <div class="section-tag tag-indigo">⚙️ System</div>
-          <h2>OpenClaw v2026.3.24</h2>
-          <p class="section-sub">50 skills available · 38 running · 12 quick wins sitting idle</p>
+          <h2>Remote Access + AI Setup Breakthrough</h2>
+          <p class="section-sub">Tailscale + VNC = access anything, anywhere</p>
         </div>
       </div>
       <div class="card-body">
-        <h3>🆕 New This Week</h3>
+        <div class="trending-banner">
+          <div class="trending-label">💡 Setup Realisation</div>
+          <p>Setting up <strong>Tailscale</strong> (zero-config VPN) combined with <strong>VNC</strong> gives reliable remote desktop access to a personal machine from anywhere — no port forwarding, no complex firewall rules. This unlocks true remote workflow: access the same dev environment, files, and tools from any device.</p>
+        </div>
+
+        <h3>🌐 Remote Access Stack</h3>
         <ul>
-          <li>OpenClaw <strong>v2026.3.24</strong> — solid recent build, 50 skills in the library</li>
-          <li><strong>50 skills</strong> available, <strong>38 running</strong> on your system</li>
-          <li>No major AI model releases confirmed — GPT-5.4 series still dominates the leaderboard</li>
+          <li><strong>Tailscale</strong> — Creates a secure mesh VPN over the internet. Devices get their own private IP on a tailnet. SSH, VNC, file sharing — all encrypted and through NAT without any router config.</li>
+          <li><strong>VNC (screen sharing)</strong> — Cross-platform remote desktop. Connect to the full GUI session, not just terminal. macOS has built-in Screen Sharing; Linux uses <code>tigervnc</code> or <code>x11vnc</code>.</li>
+          <li><strong>Why this wins</strong> — Tailscale handles the networking securely; VNC handles the display. No cloud services needed, no subscription, works even on a home connection behind CG-NAT.</li>
         </ul>
 
-        <h3>💡 Quick Wins — Unconfigured Skills</h3>
-        <p>12 skills need setup. Top recommendations for your workflow:</p>
-        <div class="skills-row">
-          <span class="skill-badge">bluebubbles</span>
-          <span class="skill-badge">sag (voice/TTS)</span>
-          <span class="skill-badge">spotify-player</span>
-          <span class="skill-badge">discord</span>
-          <span class="skill-badge">slack</span>
-          <span class="skill-badge">notion</span>
-          <span class="skill-badge">trello</span>
-          <span class="skill-badge">openai-whisper-api</span>
+        <div class="lesson-box">
+          <div class="lesson-label">🤖 AI Setup — Best Approach Found</div>
+          <p>After testing multiple configurations, the cleanest and most reliable AI setup is <strong>OAuth-authenticated ChatGPT</strong> (OpenAI's own API authentication). Since OpenAI hires directly from their user base, this setup aligns with how the platform is designed to be used — stable, supported, and built by the same team that owns the models.</p>
         </div>
 
         <div class="action-box">
-          <div class="action-label">🔧 Recommended Action</div>
-          <p>Run <code>openclaw skills list</code> to see which of the 12 unconfigured skills add the most value to your day-to-day. Set up the top 2–3 — <strong>bluebubbles</strong> for iMessage relay or <strong>sag</strong> for voice output would give the biggest practical boost.</p>
+          <div class="action-label">🔧 Next Steps</div>
+          <p>Tailscale on all devices → verify VNC access over the tailnet → lock down with MFA. Then streamline the AI stack to OAuth ChatGPT as the primary inference layer.</p>
         </div>
       </div>
     </div>
@@ -784,7 +781,7 @@ jobs:
     <div class="made">
       Built with <span class="heart">♥</span> by TheBoredNerd
     </div>
-    7 reports · 1 page · Generated March 28, 2026 at 12:08 PM SGT
+    Updated March 30, 2026 · TheBoredNerd Daily
   </footer>
 
 </body>
