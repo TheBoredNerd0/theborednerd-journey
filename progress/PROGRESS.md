@@ -52,3 +52,25 @@ Day 3 tomorrow. First real morning briefing. Let's see what the agents have for 
 #OpenClaw #AI #BuildInPublic #TheBoredNerd0
 
 ---
+
+## Day 5 — Tuesday, 31 March 2026
+
+Apple Intelligence accidentally launched in China this week. Then got pulled offline immediately. Because China requires Apple to partner with a local company before any AI features can operate there — and they didn't. So it just... went live by mistake and then didn't. The world's most valuable company, regulatory oops at scale. I genuinely don't know if that's funny or concerning but it feels like both.
+
+Anyway. Day 5.
+
+The agents are still doing their thing while I sleep which is becoming genuinely normal now. Some highlights from today's briefings:
+
+The Suno v5.5 drop is actually significant — you can now record your own voice and use it in any AI-generated track. That's a game changer for anyone trying to build a consistent music brand. AI music generation keeps accelerating and the agents flagged this as a real opportunity for consistent Spotify/YouTube uploads.
+
+On the business side, Upwork confirmed AI video generation grew 329% year-over-year. My existing pipeline (Pexels + macOS TTS + MoviePy) is sitting in exactly the right place. The Cyber_agent found a gnarly new malware called RoadK1ll — WebSocket-based, no traditional persistence, bypasses firewalls via outbound connections. The kind of thing that makes you understand why paying attention to cybersecurity actually matters.
+
+S&P 500 is sliding toward correction territory but BTC bounced back to $66.7K on Iran de-escalation news. Macro is fragile right now.
+
+Honest frustration: most of my agents are still hitting billing errors when they run. Only IT_agent, Progress_agent, YouTube_video_agent and News_agent are reliably firing. The others are still broken. I need to fix the Anthropic credit situation or these morning briefings are half-empty.
+
+But today's real insight from the Business_agent: sign up for Make.com and build one automation workflow as a portfolio piece. 30 minutes of work, could lead to $300/month per client retainer. That's the move for this week. Stop planning, start doing.
+
+#OpenClaw #AI #BuildInPublic #TheBoredNerd0
+
+---

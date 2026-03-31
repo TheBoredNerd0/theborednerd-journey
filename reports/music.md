@@ -1,107 +1,105 @@
-# 🎵 Music Intel Report — March 30, 2026
+# 🎵 Music Agent Report — March 31, 2026
 
-## Trending Genres & Sounds
+## 🔥 Trending Right Now
 
-### What's Hot Right Now
+**Suno v5.5 JUST dropped (March 26-27, 2026)** — this is massive:
+- **Voices**: Record/upload your own singing voice and use it in any track (Pro/Premier only). Verification process matches your voice to a spoken phrase for authenticity.
+- **Custom Models**: Fine-tune Suno 5.5 on your own created music — up to 3 custom models (Pro/Premier only)
+- **My Taste**: Free tier gets this — Suno learns your preferred genres/moods. Big for personalizing output.
 
-1. **Country-adjacent Pop** — Ella Langley's "Choosin' Texas" hit #1 on Billboard Hot 100 this week. Cross-genre country-pop hooks are dominating. AI angle: blend Nashville songwriting structure with modern pop production.
+**Competitor move**: Google also just launched **Lyria 3 Pro** via DeepMind — promises better instrumental detail and dynamic control. AI music generation arms race is real.
 
-2. **Lo-fi Hip Hop / Study Beats** — Still consistently monetizable on YouTube. Channels like ChilledCow-style streams pull 50K–500K views on individual uploads. Low competition for AI-generated instrumentals in this space.
-
-3. **Hyperpop / Digital Fragmentation** — Audrey Nuna / HUNTR's "Golden" at #5 on Hot 100 shows the fragmented, glitchy aesthetic is mainstreaming. Great for Suno V5.5 style experimentation.
-
-4. **K-Pop / J-Pop Crossover** — BTS still dominating Billboard 200. AI covers and remixes in this space get huge engagement but face copyright risks on official platforms.
-
----
-
-## Suno V5.5 — Prompt Strategy Update
-
-**Major finding from the SunoAI subreddit community:**
-
-Suno V5.5 has shifted away from "wall of descriptors" prompting. New best practices:
-
-- **Fewer, sharper descriptors** — don't list 10 adjectives, give 3–4 sharp ones
-- **Performance direction is HUGE** — tell the model HOW to perform, not just what style
-- **Separate layers conceptually** — style/energy vs performance behavior vs voice vs recording character
-- **Light negative prompting works** — "no glossy production, no modern vocal polish"
-
-### Example Working Prompt (Barroom Rock):
-```
-Barroom rock, loose and ragged, loud swagger, late-night energy.
-Fuzzy overdriven guitars playing crooked blues riffs.
-Verse: talk-sung, restrained, conversational.
-Chorus: louder, sloppier, controlled unraveling.
-Band slightly behind the beat, never tight.
-Weathered male baritone, narrow range, close-mic, slight overload.
-no glossy production
-no modern vocal polish
-```
+**On TikTok right now** (March 2026):
+- Harry Styles dropped "Kiss All the Time. Disco, Occasionally." (March 6) — full album of dance-ready audio
+- Megan Moroney "Cloud 9" still dominating
+- Breakup/longing vocals + melancholic pop are viral formats
+- AI-generated "brainrot" sounds are trending on YouTube Music playlists
 
 ---
 
-## 3 Monetizable Niches Right Now
+## 📊 3 Monetizable Niches Today
 
-| Genre/Style | Platform | Est. Plays | Notes |
-|---|---|---|---|
-| **Lo-fi Study Beats (AI instrumental)** | YouTube, Spotify | 10K–200K views/video | Massive on YouTube Shorts too. 10–15 second loops work well for Shorts. |
-| **AI Cover Songs (public domain/classics)** | YouTube, Spotify | 5K–50K | Take old jazz standards or classical pieces, give them modern AI production. Risky if copyrighted. |
-| **Cinematic Ambient / Trailer Music** | Spotify, Pond5, Artlist | Lower plays but higher licensing $ | Submit to sync licensing libraries. One sync deal = big payout. |
+### 1. 💔 Melancholic Lo-Fi Pop (AI-generated vocals)
+- **Platform**: Spotify + YouTube Music
+- **Why**: Breakup season content cycles, TikTok edits pick these up
+- **Suno prompt**: *"sad lo-fi pop with soft female vocals, 85 bpm, melancholic piano, dreamy atmosphere"*
+- **Est. plays**: 10K–500K/month for consistent posters
 
----
+### 2. 🌙 Ambient Cinematic / Dark Ambient
+- **Platform**: Spotify (ambient playlists), YouTube (sleep/focus content)
+- **Why**: AI-generated ambient has very low royalty rates but HIGH volume potential. 1,000 tracks >> 100 tracks.
+- **Suno prompt**: *"dark ambient, evolving textures, cinematic, 60 bpm, film score atmosphere"*
+- **Est. plays**: 5K–200K/month but cheaper to produce (instrumental only)
 
-## Upload Strategy
-
-**YouTube Shorts for AI Music:**
-- Cut tracks into 15–30 second clips
-- Title format: "[Mood] [Genre] Beats — [Duration] min" — e.g., "Rainy Night Lo-Fi Beats — 2 Hours"
-- Use keywords in first line of description
-- Post timing: 6–9 PM local time for your target audience
-- Thumbnail: dark background + waveform visual + mood keyword
-
-**Spotify:**
-- Release as singles, not albums — more algorithmic surface area
-- Submit to Spotify for Artists editorial consideration 7 days before release
-- Playlist pitch is critical — write a compelling "why this track" note
+### 3. 🎮 Synthwave / Retrowave
+- **Platform**: YouTube (gaming compilations), Spotify
+- **Why**: Gaming YouTubers and synthwave playlists constantly need fresh tracks
+- **Suno prompt**: *"retro synthwave, 110 bpm, neon atmosphere, driving bass, 1980s film score energy"*
+- **Est. plays**: 20K–1M+ if picked up by a gaming curator
 
 ---
 
-## Legal Corner
+## 📲 Upload Strategy
 
-**YouTube's AI Music Policy (March 2026):**
-YouTube has been cracking down on AI-generated content that mimics specific artists. Key rules:
-- AI covers of copyrighted songs = high rejection risk or monetization strip
-- Fully original AI tracks = allowed and can monetize
-- Using a real artist's voice/style in prompt (e.g., "in the style of Taylor Swift") = can result in Content ID claim even if the song is original
+**Titles that work for AI music discovery:**
+- Format: `[Mood] [Genre] · [Duration] · [Use Case]`
+- Examples:
+  - `"Rainy Day Lo-Fi · 2:30 · Study & Focus"`
+  - `"Neon Dreams Synthwave · 3:45 · Gaming Background"`
+  - `"Midnight Dark Ambient · 4:00 · Sleep Sounds"`
 
-**Safe play:** Generate completely original works. Don't reference living artists in prompts. Suno/Udio outputs are generally safe if they're not direct copies.
+**Tags**: Always include `royalty-free`, `AI music`, `lo-fi`, `[genre]`, `no copyright`, `study music`, `focus music`, `sleep music`
 
-**Royalty-free tip:** Tracks generated by Suno/Udio are typically licensed for commercial use by the platform's terms — but for full ownership certainty, use Suno Commercial tier (~$20/mo) which covers business use.
+**Upload frequency**: 1 track/day minimum for Spotify. Quantity beats perfection at this stage of the market.
 
----
-
-## This Week's Experiment
-
-**Try this and share as content:**
-
-Generate a "study session" lo-fi track using Suno V5.5 with the new prompt structure:
-- Prompt: "Rainy afternoon lo-fi, nostalgic warmth, dust motes in sunlight, late 90s portable cassette player feel. Verse: sparse, unhurried. Chorus: gentle guitar swell, soft drums. no digital shimmer, no modern polish"
-- Cut into 15-second clips for YouTube Shorts
-- Post with caption: "songs to study to when it's raining ☕"
-- Track the views over 48 hours and screenshot growth
-
-This type of content is evergreen and the "study session" niche has consistent search volume.
+**YouTube strategy**: Upload with a static visual (album art + title). Title as a searchable phrase: `"3 Hour Lo-Fi Hip Hop Radio - Beats to Study/Relax"`. Descriptions include timestamps.
 
 ---
 
-## Tools & Resources
+## ⚖️ Legal Corner
 
-- **Suno:** suno.com — V5.5 is current, Commercial tier for business use
-- **Udio:** udio.com — good for different vocal styles, slightly different strengths
-- **For thumbnails:** Canva (free) with waveform graphics
-- **For YouTube metadata:** TubeBuddy or vidIQ free tier
-- **Royalty-free visuals for video:** Pexels (free videos)
+**YouTube AI Music Policy 2026 — Key Rules:**
+1. AI-generated music IS monetizable on YouTube if you **disclose it was AI-assisted** in your video
+2. **Content ID claims** will hit AI music automatically — you can dispute but results vary
+3. Using **real artist voice cloning** (without consent) = instant removal + potential copyright strike
+4. Suno v5.5's "Voices" feature is private only — you can't share cloned voices commercially yet
+5. **Distrokid/ TuneCore**: Both accept AI-generated music but require you to confirm you have the rights to all elements
+
+**Bottom line**: Fully AI-generated tracks where you own the prompt IP are generally safe to distribute. Don't use reference tracks that sound like specific artists.
 
 ---
 
-*Report generated: March 30, 2026 07:08 SGT*
-*Music_agent — autonomous research run*
+## 💡 This Week's Experiment
+
+**Try this and post as content:**
+
+Generate 3 versions of the same 30-second ambient loop using different Suno styles:
+1. Dark ambient version
+2. Lo-fi hip hop version  
+3. Cinematic orchestral version
+
+Post the comparison on TikTok/Reels with caption: *"AI generated the same loop in 3 different styles. Which one hits hardest? 👇"*
+
+This tests which style gets more engagement AND builds your intuition for what sounds resonate. Track which version gets more saves — saves = algorithm approval signal.
+
+**Suno prompt template for the loop**:
+`[Describe mood/vibe in 1 sentence], [specific instruments], [tempo], [genre], seamless loop`
+
+Example: `"floating through a neon city at night, glowing synth pads and soft percussion, 80 bpm, ambient electronic, seamless loop"`
+
+---
+
+## 🛠️ Tools Status
+
+| Tool | Status | Notes |
+|------|--------|-------|
+| Suno | ✅ v5.5 just released | Voices = game changer for vocal consistency |
+| Udio | ⚠️ Check for updates | No major news this week |
+| Google Lyria 3 Pro | 🆕 Just launched | Not yet consumer-accessible |
+| DistroKid | ✅ Accepts AI music | Confirm AI disclosure checkbox |
+| TuneCore | ✅ Accepts AI music | Same — disclosure required |
+
+---
+
+*Report generated: 2026-03-31 06:56 SGT*
+*Music_agent | TheBoredNerd workspace*

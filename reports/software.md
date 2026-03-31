@@ -1,93 +1,105 @@
-# 💻 Software Engineer Report — March 30, 2026
+# 💻 Software Engineer Report — March 31, 2026
 
-## 🔥 Trending on GitHub
+## Today's Topic: Git/GitHub Workflows
 
-**Microsoft's VibeVoice** is blowing up — 27k stars and climbing. It's an open-source frontier voice AI project. Also notable: **claude-mem** (42k stars) — a plugin that gives Claude Code persistent memory across sessions. If A ever wondered "can Claude remember my project context automatically?" — this is how.
-
-**ShareAI's learn-claude-code** (43k stars) is a bash-based Claude Code harness written in TypeScript. Worth studying if A ever wants to build their own agent framework.
+Today falls in the **days 22–31** rotation: **Git & GitHub workflows**.
 
 ---
 
-## 📚 Today's Topic: GitHub Actions + Workflow Automation
+## 🔥 GitHub Trending Highlights
 
-**GitHub Actions** is GitHub's built-in CI/CD system — and it's free for public repos. For A's use case (automated daily reports, scheduled agents), understanding Actions is a superpower.
+### microsoft/VibeVoice — 29,931 ⭐
+Open-source frontier voice AI from Microsoft. Real-time voice interaction, built for agents. Worth watching if you're building voice into your pipeline.
 
-### What it does
-GitHub Actions lets you run code automatically when:
-- Code is pushed
-- A schedule triggers (cron)
-- A PR is opened
-- Manual dispatch
+### luongnv89/claude-howto — 9,754 ⭐
+A visual, example-driven guide to Claude Code — from basics to advanced agents, with copy-paste templates. **Super relevant** since you're literally building an agent system with OpenClaw.
+→ https://github.com/luongnv89/claude-howto
 
-### Key concepts
-- **Workflow**: A YAML file in `.github/workflows/`
-- **Job**: A set of steps running in a VM
-- **Step**: Individual actions (run commands or use pre-built actions)
-- **Runner**: The machine running your job (GitHub-hosted or self-hosted)
+### NousResearch/hermes-agent — 18,499 ⭐
+"An agent that grows with you" — multi-agent orchestration framework. If you're thinking about scaling your agent setup beyond the current 12 cron agents, this is worth a look.
+→ https://github.com/NousResearch/hermes-agent
 
-### A simple daily workflow
+---
+
+## 📚 Concept: GitHub Actions CI/CD Pipeline
+
+Since your workspace is already a git repo with scheduled agent commits, you could level up by adding a lightweight CI pipeline.
+
+**What it does:**
+- Runs automatically when you push code
+- Can run tests, linting, or deployment checks
+
+**Minimal example** — create `.github/workflows/ci.yml`:
 ```yaml
-name: Daily Report
-on:
-  schedule:
-    - cron: '0 23 * * *'  # 11 PM daily
-  workflow_dispatch:       # Also allow manual trigger
-
+name: CI
+on: [push, pull_request]
 jobs:
-  report:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Run daily agent
+      - name: Run shell script
         run: |
-          echo "Agents run here"
-          # A's agents would trigger here
-      - name: Commit & push
-        run: |
-          git config user.name "Bot"
-          git config user.email "bot@openclaw"
-          git add -A
-          git commit -m "Daily update $(date +%Y-%m-%d)" || true
-          git push
+          echo "Checking workspace..."
+          ls -la
+          git status --short
 ```
 
-### Try it
-A could create a `.github/workflows/weekly-summary.yml` that:
-1. Runs every Monday at 8 AM
-2. Uses `actions/checkout@v4`
-3. Runs a Python script that summarizes the week's commits
-4. Pushes a `WEEKLY.md` file to the repo
-
-**Resource:** [GitHub Actions docs](https://docs.github.com/en/actions) — quickstart guide takes 10 min.
+**Why bother:** Lets you catch issues before merging, and it's a real dev workflow skill for any engineering role.
 
 ---
 
 ## 🛠️ Repo Status
 
-**Git status:** Clean. Uncommitted changes are all agent-generated report files (business, content, cyber, investment, law, music, upgrade) — these are output from other agents and will be committed by their respective agents.
+```
+On branch main — up to date with origin
+Modified (uncommitted):
+  reports/content.md   (ContentCreator_agent output)
+  reports/cyber.md      (Cyber_agent output)
+  reports/investment.md (Investment_agent output)
+  reports/music.md      (Music_agent output)
+  reports/upgrade.md    (Upgrade_agent output)
+```
 
-**No TODOs in project files.** All TODOs found are in `node_modules` (ignore).
+These are agent report outputs from last night's runs — they auto-write and await the morning digest push. **Nothing needs immediate action.** The News_agent at 7:30 AM will compile all of these into the HTML digest.
 
-**README.md:** Fresh — good shape.
-
-**Action item:** Could set up a GitHub Actions workflow to auto-commit the daily agent reports. That would replace the manual `git add` the Progress agent does at midnight.
+No stale docs. No TODO items in your code. README is current. **All clean.**
 
 ---
 
 ## 💡 Weekend Project Idea
 
-**Build a personal GitHub stats tracker**
+**Build a personal git log analyzer script.**
 
-A simple Python script that:
-1. Uses GitHub REST API (no auth needed for public repos)
-2. Fetches star counts, follower changes, repo stats
-3. Writes to a `STATS.md` file and commits it daily
-4. Scheduled via GitHub Actions
+What it does: point it at any repo and it tells you your commit frequency, most active files, and avg message length. Written in bash or Python.
 
-**Why it's a good portfolio piece:**
-- Shows API integration skills
-- Demonstrates automation thinking
-- Results in a visible, auto-updating GitHub page
-- Easy to extend (add charts, Discord alerts, etc.)
+Why it's a good portfolio piece:
+- It shows you understand git internals (refs, logs, object model)
+- It's genuinely useful — you can use it on your own repos right now
+- Easy to extend: add HTML output, commit streak tracking, co-author detection
 
-Bonus: It mirrors exactly how A's existing agents work — so it reinforces what's already built.
+Sample git log for stats:
+```bash
+git log --format='%aI|%s' --shortlog -10  # ISO timestamp + subject
+git log --format='%aN' | sort | uniq -c | sort -rn  # top contributors
+```
+
+---
+
+## 📖 Resource
+
+**Pro Git book (free):** https://git-scm.com/book
+Chapters 6–9 cover advanced stuff that separates hobbyists from pros: branching strategies, GitHub workflows, git tools.
+
+---
+
+## 🔧 Quick Git Workflow Tip
+
+Want to clean up your commits before pushing? Use an interactive rebase:
+```bash
+git rebase -i HEAD~5  # reword, squash, or reorder last 5 commits
+```
+⚠️ **Never rebase commits that have been pushed to shared branches.**
+
+---
+_Generated by SoftwareEngineer_agent — OpenClaw workspace_

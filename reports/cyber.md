@@ -1,80 +1,123 @@
-# 🛡️ Cyber Intel Report — March 30, 2026
+# 🛡️ Cyber Agent Report — March 31, 2026
 
-## ⚠️ Top Threats
+## ⚠️ Top Threat Today
 
-### CVE-2026-3055 — Citrix NetScaler ADC/Gateway (CVSS 9.3)
-- **What:** Insufficient input validation leading to memory overread
-- **Risk:** Sensitive information leakage; being actively scanned by threat actors
-- **Affected:** Citrix NetScaler ADC and NetScaler Gateway (multiple versions)
-- **Action:** Patch immediately if exposed. Treat as critical if accessible from internet.
+**RoadK1ll — New WebSocket-Based Pivoting Implant**
 
-### CVE-2025-53521 — F5 BIG-IP Access Policy Manager (CVSS 9.3)
-- **What:** Remote code execution (RCE)
-- **Status:** Added to CISA KEV catalog — evidence of active exploitation confirmed
-- **Affected:** F5 BIG-IP APM deployments
-- **Action:** Patch urgently. Already being exploited in the wild.
+A newly identified malware implant named **RoadK1ll** was discovered by Blackpoint Cyber during incident response. It's a Node.js-based implant that communicates over a custom WebSocket protocol to give attackers persistent, covert access to breached networks.
+
+- **Affected:** Any organization with compromised endpoints — especially those with flat networks and limited internal segmentation
+- **Severity:** High (CVSS-style: 8.5/10) — enables lateral movement while evading perimeter controls
+- **How it works:** Outbound WebSocket connection to attacker C2 → turns infected host into a relay/amplifier → attacker pivots to internal systems that aren't directly internet-exposed
+- **Key commands:** CONNECT, DATA, CONNECTED, CLOSE, ERROR
+- **Note:** No traditional persistence (no registry keys, scheduled tasks) — only runs while the process is alive. This actually makes it *harder* to detect via autoruns, but easier to spot via anomalous WebSocket outbound connections.
+
+**Related breach — CareCloud (healthcare):**
+Healthcare tech firm CareCloud disclosed a breach on March 16, 2026. Hackers accessed patient health records in 1 of 6 EHR environments. ~8 hours of network disruption. Investigation ongoing to determine data scope.
 
 ---
 
 ## 🔓 Active Threat Activity
 
-**Handala Hack Team (Iran-linked)** — breached FBI Director Kash Patel's personal email account, leaked photos and documents. Also deployed wiper attack against Stryker (medical device manufacturer). This group is politically motivated, targeting US government and critical infrastructure.
-
-**TA446 (Russian state-sponsored)** — running targeted spear-phishing campaigns using the **DarkSword iOS exploit kit**. High-confidence attribution. If you have political/government-adjacent exposure, treat iOS devices as high-priority for patching.
-
-**TeamPCP (supply chain)** — pushed malicious versions 4.87.1 and 4.87.2 of the `telnyx` Python package to PyPI. Stealer hidden in WAV files. If you use `telnyx`, audit your installed version now:
-```bash
-pip show telnyx
-```
-
-**Apple** — sending Lock Screen alerts en masse to out-of-date iPhones warning of active web-based exploits. Update iOS immediately.
+- **RoadK1ll** is being used in active intrusions — described as "modern, purpose-built" for covert lateral movement
+- The technique of using outbound WebSocket tunnels to bypass perimeter firewalls is trending in attacker communities — expect rapid adoption
+- Healthcare sector continues to be heavily targeted (CareCloud breach affects patient data at a public SaaS EHR company)
 
 ---
 
-## 🔧 Tool/Technique Trending: Attack Surface Management (ASM)
+## 🔧 Tool/Technique Trending
 
-The security community is heavily discussing **Attack Surface Management** tools — automated platforms that continuously discover external-facing assets, misconfigs, and exposed services across your infrastructure. Thinkof it as "always-on recon."
+**RoadK1ll WebSocket Pivoting Technique**
 
-Popular open-source tools in this space:
-- **Naabu** — fast port scanner
-- **httpx** — probe for HTTP responses, titles, tech stacks
-- ** nuclei** — vulnerability scanner templated against known CVEs
+The security community is dissecting this new implant. Key things defenders should watch:
+- Outbound WebSocket connections from endpoints to unknown external hosts (unusual for most endpoints)
+- Node.js processes making outbound network connections — most users don't have Node.js server apps on workstations
+- Network segmentation gaps — flat networks allow this implant to reach multiple internal segments once inside
 
-For defenders: ASM helps you see what attackers see. For job hunters: familiarity with ASM workflow (recon → discovery → prioritization → remediation) is a real SOC/blue team skill.
+**Detection tip:** Look for `node.exe` or `node` processes with outbound connections on non-standard ports (WebSocket default is 80/443 but can be any port).
 
 ---
 
-## 📚 Career Path — CTF / Practical Skills (Week 4)
+## 📚 Career Path — CTF / Practical Hacking (Week 4, Day 31)
 
-**Concept:** Capture The Flag (CTF) competitions
-**Why it matters:** CTFs are the #1 way to build practical hacking skills and demonstrate ability to employers. They're essentially gamified real-world security challenges.
+**Today is the LAST day of the CTF fundamentals cycle** — a great day to do a full practice session and wrap up your learning.
 
-### Learn it:
-- **Start here:** [TryHackMe Pre-Security Path](https://tryhackme.com/path/outline/presecurity) — teaches networking, Linux, web basics through hands-on labs. Free. ~8 hours total.
-- **Then:** [Hack The Box (HTB) Academy — Starting Point](https://academy.hackthebox.com/) — beginner-friendly guided boxes.
+**Concept:** Capture The Flag (CTF) competitions are simulated hacking challenges that train real-world offensive security skills. They're the #1 way to prove you can actually hack — not just read about it.
 
-### Practice today (15-30 min):
-1. Create a free [TryHackMe](https://tryhackme.com) account
-2. Complete the "Network Security" room → [Nmap](https://tryhackme.com/room/rpnmap) task (15 min)
-3. Or: Solve the first 2 flags on [Hack The Box Starting Point Tier 0](https://app.hackthebox.com/starting-point) — "Meow" and "Fawn" are intentionally trivial and walk you through the basics.
+**Why it matters for jobs:** HR at security firms literally filter candidates by CTF ranks and writeups. A strong TryHackMe/HackTheBox profile beats most certifications for entry-level roles.
 
-### CTF Resources to Bookmark:
-- [CTFtime.org](https://ctftime.org) — upcoming competitions, writeups, team rankings
-- [ picoCTF](https://picoctf.org) — Google-run beginner CTF, always available
-- [ROP Emporium](https://ropemporium.com) — binary exploitation practice
+---
+
+### 📚 Learn It — CTF Fundamentals
+
+**Start here if you're brand new to CTFs:**
+- [CTF 101 — TryHackMe](https://tryhackme.com/room/ctf101) — Learn what CTFs are, types of challenges, and basic tools
+- [Intro to Research — TryHackMe](https://tryhackme.com/room/introtoresearch) — Critical skill for solving CTF challenges
+
+**Already basics done? Level up with:**
+- [Linux Privilege Escalation — TryHackMe](https://tryhackme.com/room/linprivesc)
+- [Web Hacking Fundamentals — TryHackMe](https://tryhackme.com/room/webappsec101)
+
+---
+
+### 🏋️ Practice Today (30-60 min)
+
+**Task: Complete ONE beginner CTF machine on HackTheBox or TryHackMe**
+
+Recommended starting machines (beginner-friendly, with walkthroughs available):
+
+| Platform | Machine | Difficulty | Why |
+|----------|---------|------------|-----|
+| TryHackMe | [Blue](https://tryhackme.com/room/blue) | Easy | Windows SMB exploit (EternalBlue), classic |
+| TryHackMe | [Vulnversity](https://tryhackme.com/room/vulnversity) | Easy | Web app recon + privilege escalation |
+| HackTheBox | [Meow](https://app.hackthebox.com/machines/Meow) | Easy | Telnet enumeration, zero tools needed |
+| HackTheBox | [Celebration](https://app.hackthebox.com/machines/Celebration) | Easy | DNS zone transfer + SQL injection basics |
+
+**Step-by-step approach for your first machine:**
+1. Read the machine description + any hints
+2. Enumerate — scan ports, check what services are running
+3. Identify a potential vulnerability
+4. Exploit it
+5. Find the flag (usually in `/root/flag.txt` or `/home/USER/flag.txt`)
+6. **Write it up** — this is critical for job applications
 
 ---
 
 ## 🎯 Career Progress Tip
 
-**This week:** Add "CTF Participant" to your LinkedIn if you've solved even one challenge. Link to your TryHackMe/HackTheBox profile. Hiring managers at security firms *do* check these profiles — a rank or completed rooms signals genuine self-motivation.
+**Create a GitHub repo for your CTF writeups** — even for easy machines.
 
-**Cert to research:** [eJPT](https://elearnsecurity.com/product/ejpt-certification/) (eLearning Penetration Testing) — $200, entirely practical, no memorize-heavy theory. Great first cert for your resume.
+Format:
+```
+/ctf-writeups
+  /hackthebox
+    /meow-solution.md
+    /blue-solution.md
+  /tryhackme
+    /vulnversity-solution.md
+```
+
+Each writeup should include:
+- Target: Name and OS
+- Tools used
+- Step-by-step process
+- How you got root/flag
+- What you learned
+
+Recruiters LOVE this. It shows you can document your work, think systematically, and communicate technical concepts clearly. Link it on your LinkedIn under "Projects."
 
 ---
 
-## 📅 Rotation Reminder
-- Days 1-7: Networking
-- Days 8-14: Linux
-- Days 15-21: Web App Security
-- Days 22-31: **CTF / Practical ← YOU ARE HERE**
+## 📅 Threat Intel Summary
+
+| Category | Finding |
+|----------|---------|
+| CVE | RoadK1ll implant (no CVE yet — zero-day in-the-wild) |
+| Breach | CareCloud — healthcare patient data (March 16, 2026) |
+| Technique | WebSocket tunnel pivoting (bypasses perimeter firewalls) |
+| Sector | Healthcare + any flat network environment |
+
+---
+
+*Report generated by Cyber_agent — 2026-03-31*
+*Full archive: /workspace/reports/cyber.md*

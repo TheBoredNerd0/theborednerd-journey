@@ -1,98 +1,111 @@
 # Content Plan — TheBoredNerd0
-**Monday, March 30, 2026**
+## March 31, 2026
+
+> **Context:** March 2026 was a massive AI month — GPT-5.4, Gemini 3.1, Grok 4.20 released, MCP hit 97M installs, Sora shutdown, NVIDIA GTC agentic AI summit, AI video generators surging. This is a goldmine for content.
 
 ---
 
-## 📱 Short #1 (TikTok/Reels/Shorts)
+## 🎬 Short #1 (TikTok / Reels / Shorts)
 
-**Title:** "7 Open Source AI Tools That Are Actually Better Than ChatGPT"
+**Title:** I let AI run my Mac mini for 24 hours — here's what happened
 
-**Hook (first 3 sec):** *"Everyone's paying for AI tools. Here's 7 free ones that might replace them."*
+**Hook (first 3 sec):** *"My Mac mini has been running AI agents while I slept. I wasn't ready for what I found."*
 
 **Structure:**
-- [0-5s] Hook — bold claim, people ARE paying for ChatGPT/Claude
-- [5-20s] Tool #1-3 rapid fire (name + what it does + why it's free)
-- [20-35s] Tool #4-6, emphasize "open source = your data stays yours"
-- [35-45s] The plot twist: one of them is actually better for coding
-- [45-55s] Personal callout — "I've been running these on my Mac mini 24/7 via agents"
+- 🟢 Beat 1 (0–5s): Setup — "I left 14 AI agents running overnight on my Mac mini. Here's everything they did."
+- 🟡 Beat 2 (5–20s): The receipts — show terminal output, what each agent worked on (IT_agent checked system health 47 times, Progress_agent wrote my diary, ContentCreator_agent made this plan)
+- 🔴 Beat 3 (20–45s): The honest result — "They ran 24 hours straight. CPU barely broke a sweat. I'm kind of obsessed now."
 
-**CTA:** *"Save this post, follow for more build-in-public AI setups every week."*
+**CTA:** "Follow for more 'AI running while I sleep' updates. Drop a 🔥 if you want part 2."
 
 ---
 
 ## 📱 Short #2
 
-**Title:** "DeepSeek Fixed The Biggest AI Problem and Nobody's Talking About It"
+**Title:** MCP hit 97 MILLION installs — most people don't know what it is
 
-**Hook (first 3 sec):** *"AI has a lying problem. DeepSeek just quietly fixed it."*
+**Hook (first 3 sec):** *"This thing just hit 97 million installs and 90% of tech Twitter hasn't explained it properly."*
 
 **Structure:**
-- [0-5s] The problem: AI confidently gives wrong answers (citation hallucination)
-- [5-20s] What DeepSeek changed — better reasoning trails, sources cited
-- [20-35s] Why this matters for real-world use (coding, research, learning)
-- [35-50s] "This is why I track what's actually being fixed vs. what's just marketed"
+- 🟢 Beat 1: What MCP actually is (Model Context Protocol — makes AI agents talk to tools/files/APIs without custom code each time)
+- 🟡 Beat 2: Why 97M installs matters (it's the USB-C of AI agents — one standard, any AI can use it)
+- 🔴 Beat 3: What this means for you (building AI stuff just got way easier, here's the 1-sentence version)
 
-**CTA:** *"Follow for the AI updates that actually matter, not the hype."*
+**CTA:** "Save this. You'll hear about MCP everywhere in 6 months."
 
 ---
 
 ## 🎥 YouTube Video
 
-**Title:** "I Let AI Agents Run My Life For 30 Days — Here's What Actually Broke"
+**Title:** MCP Explained (97M Installs) — The Standard That's Changing AI Agents Forever
 
-**Thumbnail idea:** Split screen — left side: calm organized desk setup, right side: chaotic whiteboard with crossed-out plans. Bold text overlay: "30 DAYS OF AI AGENTS."
+**Thumbnail idea:** Clean screengrab style. Left: VS Code / terminal showing MCP config. Right: Text overlay "97M INSTALLS" with an arrow pointing to a single USB-C cable labeled "MCP." Simple, contrast-heavy, readable at tiny size.
+
+**SEO-optimized tags:** MCP, Model Context Protocol, AI agents, OpenClaw, AI automation, AI tools 2026
 
 **Outline:**
-- **Intro (0-30s):** Hook — "I set up 14 AI agents to run my life. Month 1 was... a ride." Promise: real results, real failures, real setup details
-- **Section 1 (30s-2min):** What worked — email summarization, calendar alerts, content pipeline agents
-- **Section 2 (2-4min):** What broke — the agents that went off-track, the costs that surprised me, the "hallucination moments"
-- **Section 3 (4-6min):** The fix — what I changed in week 3-4, prompt adjustments, which agents I killed
-- **Section 4 (6-8min):** Month 2 preview — what I'm keeping, what's next
-- **CTA (8-9min):** "Drop a comment — what would YOU automate first? I'll pick 5 to build live."
+1. **Intro (0–30s):** Hook — "This obscure protocol just hit 97 million installs and quietly became the most important thing in AI right now. Let me explain why in plain English." Promise: "By the end you'll know exactly what MCP is and why it matters for anyone using AI in 2026."
+2. **Section 1 (30s–2min):** What is MCP? — Contrast with old way (every AI tool = custom integration) vs MCP way (one standard, plug anything in). Analogy: it's like USB-C for software.
+3. **Section 2 (2–4min):** Live demo — Show OpenClaw agents using MCP to call tools. Real terminal, real output. Keep it messy-authentic (that's the brand).
+4. **Section 3 (4–6min):** Why 97M installs is the signal — ecosystem flywheel, who wins, what breaks. Mention OpenAI and Anthropic both adopting it.
+5. **CTA:** "If you found this useful, subscribe. I break down one AI thing every week in a way that actually makes sense."
 
-**Tags:** AI agents, automation, build in public, productivity, AI tools 2026
+**Duration:** 6–8 minutes
+**Post-processing:** Auto-generated via video pipeline (Samantha voice, stock footage from Pexels search "AI agents", MoviePy assembly)
 
 ---
 
 ## ✍️ Posts (copy-paste ready)
 
-### Post 1 (Instagram/TikTok caption)
-> Everyone told me to "just use AI for everything."
->
-> So I did. 14 agents running 24/7.
->
-> Month 1 truth: it's not magic. It's maintenance.
-> Some broke. Some surprised me.
->
-> Documenting the whole messy journey 👇
-> #AI #buildinpublic #aitools #productivity #tech #automation
+### Post 1 (TikTok / Instagram caption)
+```
+I let 14 AI agents run my Mac mini while I slept.
 
-### Post 2 (Twitter/X style)
-> hot take: the real AI skill isn't knowing how to use ChatGPT.
->
-> it's knowing which 5 tools to run in parallel, how to connect them, and when to turn them off before they burn your budget.
->
-> (that last part took me 3 weeks to learn)
->
-> #AI #tools #automation
+Results:
+→ 47 system health checks
+→ 1 daily diary written
+→ This entire content plan created
+→ 0 human hours worked
+
+The future of work isn't "AI replacing you."
+It's AI handling the stuff you don't want to do.
+
+Follow @theborednerd0 — I'm documenting the whole build in public 🔴
+
+#AI #AIagents #buildinpublic #tech #productivity #aitools #ChatGPT #automation #futureofwork #themacmini
+```
+
+### Post 2 (Twitter/X style for Threads/LinkedIn)
+```
+Hot take: MCP (Model Context Protocol) is the most important AI release of 2026 and nobody's talking about it.
+
+97 million installs. OpenAI and Anthropic both adopting it. It's becoming the USB-C of AI agents.
+
+One standard. Any AI. Any tool. No custom code.
+
+The people building on MCP right now are going to have a massive head start.
+
+Save this and come back in 6 months. 🧵
+
+#AI #MCP #AIagents #LLM #OpenAI #Anthropic #tech #buildinpublic
+```
 
 ---
 
 ## ⏰ Best Times to Post (GMT+8)
 
-| Platform | Best Time | Rationale |
-|---|---|---|
-| TikTok | 12:00 PM, 7:00 PM | Lunch break scroll, evening wind-down |
-| Instagram Reels | 1:00 PM, 8:00 PM | Slightly later than TikTok |
-| YouTube Shorts | 2:00 PM, 9:00 PM | Afternoon algorithm boost |
-| YouTube Long | Saturday 3:00 PM, Sunday 10:00 AM | Weekend binge viewing |
-| Twitter/X | 8:00 AM, 9:00 PM | Morning check, late-night scroll |
+| Platform | Best Time | Why |
+|----------|-----------|-----|
+| TikTok | 12:00 PM / 7:00 PM | Lunch break scroll + evening unwind |
+| Instagram Reels | 1:00 PM / 8:00 PM | Similar to TikTok |
+| YouTube Shorts | 3:00 PM / 9:00 PM | After-work browsing |
+| YouTube Long | Saturday 10:00 AM | Weekend viewers have time to watch |
+| LinkedIn | Tuesday–Thursday 9:00 AM | Professional scroll before work |
 
 ---
 
-## 🎯 This Week's Angle
+## 📌 News-Jack Angle (Today)
+**MCP 97M installs** is the freshest data point. It's timely, visualizable, and has a "wait what?" factor that makes good hooks. Lean into the "nobody's explaining this" angle — it's true and it works.
 
-**Core theme:** "The AI Hype vs. Reality Gap" — lots of people talking about AI changing everything, fewer people showing the actual messy middle. Lean into being the honest, learning-out-loud creator. The "cracks in AI narrative" content is trending — that's your lane.
-
-## 📦 Batch Content Tip
-Shoot/edit both shorts on the same day. YouTube long-form can be recorded in one take (40 min) and broken into clips later for shorts repurposing.
+---
+*Generated by ContentCreator_agent — March 31, 2026*
