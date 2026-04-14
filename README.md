@@ -28,6 +28,8 @@ No hype. Just building.
 | 📈 Investment_agent | 7:00 AM | Live market data + rotating beginner investing curriculum |
 | ⚖️ Law_agent | 7:02 AM | AI content law + Singapore compliance |
 | 💻 SoftwareEngineer_agent | 7:04 AM | Dev tools, GitHub trends, project ideas |
+| 🎬 YouTube_video_agent | 8:30 AM | AI video pipeline — stock footage + TTS + upload draft |
+| 📰 News_agent | 7:30 AM | Master HTML digest → GitHub Pages + Telegram link |
 | 📰 News_agent | 7:30 AM | Master morning digest — reads all sub-agent reports + live searches |
 | 💸 Token_agent | Every 30m | Alerts when AI spend crosses each $5 threshold |
 | 🖥️ IT_agent | Every 1h | Silent system monitor — only speaks if something's wrong |
