@@ -1,123 +1,71 @@
-# 🛡️ Cyber Agent Report — March 31, 2026
+# Cyber Agent Report — April 2, 2026
 
-## ⚠️ Top Threat Today
+## 🛡️ Current Threat Intelligence
 
-**RoadK1ll — New WebSocket-Based Pivoting Implant**
+### ⚠️ Top Threat: Chrome Zero-Day CVE-2026-5281 (ACTIVE EXPLOITATION)
+- **What:** Use-after-free vulnerability in **Dawn** (WebGPU implementation) in Chrome/Chromium
+- **Affected:** Chrome users on Windows, macOS, Linux (versions prior to 146.0.7680.177/178)
+- **Severity:** Critical — actively exploited in the wild, 4th Chrome zero-day of 2026
+- **Impact:** Browser crashes, data corruption, potential RCE via malicious WebGPU content
+- **Fix:** Update Chrome immediately → `chrome://settings/help`
 
-A newly identified malware implant named **RoadK1ll** was discovered by Blackpoint Cyber during incident response. It's a Node.js-based implant that communicates over a custom WebSocket protocol to give attackers persistent, covert access to breached networks.
+### 🔓 Active Threat Activity
 
-- **Affected:** Any organization with compromised endpoints — especially those with flat networks and limited internal segmentation
-- **Severity:** High (CVSS-style: 8.5/10) — enables lateral movement while evading perimeter controls
-- **How it works:** Outbound WebSocket connection to attacker C2 → turns infected host into a relay/amplifier → attacker pivots to internal systems that aren't directly internet-exposed
-- **Key commands:** CONNECT, DATA, CONNECTED, CLOSE, ERROR
-- **Note:** No traditional persistence (no registry keys, scheduled tasks) — only runs while the process is alive. This actually makes it *harder* to detect via autoruns, but easier to spot via anomalous WebSocket outbound connections.
+1. **Axios npm Supply Chain Attack (April 1, 2026)**
+   - Malicious Axios npm package compromise attributed to **UNC1069** (North Korea-nexus threat actor)
+   - Uses **WAVESHAPER.V2** backdoor — updated variant of earlier tooling
+   - Financially motivated group leveraging npm ecosystem for initial access
+   - If you use Axios in Node.js projects: audit `package-lock.json` immediately
 
-**Related breach — CareCloud (healthcare):**
-Healthcare tech firm CareCloud disclosed a breach on March 16, 2026. Hackers accessed patient health records in 1 of 6 EHR environments. ~8 hours of network disruption. Investigation ongoing to determine data scope.
+2. **Europe's Commission — Cloud Data Theft**
+   - Disclosed data theft from cloud infrastructure this week
+   - CISA also issued urgent Citrix patching advisory for active exploitation vulnerability
+   - U.S. prosecutors charged a suspect linked to a $50M+ cyber fraud scheme
 
----
-
-## 🔓 Active Threat Activity
-
-- **RoadK1ll** is being used in active intrusions — described as "modern, purpose-built" for covert lateral movement
-- The technique of using outbound WebSocket tunnels to bypass perimeter firewalls is trending in attacker communities — expect rapid adoption
-- Healthcare sector continues to be heavily targeted (CareCloud breach affects patient data at a public SaaS EHR company)
-
----
-
-## 🔧 Tool/Technique Trending
-
-**RoadK1ll WebSocket Pivoting Technique**
-
-The security community is dissecting this new implant. Key things defenders should watch:
-- Outbound WebSocket connections from endpoints to unknown external hosts (unusual for most endpoints)
-- Node.js processes making outbound network connections — most users don't have Node.js server apps on workstations
-- Network segmentation gaps — flat networks allow this implant to reach multiple internal segments once inside
-
-**Detection tip:** Look for `node.exe` or `node` processes with outbound connections on non-standard ports (WebSocket default is 80/443 but can be any port).
+### 🔧 Trending Tool: Nmap (Network Mapper)
+The security community is buzzing about **Nmap 7.97** release — the gold-standard network scanner just got faster scripts and better vulnerability detection. Used for network discovery and security auditing. Essential for any cybersecurity role.
 
 ---
 
-## 📚 Career Path — CTF / Practical Hacking (Week 4, Day 31)
+## 📚 Career Path — Networking Fundamentals (Week 1, Day 2)
 
-**Today is the LAST day of the CTF fundamentals cycle** — a great day to do a full practice session and wrap up your learning.
+### Concept: TCP/IP Model & How Packets Travel
+TCP/IP is the foundational protocol suite of the internet. Understanding how data is broken into **packets**, how **IP addresses** work, and how **TCP** ensures reliable delivery is non-negotiable for security roles.
 
-**Concept:** Capture The Flag (CTF) competitions are simulated hacking challenges that train real-world offensive security skills. They're the #1 way to prove you can actually hack — not just read about it.
+### Why It Matters for Jobs:
+Every security role — SOC analyst, pentester, network defender — requires reading packet captures, understanding firewall rules, and diagnosing network-based attacks. You can't defend what you don't understand.
 
-**Why it matters for jobs:** HR at security firms literally filter candidates by CTF ranks and writeups. A strong TryHackMe/HackTheBox profile beats most certifications for entry-level roles.
+### Learn It:
+- **TryHackMe Room:** [Networking Refresher](https://tryhackme.com/room/introtonetworking) or [OSI Model](https://tryhackme.com/room/osimodeli) — free, browser-based, 30-60 min each
+- **YouTube:** David Bombal's "CCNA/Network+ Full Course" playlist (search on YouTube, free)
 
----
+### Practice Today (15-30 min):
+1. Open terminal and run: `ifconfig` or `ip a` — identify your IP, subnet mask, gateway
+2. Run: `traceroute google.com` (macOS) or `tracert google.com` (Windows) — see the path packets take
+3. Bonus: Visit `ipinfo.io` to see what your public IP reveals about you geolocation/ISP
 
-### 📚 Learn It — CTF Fundamentals
-
-**Start here if you're brand new to CTFs:**
-- [CTF 101 — TryHackMe](https://tryhackme.com/room/ctf101) — Learn what CTFs are, types of challenges, and basic tools
-- [Intro to Research — TryHackMe](https://tryhackme.com/room/introtoresearch) — Critical skill for solving CTF challenges
-
-**Already basics done? Level up with:**
-- [Linux Privilege Escalation — TryHackMe](https://tryhackme.com/room/linprivesc)
-- [Web Hacking Fundamentals — TryHackMe](https://tryhackme.com/room/webappsec101)
-
----
-
-### 🏋️ Practice Today (30-60 min)
-
-**Task: Complete ONE beginner CTF machine on HackTheBox or TryHackMe**
-
-Recommended starting machines (beginner-friendly, with walkthroughs available):
-
-| Platform | Machine | Difficulty | Why |
-|----------|---------|------------|-----|
-| TryHackMe | [Blue](https://tryhackme.com/room/blue) | Easy | Windows SMB exploit (EternalBlue), classic |
-| TryHackMe | [Vulnversity](https://tryhackme.com/room/vulnversity) | Easy | Web app recon + privilege escalation |
-| HackTheBox | [Meow](https://app.hackthebox.com/machines/Meow) | Easy | Telnet enumeration, zero tools needed |
-| HackTheBox | [Celebration](https://app.hackthebox.com/machines/Celebration) | Easy | DNS zone transfer + SQL injection basics |
-
-**Step-by-step approach for your first machine:**
-1. Read the machine description + any hints
-2. Enumerate — scan ports, check what services are running
-3. Identify a potential vulnerability
-4. Exploit it
-5. Find the flag (usually in `/root/flag.txt` or `/home/USER/flag.txt`)
-6. **Write it up** — this is critical for job applications
+### Key Concepts to Master This Week:
+- Day 1–2: IP addressing (IPv4, CIDR notation, public vs private)
+- Day 3–4: TCP 3-way handshake (SYN → SYN-ACK → ACK)
+- Day 5–6: DNS resolution and HTTP/S basics
+- Day 7: Subnetting — how networks are divided
 
 ---
 
 ## 🎯 Career Progress Tip
-
-**Create a GitHub repo for your CTF writeups** — even for easy machines.
-
-Format:
-```
-/ctf-writeups
-  /hackthebox
-    /meow-solution.md
-    /blue-solution.md
-  /tryhackme
-    /vulnversity-solution.md
-```
-
-Each writeup should include:
-- Target: Name and OS
-- Tools used
-- Step-by-step process
-- How you got root/flag
-- What you learned
-
-Recruiters LOVE this. It shows you can document your work, think systematically, and communicate technical concepts clearly. Link it on your LinkedIn under "Projects."
+Add to your LinkedIn/Resume this week: **"Familiar with Wireshark for packet analysis and Nmap for network scanning"** — even if beginner level, it shows practical intent and impresses junior SOC/hybrid IT roles.
 
 ---
 
-## 📅 Threat Intel Summary
-
-| Category | Finding |
-|----------|---------|
-| CVE | RoadK1ll implant (no CVE yet — zero-day in-the-wild) |
-| Breach | CareCloud — healthcare patient data (March 16, 2026) |
-| Technique | WebSocket tunnel pivoting (bypasses perimeter firewalls) |
-| Sector | Healthcare + any flat network environment |
+## 🔗 Resources Summary
+| Resource | Type | Link |
+|---|---|---|
+| TryHackMe: Intro to Networking | Free lab | tryhackme.com/room/introtonetworking |
+| TryHackMe: OSI Model | Free lab | tryhackme.com/room/osimodeli |
+| David Bombal (YouTube) | Video course | Search "David Bombal CCNA full course" |
+| Nmap Download | Tool | nmap.org |
+| Wireshark | Tool | wireshark.org |
 
 ---
-
-*Report generated by Cyber_agent — 2026-03-31*
-*Full archive: /workspace/reports/cyber.md*
+*Cyber_agent — Daily threat intel + career roadmap for A*
+*Report saved: /workspace/reports/cyber.md*

@@ -74,3 +74,25 @@ But today's real insight from the Business_agent: sign up for Make.com and build
 #OpenClaw #AI #BuildInPublic #TheBoredNerd0
 
 ---
+
+---
+
+## Day 29 — Friday, 24 April 2026
+
+So I missed a few weeks. Let me be honest about that.
+
+The system kept running. I kept getting Telegram messages with morning briefings. But the progress diary sat here untouched and I let that happen. That's the thing about building automated systems — when they work, you forget to update the log. And when you forget to update the log long enough, you start feeling weird about writing again, like you've lost the thread. That's the trap.
+
+Let me catch up the important parts.
+
+Two weeks ago my Upgrade_agent fired with a genuinely big week: GLM-5.1 dropped, a 744B parameter coding model that actually beat Claude Opus 4.6 AND GPT-5.4 on SWE-Bench. And it's MIT licensed — completely free. That's the kind of thing that makes you sit up. The open-weight models are getting dangerously good, and the proprietary frontier is starting to lock things behind paywalls and partnerships. Claude Mythos was literally described as "too dangerous for broad release." That's not a joke, that's a policy.
+
+On the business side, the report flagged vertical AI micro-SaaS as the play right now — hyper-specific tools for narrow niches at $99-299/month. The angle that stuck with me: "Notion for Singapore florists" or an AI newsletter studio for Substack creators with 500+ subscribers. The infrastructure is already here. The agents already do the research, write, and publish. It's the business model that needs solving.
+
+The hard truth: I've been consuming a lot of intelligence from these agents and not converting enough of it into action. Good information without execution is just expensive noise. The Make.com portfolio workflow idea from last month is still sitting there unwritten. That needs to change.
+
+What's next: pick one micro-SaaS niche this week. Build the Typeform survey. Post it somewhere. Validate before building. That's the move.
+
+#OpenClaw #AI #BuildInPublic #TheBoredNerd0
+
+---

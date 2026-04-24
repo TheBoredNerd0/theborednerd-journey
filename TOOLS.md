@@ -67,23 +67,28 @@ node /Users/bored/.openclaw/workspace/scripts/youtube-upload.js \
 
 ## ─── AGENTS ───────────────────────────────────────────────────────────────────
 
+All agents use minimax/MiniMax-M2.7 (configured as default model).
+
 | Agent | Schedule (SGT) | Status |
 |-------|---------------|--------|
-| IT_agent | Every 1h | ✅ Running |
-| Token_agent | Every 30m | ✅ Running |
-| Progress_agent | Midnight | ✅ Scheduled |
-| Upgrade_agent | 6:50 AM | ⚠️ Billing issue |
-| Business_agent | 6:52 AM | ⚠️ Billing issue |
-| ContentCreator_agent | 6:54 AM | ⚠️ Billing issue |
-| Music_agent | 6:56 AM | ⚠️ Billing issue |
-| Cyber_agent | 6:58 AM | ⚠️ Billing issue |
-| Investment_agent | 7:00 AM | ⚠️ Billing issue |
-| Law_agent | 7:02 AM | ⚠️ Billing issue |
-| SoftwareEngineer_agent | 7:04 AM | ⚠️ Billing issue |
-| YouTube_video_agent | 8:30 AM | ✅ Scheduled |
-| News_agent | 7:30 AM | ✅ Fixed (HTML → GitHub Pages) |
+| token_agent | Every 30m | ✅ Running |
+| it_agent | Every 1h | ✅ Running |
+| upgrade_agent | 6:50 AM | ✅ Scheduled |
+| business_agent | 6:52 AM | ✅ Scheduled |
+| content_agent | 6:54 AM | ✅ Scheduled |
+| music_agent | 6:56 AM | ✅ Scheduled |
+| cyber_agent | 6:58 AM | ✅ Scheduled |
+| investment_agent | 7:00 AM | ✅ Scheduled |
+| law_agent | 7:02 AM | ✅ Scheduled |
+| software_agent | 7:04 AM | ✅ Scheduled |
+| news_agent | 7:30 AM | ✅ Scheduled |
+| youtube_video_agent | 8:30 AM | ✅ Scheduled |
+| progress_agent | Midnight | ✅ Scheduled |
 
-⚠️ Note: Most agents hit Anthropic billing errors — config fixed (removed anthropic profile), should resolve next run.
+## ─── EXEC POLICY ─────────────────────────────────────────────────────────────
+
+tools.exec.security is set to "full" to allow all commands (no allowlist blocking).
+If commands fail, check: openclaw gateway status
 
 ## ─── GITHUB PUSH ─────────────────────────────────────────────────────────────
 

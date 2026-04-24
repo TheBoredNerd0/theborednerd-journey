@@ -1,67 +1,92 @@
-# Legal Corner — Week of March 30, 2026
+# Legal Corner Report — April 2026
 
-## Today's Topic: Data Privacy & Consumer Protection for AI Content Businesses
-
----
-
-### AI Content Copyright — Where Things Stand (March 2026)
-
-**Key developments:**
-- The U.S. Copyright Office continues to hold that AI-generated content without human authorship cannot be copyrighted (per the *Thaler v. Perlmutter* 2023 ruling and subsequent guidance).
-- The EU AI Act is in force and requires **transparency** — AI-generated content disclosed to users (especially for commercial purposes).
-- Singapore's **Personal Data Protection Act (PDPA)** applies to any business collecting personal data of Singapore residents, including email subscribers, followers, and viewers.
+**Topic: AI Content Copyright — What You Actually Own**
 
 ---
 
-### What This Means for A
+## What You Need to Know
 
-**You're fine if you:**
-- Clearly label AI-generated content (voiceovers, scripts, music, video) in the video description or content itself.
-- Don't claim copyright over purely AI-generated assets — you CAN claim copyright over the human-curated selection, arrangement, and commentary.
-- Have a basic privacy policy if you're collecting emails (e.g., newsletter signup, waitlist).
-- Disclose when you're using audience data to personalize content or recommendations.
+AI-generated content occupies a legal grey zone that's slowly getting clearer. The US Copyright Office has now published three major reports on AI and copyright (Parts 1-3, through May 2025), and the consistent ruling: **if a human didn't meaningfully control the creative output, copyright doesn't protect it.**
 
-**Watch out for:**
-- **Re-uploading others' AI-generated content** — even if the original was AI-made, platform terms and copyright still apply to the specific expression.
-- **Subscriber/follower data** — if you're building a database of emails or phone numbers (e.g., via Telegram group, WhatsApp broadcast), PDPA requires you to tell them why you're collecting it and let them opt out.
-- **Cross-border data flows** — if your tools (e.g., email service providers) store data outside Singapore, you need to ensure those providers meet PDPA standards.
+That doesn't mean you're doing something illegal — it means if someone steals your AI video or music, you may have limited legal recourse to stop them.
 
 ---
 
-### Singapore-Specific: PDPA Basics for Content Creators
+## Current Legal Landscape
 
-Singapore's Personal Data Protection Commission (PDPC) has fined businesses for:
-- Collecting more data than needed
-- Not having a clear purpose for data collection
-- Failing to honour opt-out requests
+### 🗽 United States (the standard most platforms follow)
 
-**Practical minimum for A:**
-1. If using email newsletters (e.g., through a mailing service), include a one-liner: "Your email won't be shared. Unsubscribe anytime."
-2. If running Telegram/WhatsApp broadcasts, let people know what they'll receive and how to leave.
-3. No need for a full legal privacy policy until you're at significant scale — just be transparent.
+- **Human authorship requirement**: The Copyright Office has ruled that works created by AI with minimal human direction (e.g., just typing a prompt) are NOT eligible for copyright protection.
+- **What's protected**: Works where a human made meaningful creative choices — selecting which AI outputs to use, arranging them, editing them, adding significant creative input.
+- **AI training data**: Part 3 of the Copyright Office report (May 2025) addressed AI training on copyrighted works. This is still being litigated but affects how tools like Suno, Udio, and image generators legally operate.
+- **AI-generated music**: Suno/Udio outputs are treated similarly to AI images/videos — the base model is trained on licensed or licensed-equivalent data, but the individual outputs have questionable copyright status.
 
----
+### 🇪🇺 European Union
 
-### Platform Policy Watch
+- **EU AI Act (fully applicable by 2026)**: Requires disclosure of AI-generated content in certain contexts. Affects platforms and businesses operating in Europe.
+- **Copyright opt-out**: The EU's text-and-data mining exception does NOT apply if a rights holder explicitly reserved rights — meaning some AI generators may need licensing agreements.
 
-**YouTube (March 2026):**
-- AI-generated content must be disclosed using the "AI-Generated" label when applicable.
-- Creator responsibility for AI content applies even if you used an AI tool.
-- Music policies: if using AI music (Suno/Udio), ensure the platform you publish to allows it.
+### 🇸🇬 Singapore
 
-**TikTok:**
-- AI-generated content disclosures are now mandatory in many regions.
-- Branded content and sponsored posts still require clear labelling regardless of how the content was made.
+- **No AI-specific copyright law yet**, but Singapore's Copyright Act applies to original works. The IPOS (Intellectual Property Office of Singapore) is monitoring US/EU developments.
+- **Practical implication**: If you run a Singapore-based AI content business, follow US Copyright Office guidance as the de facto standard until local law catches up.
 
 ---
 
-### Sources & Links to Verify
+## Platform-Specific Rules
 
-- U.S. Copyright Office AI guidance: copyright.gov/ai
-- EU AI Act transparency requirements: europa.eu/ai-act
-- Singapore PDPC: pdpc.gov.sg
-- YouTube Community Guidelines (AI content): support.google.com/youtube
+### YouTube
+- Must disclose AI-generated content in certain categories (news, elections, etc.)
+- Music AI content is handled under YouTube's music policies — claims can still be filed against AI music
+- Stock footage + TTS voiceover = generally accepted, provided stock footage is properly licensed
+
+### TikTok
+- AI-generated content labeling is mandatory for certain content types
+- Creator Fund eligibility: pure AI-generated content may be restricted
+
+### Suno / Udio
+- These platforms own licenses for their training data
+- You own what you create on the platform BUT they have terms granting them certain rights
+- Commercial use of outputs may have restrictions — read the Terms of Service
 
 ---
 
-*Note: Laws evolve rapidly. For significant business decisions, consult a Singapore-licensed lawyer. This report is awareness, not legal advice.*
+## You're Fine If You:
+
+- ✅ Disclose that your content is AI-assisted (even if not legally required everywhere yet)
+- ✅ Use properly licensed stock footage (Pexels API content = commercial use OK)
+- ✅ Don't claim AI outputs are "100% original human creation" in misleading ways
+- ✅ Read and follow the terms of AI platforms you use (Suno/Udio/etc.)
+- ✅ Keep records of your creative process (scripts, editing decisions) showing human authorship
+
+---
+
+## Watch Out For:
+
+- ⚠️ **"100% AI-generated music" posted as original composition** — this can lead to platform disputes if the AI model itself had training on similar works
+- ⚠️ **Using AI to recreate specific artists' voices or styles** — Suno/Udio prohibit this, and it's legally risky
+- ⚠️ **Not reading platform ToS for commercial use** — some free tiers don't allow monetization
+- ⚠️ **Assuming AI content = public domain** — copyright is complicated even when the output isn't protected
+
+---
+
+## Singapore-Specific Notes
+
+- IRAS (Inland Revenue Authority) treats AI content income the same as any other income — no special AI tax rules yet
+- If you're earning from AI content, keep records and declare income when filing taxes
+- ACRA has no specific AI business registration requirements at this time
+- The Personal Data Protection Act (PDPA) still applies — don't use AI to process others' personal data without consent
+
+---
+
+## Key Sources
+
+- US Copyright Office AI Reports: https://www.copyright.gov/ai/
+- EU AI Act: https://artificialintelligenceact.eu/
+- IPOS Singapore: https://www.ipos.gov.sg
+- Suno Terms: https://suno.ai/legal
+- Udio Terms: https://udio.com/legal
+
+---
+
+*Report generated by Law_agent — April 2, 2026*

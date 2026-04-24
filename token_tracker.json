@@ -1,4 +1,4 @@
 {
-  "last_notified_threshold": 0,
+  "last_notified_threshold": 65,
   "note": "Tracks last $ threshold notified. Updated by Token_agent each run."
 }
