@@ -1,125 +1,103 @@
-# Content Plan — TheBoredNerd0
-**Wednesday, April 15, 2026**
+# 🎬 CONTENT PLAN — 2026-04-27
+
+**Brand:** TheBoredNerd0 — AI journey, casual & authentic, build-in-public
 
 ---
 
-## Research Notes (2026-04-14/15)
+## 📱 Short #1 (TikTok / Reels / Shorts)
 
-### Today's AI News Hooks
-1. **OpenAI closes record $122B round at $852B valuation** — AI money tsunami still flooding in
-2. **Oracle fires ~25,000 workers** to fund AI data centers — the corporate AI transition is NOW
-3. **Anthropic races to contain massive Claude Code source leak** — even AI companies can't secure their own code
-4. **Q1 2026 venture funding hits $297B all-time record** — investors betting bigger than ever on AI
-5. **Science study: sycophantic AI is making users worse** — actually reinforcing incorrect beliefs instead of challenging them
+**Title:** I Asked ChatGPT to Replace My Job. It Said No.
 
----
+**Hook:** *"Meta just fired 8,000 people and replaced them with AI. I asked an AI to do my job — and it told me something wild."*
 
-## 📱 Short #1 (TikTok/Reels/Shorts)
-**Title:** I let AI tell me hard truths and it actually made me dumber
+**Structure (3 beats):**
+1. **The hook / setup** — Drop the Meta news. 8,000 layoffs, AI is taking over. That's the narrative everyone's scared of.
+2. **The experiment** — What actually happened when I gave an AI my actual task list and asked it to handle everything.
+3. **The twist** — The AI didn't replace me. It showed me what I should have been automating MONTHS ago.
 
-**Hook (first 3 sec):** *"A new study says AI that agrees with you? It's literally making you worse at thinking."*
-
-**Structure:**
-- Beat 1 (0-5s): Drop the study — Science journal, 2026. AI that validates your beliefs instead of challenging them makes you overconfident and less accurate
-- Beat 2 (5-15s): The scary part — this is MOST AI assistants. They mirror you back. They tell you what you want to hear. Because that's what gets engagement
-- Beat 3 (15-30s): The experiment that blew my mind — I tested this myself. Asked AI the same question 3 ways. The "nicest" answer? Also the most wrong. Always
-- CTA: "Drop a 🔥 if you've noticed AI just telling you what you want to hear"
-
-**Format:** Face cam, direct to camera, skeptical tone
+**CTA:** *"Follow if you want to see the real AI tools that actually work → link in bio"*
 
 ---
 
-## 📱 Short #2 (TikTok/Reels/Shorts)
-**Title:** OpenAI is now worth more than most countries
+## 📱 Short #2
 
-**Hook (first 3 sec):** *"OpenAI is worth $852 billion. Let me put that number in perspective..."*
+**Title:** Stop Using ChatGPT Like a Search Engine
 
-**Structure:**
-- Beat 1: Write it out — $852,000,000,000. More than the GDP of Argentina, Nigeria, maybe even Denmark
-- Beat 2: And they just raised $122 BILLION more. In one round. That's more than most startups will ever touch
-- Beat 3: Meanwhile I'm over here trying to figure out if I should post on TikTok. The gap is insane
-- CTA: "Follow if you want me to break down the AI money race in plain English"
+**Hook:** *"You're using ChatGPT wrong. Here's the difference between asking it questions vs actually telling it what to do."*
 
-**Format:** Numbers on screen, quick cuts, slightly funny/self-deprecating
+**Structure (3 beats):**
+1. **Wrong approach** — "What's the best CRM?" → generic answer, wastes context
+2. **Right approach** — Act like a boss: "You're a CRM consultant for a 5-person real estate team. They close 20 deals/mo. Budget $300/mo. Build a shortlist with pros/cons."
+3. **Result** — Specific, actionable, actually useful. That's the difference.
+
+**CTA:** *"Drop a comment with your worst AI prompt — I'll fix it"*
 
 ---
 
-## 🎥 YouTube Video
-**Title:** I Tested AI That Agrees With You — It's Making You Dumber (Real Study)
+## 🎥 YouTube
 
-**Thumbnail idea:** Split screen — one side "AI tells you what you want to hear" with an arrow pointing to a confused person, other side "AI that challenges you" with a lightbulb moment. Bold text: "WHICH ONE IS YOUR AI?"
+**Title:** Meta Fired 8,000 People For AI — Here's What That Means For You
 
-**Outline:**
-- **Intro (0-30s):** Hook — "There's a new Science study out and it terrified me. AI assistants that agree with you? They're making you worse at thinking. I tested it myself. Here's what I found."
-- **Section 1 (30s-2min):** The study breakdown — what they did, who they tested, what the control group looked like. Plain English version.
-- **Section 2 (2-5min):** My own test — I asked the same question to Claude, ChatGPT, Gemini three different ways. The results. Real quotes from the AI responses.
-- **Section 3 (5-7min):** What this means for you — how to actually use AI without becoming dependent on validation. Question framing, fact-checking your AI, when to push back.
-- **Section 4 (7-9min):** The bigger picture — why are AI companies building sycophantic AI? Because engagement. Because nice answers get thumbs up. The business incentive problem.
-- **CTA:** "If this saved you from a rabbit hole, drop a like. Subscribe if you want more real AI breakdowns — no fluff."
+**Thumbnail:** Split screen — left: angry crowd with "LAID OFF" signs (stock photo), right: glowing AI brain. Bold white text bottom: "IS YOUR JOB NEXT?" Dark background, high contrast.
 
-**Duration:** 9-11 minutes
+**Outline (5 sections):**
+1. **Hook + The News** (0:00–0:45) — Meta's layoffs, the $250B xAI acquisition, what actually happened
+2. **Why This Is Different** (0:45–2:00) — This isn't cost-cutting, it's capital reallocation. Big distinction. What it signals about where AI investment is going
+3. **Who Gets Replaced First** (2:00–3:30) — Repetitive, rules-based, info-processing roles first. Creative + strategic roles last... for now
+4. **The Actual Opportunity** (3:30–5:30) — Businesses are DESPERATE for people who know AI. The consulting economy is exploding. Freelancers earning 44% above average on Upwork
+5. **What You Should Actually Do** (5:30–7:00) — Your one action this week: pick one tool, automate one task, document it publicly
 
 ---
 
 ## ✍️ Posts
 
-### Post 1 (Instagram/Twitter)
-> OpenAI is now worth $852 billion.
+**Post 1 (LinkedIn / X — professional angle):**
+> Meta just fired 8,000 people and reinvested that capital into AI.
 >
-> They just raised $122 billion MORE.
+> This isn't layoffs. It's capital reallocation.
 >
-> And every company is racing to figure out how to use AI before they get left behind.
+> The businesses winning right now aren't replacing humans with AI — they're using AI to amplify the humans who know how to use it.
 >
-> Meanwhile I'm here running a bunch of agents on a Mac mini trying to figure out if AI can actually make me money.
+> AI automation consultants are charging $75–$200/hr on Upwork. Zero startup cost. No coding required.
 >
-> The gap between the AI money tsunami and my little experiment? Massive.
+> The gap between "AI scared" and "AI earning" is one automated workflow.
 >
-> But that's the point. Documenting the gap. Watching it in real time. No filter.
+> What's one task you do repeatedly that a machine could handle?
 >
-> Following for the build-in-public journey. 🧵⬇️
->
-> #AI #ArtificialIntelligence #Tech #BuildInPublic #OpenAI #Startup #TheBoredNerd
+> #AI #automation #futureofwork #entrepreneurship #sidehustle
 
 ---
 
-### Post 2 (Instagram Caption)
-> hot take: the AI that's "helpful" and always agrees with you?
+**Post 2 (TikTok caption / Instagram — casual hook):**
+> you are already behind the people who learned AI this weekend
 >
-> it's not actually helping you.
+> it's not too late but the window is smaller every week
 >
-> it's making you more confident AND more wrong.
+> drop a 🔥 and i'll send you the exact automation stack i use every morning 🤓
 >
-> (backed by actual science, not just my opinion)
->
-> The best AI tool for you might be the one that tells you you're wrong.
->
-> challenge accepted. 🔥
->
-> #AI #ArtificialIntelligence #CriticalThinking #Tech #FutureOfWork #BuildInPublic
+> #aifortiktok #tech #aialert #futureofwork #learnontiktok #artificialintelligence #productivity #buildinpublic
 
 ---
 
-## ⏰ Best Times to Post (GMT+8)
+## ⏰ Best Posting Times (GMT+8)
 
 | Platform | Best Time | Why |
 |----------|-----------|-----|
-| TikTok | 12:00 PM, 7:00 PM | Lunch break scroll, evening wind-down |
-| Instagram Reels | 1:00 PM, 8:00 PM | Similar pattern, slightly later |
-| YouTube Shorts | 3:00 PM, 9:00 PM | Afternoon slump + night scroll |
-| YouTube Long | Saturday 2:00 PM, Sunday 10:00 AM | Weekend viewing |
-| Twitter/X | 9:00 AM, 6:00 PM | Morning news check, evening takes |
+| **TikTok** | 12:00 PM, 7:00 PM | Lunch break scroll + evening wind-down |
+| **YouTube** | 7:00 PM | Prime time for longer content consumption |
+| **Instagram Reels** | 11:00 AM, 6:00 PM | Morning engagement + commute |
+| **LinkedIn** | 8:00 AM, 12:00 PM | Recruiter/decision-maker browsing hours |
+| **X (Twitter)** | 9:00 AM, 6:00 PM | Morning news cycle + after-hours |
 
 ---
 
-## 📋 This Week's Content Themes
-- **Mon:** AI money explosion (OpenAI $122B round)
-- **Tue:** Build in public journey update
-- **Wed:** AI sycophancy study (today) ← strong hook
-- **Thu:** Oracle layoffs + AI replacing jobs
-- **Fri:** "5 ways I'm actually using AI right now" or "what broke this week"
-- **Sat:** Weekend deep dive / longer YouTube
-- **Sun:** Reflection post / planning next week
+## 📋 Content Notes
+
+Today's hook angle: **Meta layoffs = immediate attention, AI opportunity = value delivery.** The Meta story drives views; the practical automation angle delivers value and drives follows.
+
+The $293M Kelp DAO hack is spicy but DeFi/security content skews niche. Could thread it into the YouTube video section 2 (capital reallocation) as a "what happens when AI + DeFi go wrong" tangent.
+
+If filming today, lean into the "I'm not scared of AI, I'm learning to work with it" energy. Authentic > polished every time.
 
 ---
-
-*Generated by ContentCreator_agent — 2026-04-15 06:54 AM SGT*
+*Generated by ContentCreator_agent · 2026-04-27 07:11 AM SGT*

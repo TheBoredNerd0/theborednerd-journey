@@ -1,37 +1,47 @@
-# Investment Report — March 31, 2026
+# Investment Report — April 27, 2026
 
-## Market Snapshot
+## Markets
 
-| Asset | Price | 24h Change |
-|-------|-------|------------|
-| Bitcoin (BTC) | $66,696.59 | +1.98% |
-| Ethereum (ETH) | $2,030.12 | +3.68% |
-| S&P 500 | 6,343.72 | Near 8-month low |
+• BTC: ~$77,400 (-0.3%)
+• ETH: ~$2,850 (est.)
+• S&P 500: ~7,165 (near flat, near record highs)
 
-## Market Vibe
-S&P 500 is sliding toward correction territory (down ~10% from recent highs) as oil prices climb and Treasury yields fall following Powell's remarks. BTC bounced on Iran de-escalation talk headlines — sentiment is fragile, macro-driven. Risk assets are jittery.
-
-## Today's Lesson — Alternatives: T-Bills (Treasury Bills)
-
-**What they are:** T-bills are short-term government debt instruments. You lend the government money (usually 3, 6, or 12 months), and they pay you back with interest. In Singapore, the MAS offers SGS T-bills; in the US, Treasury bills are auctioned weekly.
-
-**Why the yield matters:** Right now, T-bills are offering ~4-5% risk-free returns. That's significantly better than bank savings accounts (often <1%). For a beginner with no capital yet, this is the benchmark: *any* investment you consider should beat the risk-free rate, or ask yourself why you're taking extra risk.
-
-**The key insight for beginners:** High-yield savings accounts and T-bills are where parking your emergency fund (3-6 months of expenses) actually works for you instead of losing to inflation. They're not exciting — but they're the foundation.
-
-## Why This Matters for You
-Before you invest a single dollar, you need a financial foundation:
-1. **No high-interest debt** (credit cards, personal loans) — paying off a 20% interest loan is a guaranteed 20% "return"
-2. **Emergency fund** in something safe and liquid (T-bills or high-yield savings)
-3. **Then** start investing for growth
-
-## Try This (Free)
-- **Singapore:** Check current SGS T-bill yields at [MAS SGS website](https://www.mas.gov.sg) — no minimum to view rates
-- **US:** TreasuryDirect.gov lets you buy US T-bills starting at $100
-- **Spreadsheet exercise:** Calculate how much interest you'd earn on $10k at 4.5% over 12 months vs. a regular bank at 0.5% — the difference is real money
-
-## Singapore-Specific Note
-Singapore CPF OA (Ordinary Account) earns ~2.5% currently — which is also a form of risk-free "return" locked until retirement. For short-term emergency funds though, T-bills beat CPF OA in flexibility since CPF is meant for housing/retirement.
+**Market vibe:** Steady — BTC holding $77K support, S&P still near all-time highs from Friday's record close. No major panic signals, but crypto is drifting slightly bearish short-term.
 
 ---
-*Building the foundation before chasing returns.*
+
+## Today's Lesson — T-Bills & High-Yield Savings (Day 27 of curriculum)
+
+**The boring stuff that actually makes you money.**
+
+You've probably seen "T-Bills" and "high-yield savings" mentioned and glazed over. Don't. These are the safest, simplest investment tools available — especially relevant in Singapore where your CPF already gives you a ~2.5% base return. Here's the upgrade:
+
+### What is a T-Bill?
+A Treasury Bill is a short-term government debt instrument. In Singapore, SGS (Singapore Government Securities) T-bills are auctioned weekly. You buy them at a discount, hold them, and get face value back at maturity.
+
+**How it works (plain English):**
+- Buy for $98 today → get $100 back in 6 or 12 months
+- The $2 difference is your return
+- Government backs it, so near-zero risk
+
+### Current rates (April 2026):
+- Singapore 6-month SGS T-bill: ~3.5-3.8% annually
+- Compare to CPF ordinary account: ~2.5%
+- Compare to most bank savings accounts in SG: ~0.05-0.1%
+
+### High-Yield Savings Accounts
+In Singapore, some digital banks (e.g., Syfe, Stashaway, MariBank) offer savings accounts with rates around 2-3%+ — still beating CPF OA rates for liquid cash you might need soon.
+
+### Why it matters for A:
+If you're between jobs, building an emergency fund, or waiting to deploy capital into riskier assets — T-bills are your parking spot. Better than leaving cash in the bank at near-zero. Better than CPF OA for short-term liquidity (CPF is locked for a reason — don't pull it just to chase yields).
+
+**The rule:** Money you'll need within 1-2 years = T-bills or high-yield savings. Money you won't touch for decades = index funds.
+
+### Try this (free):
+1. Check current SGS T-bill auction rates at [MAS SGS page](https://www.mas.gov.sg/sgs)
+2. Compare with your bank's savings rate — see how much you're leaving on the table
+3. No money to invest yet? Just read the auction results. Get familiar with how it works before you need it.
+
+---
+
+*Next: What is dollar-cost averaging and why it removes emotion from investing*
