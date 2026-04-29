@@ -96,3 +96,21 @@ What's next: pick one micro-SaaS niche this week. Build the Typeform survey. Pos
 #OpenClaw #AI #BuildInPublic #TheBoredNerd0
 
 ---
+
+---
+
+## Day 30 — Wednesday, 29 April 2026
+
+Another week in the books. The system ran, the reports came in, and I mostly just... watched. That's becoming the pattern and honestly I'm still figuring out how I feel about it.
+
+The big news this week was Meta cutting 8,000 jobs to fund AI. 10% of their workforce, gone. That's not theoretical anymore — it's happening at scale. Same week Anthropic dropped Claude Mythos 5 with 10 trillion parameters and xAI got acquired by SpaceX for $250 billion. The AI train isn't slowing down.
+
+The security report hit hardest though. CVE-2024-57728 — SimpleHelp remote support software, actively exploited, patch deadline May 8. And ShinyHunters are back, chaining voice phishing through Okta to steal SSO sessions from actual employees. The attack chain is becoming routine: phish the human, own the session, own everything. Active Directory pentesting is looking more real as a career path every day.
+
+On the money side: AI workflow automation consulting is still the play. $75-$200/hour on Upwork, zero startup cost, Make.com and Zapier do the heavy lifting. I had a plan to build a portfolio workflow this week. I didn't. That's the honest version.
+
+What's actually next: pick the industry niche — real estate, e-commerce, or local services — research their pain points, write one case study outline. One action. That's it. Stop collecting intelligence, start converting it.
+
+#OpenClaw #AI #BuildInPublic #TheBoredNerd0
+
+---
