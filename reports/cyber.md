@@ -1,20 +1,18 @@
-🛡️ CYBER INTEL — April 26, 2026
+🛡️ CYBER INTEL — April 29, 2026
 
-⚠️ Top threat today: CVE-2024-57728
-  Affected: SimpleHelp (remote support software) — admin users with file upload access
-  Severity: CVSS 9.1 (Critical) — actively exploited since Apr 24, patch deadline May 8
+⚠️ Top threat today: CVE-2026-4312
+  Affected: DrangSoft GCB/FCB Audit Software users (unauthenticated remote access to admin APIs)
+  Severity: CRITICAL — CVSS 9.8
 
 🔓 Active threat activity:
-ShinyHunters (the same group behind previous ADT breaches in Aug & Oct 2024) struck again — compromising an ADT employee's Okta SSO via vishing (voice phish), then accessing Salesforce and exfiltrating data for ~10M customers. Names, phone numbers, addresses, and in some cases DOBs + SSN last 4 digits were stolen. No payment data. ADT confirmed the breach Apr 20. The group set an extortion deadline of April 27 — "pay or we leak."
+**Handala Hack** surged in March 2026 with 23 ransomware victims in a single month — more than half their total for the year so far (33). The group heavily targets Israeli organizations (1 in 3 victims), and operates as a politically-motivated "wartime cyber" actor aligned against Israel. Also this week: Rockstar Games and McGraw-Hill (13.5M records) suffered major breaches, while Microsoft patched 167 vulnerabilities including 2 zero-days (CVE-2026-32201 SharePoint spoofing — actively exploited; CVE-2026-33825 "BlueHammer" Defender EoP — publicly disclosed pre-patch).
 
-Separately, UNC6692 (tracked by Mandiant/Google) is using Microsoft Teams as a helpdesk impersonation channel to deploy "Snow" malware — a full suite with browser extension (SnowBelt), backdoor (SnowBasin), and tunneler (SnowGlaze). Targets get socially engineered via email bombing, then tricked into installing a fake "spam patch." The malware persists via Chrome extension + scheduled tasks, enabling credential dumping, lateral movement via pass-the-hash, and domain takeover using LimeWire for exfiltration.
+🔧 Tool/technique trending: **Burp Suite Professional + AI-assisted fuzzing** — the security community is buzzing about using LLMs to generate fuzzing payloads and automate vulnerability discovery in web apps. Combined with Burp's intruder and crawler, it's becoming the go-to workflow for bug bounty hunters and pen testers.
 
-🔧 Tool/technique trending: OAuth token theft + SSO bypass via vishing — ShinyHunters has been chaining this across Okta/Microsoft Entra/Google Workspace targets since 2025. The attack chain: voice phish employee → steal SSO session → access SaaS apps (Salesforce, M365, Slack, etc.) → exfil data → ransom demand. Awareness training is the primary defense.
+📚 Career path — CTF/Practical (Day 29):
+Concept: **Privilege Escalation** — moving from a low-privilege user account to root/admin access on a compromised system. The critical last step in any pen test or CTF chain.
+Why it matters: It's the difference between "I got in" and "I owned the box." Blue teams need to know it too to understand how attackers escalate and how to detect it.
+Learn it: TryHackMe room "Linux PrivEsc" (https://tryhackme.com/r/writeup/linprivesc) or HTB machine "Lame" (easy, old but teaches the basics)
+Practice today: Boot up a Kali box on TryHackMe → complete one Linux privesc room → document your escalation path and the technique used
 
-📚 Career path — CTF/Practical (Days 22–31 of curriculum):
-Concept: Pass-the-Hash (PtH) — an attacker steals a password hash (not the plaintext password) and reuses it to authenticate to other systems on the network. Since NTLM/LM hashes are transmitted during auth, they can be captured from LSASS memory or network traffic and replayed to gain lateral movement without cracking the actual password.
-Why it matters: PtH is how UNC6692 moved from a single compromised host to the domain controller in the Snow malware campaign — it's a go-to technique in real-world intrusions and almost every AD-focused CTF.
-Learn it: TryHackMe room "Attacking Kerberos" — covers PtH, golden/silver tickets, and Kerberoasting in a controlled lab.
-Practice today: On a Kali box, run `responder -I eth0` to capture NTLM hashes in a CTF lab network, then use `hashcat` or `john` to crack simple ones. Next, replay a captured hash with `evil-winrm` to log into a second host as that user.
-
-🎯 Career tip: Add "Active Directory pentesting" to your LinkedIn if you've done any HTB/TryHackMe AD labs. Even "beginner" AD skills are in demand — blue teams need people who understand how attackers move laterally.
+🎯 Career tip: Add **TryHackMe** or **HackTheBox** to your LinkedIn under Skills — hiring managers for SOC and junior pen test roles actively check these platforms. A few solved boxes signals real hands-on ability, not just cert jargon.

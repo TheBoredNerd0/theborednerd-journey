@@ -1,47 +1,49 @@
-# Investment Report — April 27, 2026
+# Investment Report — April 29, 2026
 
-## Markets
+## Markets Snapshot
 
-• BTC: ~$77,400 (-0.3%)
-• ETH: ~$2,850 (est.)
-• S&P 500: ~7,165 (near flat, near record highs)
+| Asset | Price | 24h Change |
+|-------|-------|-----------|
+| BTC | $77,251.92 | +1.19% |
+| ETH | $2,325.85 | +1.59% |
+| S&P 500 | 7,138.80 | -0.49% |
 
-**Market vibe:** Steady — BTC holding $77K support, S&P still near all-time highs from Friday's record close. No major panic signals, but crypto is drifting slightly bearish short-term.
-
----
-
-## Today's Lesson — T-Bills & High-Yield Savings (Day 27 of curriculum)
-
-**The boring stuff that actually makes you money.**
-
-You've probably seen "T-Bills" and "high-yield savings" mentioned and glazed over. Don't. These are the safest, simplest investment tools available — especially relevant in Singapore where your CPF already gives you a ~2.5% base return. Here's the upgrade:
-
-### What is a T-Bill?
-A Treasury Bill is a short-term government debt instrument. In Singapore, SGS (Singapore Government Securities) T-bills are auctioned weekly. You buy them at a discount, hold them, and get face value back at maturity.
-
-**How it works (plain English):**
-- Buy for $98 today → get $100 back in 6 or 12 months
-- The $2 difference is your return
-- Government backs it, so near-zero risk
-
-### Current rates (April 2026):
-- Singapore 6-month SGS T-bill: ~3.5-3.8% annually
-- Compare to CPF ordinary account: ~2.5%
-- Compare to most bank savings accounts in SG: ~0.05-0.1%
-
-### High-Yield Savings Accounts
-In Singapore, some digital banks (e.g., Syfe, Stashaway, MariBank) offer savings accounts with rates around 2-3%+ — still beating CPF OA rates for liquid cash you might need soon.
-
-### Why it matters for A:
-If you're between jobs, building an emergency fund, or waiting to deploy capital into riskier assets — T-bills are your parking spot. Better than leaving cash in the bank at near-zero. Better than CPF OA for short-term liquidity (CPF is locked for a reason — don't pull it just to chase yields).
-
-**The rule:** Money you'll need within 1-2 years = T-bills or high-yield savings. Money you won't touch for decades = index funds.
-
-### Try this (free):
-1. Check current SGS T-bill auction rates at [MAS SGS page](https://www.mas.gov.sg/sgs)
-2. Compare with your bank's savings rate — see how much you're leaving on the table
-3. No money to invest yet? Just read the auction results. Get familiar with how it works before you need it.
+Market vibe: Stocks are taking a breather after recent highs, while crypto continues its steady climb. Slightly risk-on tone.
 
 ---
 
-*Next: What is dollar-cost averaging and why it removes emotion from investing*
+## Today's Lesson — High-Yield Savings Accounts (Singapore Edition)
+
+**What it is:**
+A high-yield savings account (HYSA) is a bank account that pays you interest on your money — like rent, but from the bank. You deposit money, the bank lends it out, and they share a slice of that interest with you.
+
+Singapore's best HYSA rates have been hovering around **2.5–3.5%** for smaller balances, significantly better than the ~0.05% in regular savings accounts.
+
+**Why it matters for you:**
+- Your CPF Ordinary Account earns ~2.5% — that's already a benchmark
+- A HYSA is your next best risk-free option for cash you want accessible
+- No lock-in, no penalties, no market exposure
+- In a high-rate environment, the gap between HYSA and everything else narrows
+
+**The math that helps:**
+If you park $10,000 in a HYSA at 3% for 5 years:
+- Without compounding: $10,000 + ($10,000 × 0.03 × 5) = **$11,500**
+- With monthly compounding: **~$11,618**
+Not exciting. But guaranteed. That's the point.
+
+**Why it matters here (Singapore context):**
+- CIMB FastSaver, UOB One, and digital banks like MariBank offer competitive HYSA rates
+- Many have promotional rates — always check what happens after the promo ends
+- Compare with SSBs (Singapore Savings Bonds) — HYSA is more liquid, SSBs slightly better long-term
+
+**Try this:**
+Go to a comparison site (like MoneySense or CompareFirst) and search "high yield savings account Singapore." Filter for accounts with:
+- No minimum balance
+- No lock-in
+- Rate above 2.5%
+
+Pick one that fits. Open it with a small amount (even $500) just to get familiar with the process. You'll be earning something instead of nothing.
+
+---
+
+*Tomorrow: More on alternatives — SSBs, T-bills, and Singapore Savings Bonds vs HYSA comparison*

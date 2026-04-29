@@ -1,25 +1,26 @@
-⚖️ LEGAL CORNER — 26 April 2026
+⚖️ LEGAL CORNER — 29 April 2026
 
-📋 Today's topic: Data Privacy + Consumer Protection
+📋 Today's topic: Data Privacy & Consumer Protection (PDPA)
 
 🔍 What you need to know:
-The Singapore Personal Data Protection Act (PDPA) applies to any business collecting personal data from Singapore residents — including email lists, customer info, and even viewer/follower data from your content channels. If you're running a newsletter, paid community, or any service where people sign up with their details, PDPA obligates you to protect that data, state why you're collecting it, and not use it for anything beyond what you stated. The recently amended PDPA (2024) also introduced mandatory breach notification — if data is leaked, you must notify PDPC and affected individuals within 3 days.
+The Personal Data Protection Act (PDPA) governs how you collect, use, and disclose personal data in Singapore — whether you're running a newsletter, selling a course, or managing a YouTube audience. Even if a user voluntarily gives you their email or name, you still have obligations around keeping that data safe and telling them what you're using it for. AI tools you use (chatbots, email handlers, analytics) that touch personal data are also in scope.
 
 ✅ You're fine if you:
-• Collect only the data you actually need (name + email for a newsletter, nothing more)
-• Have a clear privacy policy that says what you collect, why, and who sees it (even a simple one-page doc counts)
-• Store data securely — use reputable platforms (Mailchimp, Gumroad, Patreon) that handle compliance for you
-• Honour opt-outs and unsubscribe requests promptly
+• Tell people why you're collecting their data (e.g., "I'll send you product updates")
+• Only use their data for the stated purpose
+• Let people unsubscribe or request deletion of their data
+• Use trusted AI platforms with their own PDPA-compliant policies
 
 ⚠️ Watch out for:
-• Re-selling or sharing subscriber email lists with third parties without consent — this is a direct PDPA violation
-• Keeping data indefinitely without a clear retention policy ("we delete inactive accounts after 2 years")
-• AI tools that ingest user data — if you feed fan emails or community messages into an AI to draft replies, that counts as processing personal data; ensure the tool has a DPA (Data Processing Agreement) with you
-• Not posting a cookie banner if your website tracks visitors (even basic analytics can trigger this under PDPA amended rules)
+• Collecting more data than you actually need
+• Storing personal data in unsecured places (plain text files, shared drives)
+• Using AI tools that may store or train on user queries without checking their data policies
+• Failing to notify users of a data breach within 3 days of discovering it
 
-🇸🇬 Singapore note: PDPC (the Personal Data Protection Commission) has been actively enforcing fines since 2024. Small solopreneurs are not exempt — the PDPA covers any business that collects data in Singapore, regardless of size. If you're unsure, the PDPC website has free template privacy notices.
+🇸🇬 Singapore note: Under the PDPA, failing to protect personal data can result in fines up to S$1 million per breach. The PDPC has been actively investigating companies — including small ones — for data breaches.
 
 🔗 Sources:
-- PDPC Singapore: https://www.pdpc.gov.sg
-- PDPA full text: https://sso.agc.gov.sg/Act/PDPA2012
-- PDPC advisory on business addresses for SMEs: https://www.pdpc.gov.sg/Resources/Advisories
+• PDPC Overview: https://www.pdpc.gov.sg/Overview-of-PDPA
+• PDPA Full Text: https://sso.agc.gov.sg/Act/PDPA2012
+• Consumer Protection (Fair Trading Act): https://www.mti.gov.sg/legislation/consumer-protection-fair-trading-act
+• CSA Cybersecurity Guidelines: https://www.csa.gov.sg
