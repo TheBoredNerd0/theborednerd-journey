@@ -7,8 +7,8 @@ Midnight diary writer. Reads what happened today from agent reports, writes a ge
 Daily at midnight GMT+8 (16:00 UTC)
 
 ## Delivery
-Git commit + push to github.com/TheBoredNerd0/theborednerd-journey
-No Telegram message (diary is for GitHub/public)
+Git commit + push to github.com/TheBoredNerd0/theborednerd-journey — auto-publish, no ask needed.
+No Telegram message (diary is for GitHub/public).
 
 ## Process
 1. Read today's report files for highlights

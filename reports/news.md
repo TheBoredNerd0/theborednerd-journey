@@ -1,30 +1,42 @@
-# 📰 NEWS DIGEST — 2026-04-25
+# 📰 NEWS DIGEST — 2026-04-30
 
-## Live Market Data
-- **BTC:** $77,698 (-0.05%)
-- **ETH:** $2,319 (+0.46%)
-- **S&P 500:** 3,116.77 (+0.62%)
+## Market Snapshot
+- BTC: $77,251 (+1.19%)
+- ETH: $2,325 (+1.59%)
+- S&P 500: 7,138 (-0.49%)
 
-## 🔥 Top AI Story Today
-**Meta Cuts 10% of Workforce (8,000 Jobs) While Doubling Down on AI**
-Meta announced Thursday it's laying off ~10% of its staff (~8,000 people) as it redirects capital toward AI infrastructure. This is the clearest signal yet that AI-driven efficiency is replacing headcount at scale — not just in theory. Meanwhile Anthropic dropped Claude Mythos 5 with 10-trillion parameters and SpaceX reportedly acquired xAI for $250B.
+Crypto continues its steady climb while stocks take a breather. Slight risk-on tone.
+
+---
+
+## 🤖 Top AI Story
+**GPT-5.5 "Super App" Pivot Divides Industry** — OpenAI's latest is shifting from pure chat to agent-centric workflows embedded in productivity tools. Meanwhile Google Gemma 4 open-source dropped and is making serious waves in the developer community. The 1M token context window race is accelerating.
+
+---
 
 ## 🛡️ Security Alert
-**CVE-2026-33032 — Critical (CVSS 9.8) in nginx-ui**
-Authentication bypass in nginx-ui lets attackers seize full control of Nginx services. Patch immediately if running nginx-ui. Also: Vercel confirmed a breach affecting CI/CD workflows (April 19). Kelp DAO lost $293M in a LayerZero bridge hack — $5.4B withdrawn from DeFi in panic.
+**CVE-2026-4312 — CRITICAL** (CVSS 9.8) in DrangSoft GCB/FCB Audit Software. Unauthenticated remote access to admin APIs. Patch immediately if running this software. Also: Rockstar Games and McGraw-Hill breached (13.5M records exposed). Microsoft patched 167 vulnerabilities including 2 zero-days.
 
-## 💡 Wildcard
-**The Kelp DAO $293M DeFi Hack Exposes Centralization Risk**
-The biggest DeFi exploit of 2026 revealed critical flaws in how cross-chain bridges handle modular security. When $5.4B can leave an ecosystem in days because one protocol fails, it raises hard questions about "decentralized" finance.
+---
 
-## Today's Reports Summary
-- **Business:** AI Workflow Automation Agency — $75–200/hr on Upwork, zero startup cost, high leverage
-- **Content:** "I Let AI Run My Life for 24 Hours" and "Stop Using ChatGPT Wrong" content plan
-- **Cyber:** CVE-2026-33032 + career path: TryHackMe + HTB privilege escalation
-- **Investment:** Lesson on dividends — Singapore REITs offer 4–6% tax-free yields
-- **Music:** Hyperpop/Espresso-core trending; AI cover series of trending songs recommended
-- **Software:** GitHub Projects V3 + Actions CI runner dashboard portfolio project idea
-- **Upgrade:** MiniMax-M2.7 still best value — no upgrade needed
-- **Legal:** PDPA overhaul — penalties up to 10% of turnover for serious breaches
+## 💡 Business Opportunity
+AI video editing demand is exploding — **329% YoY growth** on Upwork. Entry barrier has dropped with CapCut, Descript, Runway. Freelance rates: $50–$150/hr. Combine with your existing video pipeline for a faceless YouTube + freelance combo.
 
-*Generated 2026-04-25 at 12:00 PM SGT*
+---
+
+## 🎵 Music Angle
+Lo-fi + dark synthwave still dominate TikTok/Spotify. Suno in legal gray zone — Udio has clearer commercial path (signed with Universal). Best ROI: sync licensing via Pond5/Musicbed. Build a micro-sync library of 10 hyper-niche tracks.
+
+---
+
+## 💻 Dev Highlight
+GitNexus (32k stars) — zero-server code intelligence engine that runs entirely in-browser. Drop a repo, get an interactive knowledge graph + Graph RAG Agent. Also VibeVoice from Microsoft (45k stars) is the frontier voice AI gaining serious traction.
+
+---
+
+## ⚖️ Legal Note (Singapore)
+PDPA reminder: If you collect emails or personal data for newsletters/courses, you must tell users why, let them unsubscribe, and notify breaches within 3 days. Fines up to S$1M per breach. CSA cybersecurity guidelines apply.
+
+---
+
+*Generated 2026-04-30 by news_agent | 7 reports compiled*

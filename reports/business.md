@@ -1,48 +1,45 @@
-# 💰 BUSINESS REPORT — 2026-04-29
+# 💰 BUSINESS REPORT — 2026-05-01
 
 ---
 
-## 🔥 Hottest right now: **AI Video Editing Freelancing**
+## 🔥 Hottest right now: **AI Video Editing Freelancing (329% YoY growth)**
 
-Upwork just reported **329% YoY growth** in AI video editing gigs. That's not a typo. Clients are desperate — creators need short-form clips for TikTok/Shorts, businesses need product videos, and nobody has time to learn the tools themselves. The entry barrier is lower than you think: CapCut, Descript, and Runway have made AI video editing accessible to anyone who'll actually *learn* them properly.
+Verified from Upwork's 2026 report: AI video editing is the #1 fastest-growing freelance skill at **329% year-over-year growth**. Not a trend — a tsunami. Clients are drowning in short-form content needs (TikTok, YouTube Shorts, Instagram Reels) and the tools (Runway, CapCut Pro, Descript) are finally good enough that one person can deliver professional-grade work in half the time. The demand is confirmed and real.
 
 ---
 
 ## 📈 3 methods worth exploring
 
-**• AI Video Editing Agency**
-Build a small operation offering "full-service video production for creators & brands." Use AI tools (Runway, CapCut Pro, Descript) to cut turnaround time by 70%. Charge $500–$2,000/month per client retainer. Target: YouTubers with 10K–100K subscribers who hate editing. Upwork demand is exploding — 329% growth.
+**• AI Video Editing Agency (Freelance route)**
+Use AI tools (Runway, CapCut Pro, Descript) to offer full-service video editing at 70% speed. Charge $500–$2,000/month retainer per client, or $50–$150/hour on Upwork. Target: YouTubers (10K–100K subs), course creators, e-commerce brands. With A's Mac mini + existing video pipeline, this is a natural extension.
 **Income potential:** $3K–$10K/month with 2–4 steady clients.
 
-**• Vertical Micro-SaaS (Hyper-Niche Tool)**
-Build a focused, no-code tool for ONE specific audience. IndieRadar highlights podcast clipping tools, compliance automation, and niche CRM tools as top opportunities. The formula: find a tight community (Reddit is your research ground), identify their specific pain, ship a simple tool with a $29–$99/month subscription. Market is projected at $59.6B by 2030.
+**• Micro SaaS (Ship in under 30 days, $0–$2K to start)**
+Solo-founder SaaS is exploding — vibe coding + AI lets one person ship a real product fast. Fresh data from Dodo Payments (April 2026) shows validated ideas across AI tools, dev tools, and marketing. The formula: solve ONE specific pain for ONE tight community, charge $19–$99/month, keep it lean. A's Mac mini + coding setup is built for this.
 **Income potential:** $1K–$50K/month depending on niche and execution.
 
-**• AI Content Agency (Ghost-Write for LinkedIn/Thought Leaders)**
-Many executives will pay $500–$1,500/month to have someone ghostwrite their LinkedIn posts using AI. You're not writing manually — you're using AI to draft, then customizing to their voice and brand. Low cost to start, high perceived value.
+**• Ghost-Write LinkedIn/Thought Leadership Content**
+Executives, founders, and professionals pay $500–$1,500/month to have their LinkedIn presence managed using AI. You're not writing manually — use AI to draft in their voice, customize to their brand. Low cost, high perceived value, works entirely remote.
 **Income potential:** $1.5K–$5K/month part-time.
 
 ---
 
 ## 💡 Best fit for A
 
-**AI Video Editing + Faceless YouTube Pipeline** — Combine your existing video infrastructure (Mac mini, Pexels access, TTS voice) with the 329% demand surge. A can take the AI video pipeline already set up, add AI video editing skills (Descript/Runway), and either:
-- Offer freelance AI video editing on Upwork ($50–$150/hr)
-- OR produce faceless YouTube Shorts content for the monetization route
+**Ship a Micro SaaS this month** — A has the Mac mini, the AI tools, the vibe-coding setup. The data shows solo founders are winning with hyper-specific tools: AI Contract Risk Scanner ($29/mo, targets freelancers who sign client deals), AI Meeting Brief Generator ($19–29/mo, targets AEs and consultants), or an AI Changelog Writer ($15/mo, targets indie devs).
 
-The video pipeline A already has (stock footage + TTS + moviepy) is the foundation. Learning Descript or Runway well enough to do AI video editing gigs would take 1–2 weeks of focused practice.
+The play: find ONE tight community (Reddit, Discord, indie hacker forums), identify their specific pain, ship a simple tool fast with no-code/low-code. The video pipeline A already built proves they can execute. The Micro SaaS route turns that execution ability into recurring revenue.
 
 ---
 
 ## ✅ Do this today (< 30 min)
 
-**Spend 20 minutes on Upwork searching "AI video editing" and "video editing" jobs.** Look at what clients are actually posting — what are they struggling with? What do they need? Take screenshots of 3–5 job postings that interest you. This gives A a real picture of what's actually being hired for right now.
+**Spend 25 minutes on Reddit.** Find one community A knows well (or wants to serve). Search for posts where people complain about a specific, recurring workflow problem — something they currently solve badly with spreadsheets, templates, or manual work. Screenshot 3–5 pain points. That's the validation data for a Micro SaaS idea. Pick the one that feels most solveable in under 30 days.
 
 ---
 
 ## 🔗 Sources
 
-- Upwork In-Demand Skills 2026 Report: https://www.upwork.com/research/in-demand-skills-2026
-- IndieRadar Micro-SaaS Ideas: https://indieradar.app/blog/profitable-ai-micro-saas-ideas-2026
-- Forbes Creator Monetization: https://www.forbes.com/sites/meggenharris/2026/03/25/7-of-the-most-profitable-platforms-for-creators-in-2026--how-they-pay/
-- BestJobSearchApps Freelance Skills: https://bestjobsearchapps.com/articles/en/most-indemand-freelance-skills-for-2026-ai-and-data-dominate-upwork-and-fiverr
+- Upwork In-Demand Skills 2026: https://www.upwork.com/research/in-demand-skills-2026
+- Dodo Payments — 30 Micro SaaS Ideas 2026: https://dodopayments.com/blogs/micro-saas-ideas-2026
+- BestJobSearchApps — In-Demand Freelance Skills: https://bestjobsearchapps.com/articles/en/most-indemand-freelance-skills-for-2026-ai-and-data-dominate-upwork-and-fiverr

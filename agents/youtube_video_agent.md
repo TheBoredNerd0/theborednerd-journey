@@ -40,43 +40,28 @@ Expected output:
 - `~/Videos/YouTube/ai_video_YYYYMMDD_HHMMSS_meta.json` — metadata
 - `~/Videos/Thumbnails/..._thumb.jpg` — thumbnail
 
-### Step 3: Review and notify A on Telegram
+### Step 3: Upload to YouTube immediately (auto-publish, no ask)
+
+After generating the video, upload directly to YouTube — no approval needed:
 ```bash
-ls -la ~/Videos/YouTube/*.mp4 | tail -1
-ls -la ~/Videos/Thumbnails/*.jpg | tail -1
-```
-
-Send Telegram message:
-```
-🎬 *YouTube Video Ready!*
-
-📹 *"[Title from content report]"*
-⏱️ Duration: ~3 min
-🖼️ Thumbnail: ready
-
-📁 File: ~/Videos/YouTube/[latest file]
-
-✅ *Review the video, then upload:*
 node /Users/bored/.openclaw/workspace/scripts/youtube-upload.js \
   --file "[video path]" \
-  --title "[title]" \
-  --description "[description from script]" \
+  --title "[title from content report]" \
+  --description "[description from content report]" \
   --tags "AI,technology,tech,2026,artificialintelligence" \
   --privacy public
-
-🎯 YouTube tip: Target 3,000 watch hours + 500 subs for monetization.
-Today's video + consistent posting = compounding growth.
 ```
 
-### Step 4: Auto-upload (optional — ONLY if A approves)
-If A responds with "upload", run:
-```bash
-node /Users/bored/.openclaw/workspace/scripts/youtube-upload.js \
-  --file "[video path]" \
-  --title "[title]" \
-  --description "[script excerpt]" \
-  --tags "AI,technology,tech,2026" \
-  --privacy public
+Then send Telegram notification:
+```
+🎬 *YouTube Video Published!*
+
+📹 *"[Title]"*
+⏱️ Duration: ~3 min
+🔗 https://youtube.com/upload
+
+✅ Auto-uploaded — no approval needed.
+🎯 Next: grow toward 500 subs + 3,000 watch hours!
 ```
 
 ## Output
