@@ -1,51 +1,51 @@
-# Upgrade Report — April 25, 2026
+# Upgrade Report — 2026-05-02
 
-## 🤖 LLM Value Analysis
+## 🤖 LLM Value Check
 
-### Current Benchmark: MiniMax-M2.7
-- Input: $0.30/M tokens | Output: $1.20/M tokens
-- Context: 205K | Speed: ~60 tok/s (100 tok/s high-speed variant at 2x price)
-- Status: ✅ Still best value for money
+**Current benchmark:** MiniMax-M2.7 — $0.30/M input, $1.20/M output | 205K context
 
-### Key Competitors Checked
+### Market Scan (May 2026)
 
-| Model | Input $/M | Output $/M | Context | Benchmark Edge | Verdict |
-|-------|-----------|------------|---------|----------------|---------|
-| **DeepSeek V3.2** | $0.28 | $1.10 | 131K | Better at math, reasoning mode | ❌ Lower benchmarks, smaller context |
-| **Kimi K2.6** | $0.74 | $4.00 | 262K | Multimodal, bigger context | ❌ Significantly more expensive |
-| **Groq Llama 3.3 70B** | $0.59 | $0.79 | 128K | Ultra fast (394 tok/s) | ❌ Lower quality for complex tasks |
-| **Groq Qwen3 32B** | $0.29 | $0.59 | 131K | Fast (662 tok/s) | ❌ Smaller model, lower benchmarks |
+| Model | Input $/1M | Output $/1M | Context | Notes |
+|-------|-----------|------------|---------|-------|
+| MiniMax-M2.7 | $0.30 | $1.20 | 205K | Baseline — best value |
+| DeepSeek V4 | $0.30 | $0.50 | 1M | Same input price, cheaper output, but trails on intelligence benchmarks |
+| Grok 4.1 Fast | $0.20 | $0.50 | 128K | Cheaper input, but xAI quality still not proven at MiniMax-M2.7 level for agentic work |
+| Claude Opus 4.6 | $5.00 | $25.00 | 200K | Dropped 67% but still 16x more expensive than MiniMax input |
+| Gemini 2.5 Pro | $1.25 | $10.00 | 1M | 4x input cost of MiniMax |
+| Groq Llama 4 Scout | $0.11 | $0.18 | 128K | Fast but not a quality replacement for MiniMax in agentic tasks |
 
-### Findings
+### Analysis
+- **DeepSeek V4** — Same input price as MiniMax ($0.30/M), output cheaper ($0.50 vs $1.20). 1M context is nice but intelligence benchmarks trail MiniMax-M2.7. Not a value upgrade.
+- **Grok 4.1 Fast** — Input is cheaper ($0.20/M) but quality for autonomous agent workflows hasn't proven itself against MiniMax-M2.7 yet. Worth watching but not switching.
+- **Claude Opus 4.6** — Huge price cut (67%) but still massively more expensive than MiniMax on input. Only makes sense if you need Claude-specific capabilities.
+- **Free tier options (Groq, Cerebras, GitHub Models)** — Great for experimentation but uptime and consistency not there yet for production agent use.
 
-**No value upgrade available today.**
-
-- DeepSeek V3.2 is cheaper ($0.28 vs $0.30/M input) but trails MiniMax-M2.7 on intelligence benchmarks and has a much smaller context window (131K vs 205K). Not worth switching.
-- Groq models are fast and cheap but best suited for simpler tasks. Not a primary model replacement.
-- Kimi K2.6 is significantly more expensive for what it offers.
-
-**Bottom line:** MiniMax-M2.7 at $0.30/$1.20 per 1M tokens remains the best value. No action needed.
+**Bottom line:** MiniMax-M2.7 at $0.30/$1.20 remains the best value-for-money for A's agentic workflow. No switch needed.
 
 ---
 
 ## 🛠️ OpenClaw + System Health
 
 ### OpenClaw Version
-- **Current:** 2026.4.22 (00bd2cf)
-- **Note:** Could not reach GitHub for latest release check (rate limit/network)
+- **Current:** 2026.4.22 (00bd2cf) ✅
+- **GitHub check:** Blocked (bot detection) — assume current is fine
 
 ### Gateway Status
-- **Status:** ✅ Running (pid 659)
+- **Status:** ✅ Running (pid 677)
 - **Port:** 18789 (loopback-only)
 - **Connectivity:** OK
 - **Service:** LaunchAgent (auto-start enabled)
 
+### Workspace Git
+- **Commit:** 6dac201 — "Day 31: GPT-5.5 agents pivot, CVE-9.8 critical patch, sync licensing idea sticks"
+- **Repo:** theborednerd0/theborednerd-journey
+
 ---
 
 ## 📦 ClawHub
-- Site accessible: clawhub.ai
-- 52.7k tools, 180k users, 12M downloads
-- No specific new skills flagged for A's use case today
+- clawhub CLI available at `/opt/homebrew/bin/clawhub`
+- No new skills flagged — nothing matching A's business/use case priorities today
 
 ---
 

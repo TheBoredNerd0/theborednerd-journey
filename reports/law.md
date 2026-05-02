@@ -1,26 +1,30 @@
-⚖️ LEGAL CORNER — 29 April 2026
+⚖️ LEGAL CORNER — May 2, 2026
 
-📋 Today's topic: Data Privacy & Consumer Protection (PDPA)
+📋 Today's topic: AI Content Copyright — Music, Images, Video & Text
 
 🔍 What you need to know:
-The Personal Data Protection Act (PDPA) governs how you collect, use, and disclose personal data in Singapore — whether you're running a newsletter, selling a course, or managing a YouTube audience. Even if a user voluntarily gives you their email or name, you still have obligations around keeping that data safe and telling them what you're using it for. AI tools you use (chatbots, email handlers, analytics) that touch personal data are also in scope.
+AI-generated content sits in a legal grey zone globally. No jurisdiction — including Singapore — has fully settled whether AI outputs are copyrightable. The safest assumption: if you can prove significant human creative input (prompt design, editing, arrangement), you have a stronger copyright claim. Pure "type a prompt, download, post" gives you weak or no protection.
 
 ✅ You're fine if you:
-• Tell people why you're collecting their data (e.g., "I'll send you product updates")
-• Only use their data for the stated purpose
-• Let people unsubscribe or request deletion of their data
-• Use trusted AI platforms with their own PDPA-compliant policies
+• Use AI as a creative tool and substantially edit/arrange the output yourself
+• License music properly — even AI music tools often require you to hold rights to input content
+• Use stock footage you have commercial rights to, then overlay AI voiceover and edits
+• Document your creative process (screenshots of prompts, version history)
 
 ⚠️ Watch out for:
-• Collecting more data than you actually need
-• Storing personal data in unsecured places (plain text files, shared drives)
-• Using AI tools that may store or train on user queries without checking their data policies
-• Failing to notify users of a data breach within 3 days of discovering it
+• Claiming full copyright on AI-generated images/videos without human modification — courts in US, UK, EU have generally rejected this
+• Using other artists' styles as AI prompts — several class actions still active (Midjourney, Stable Diffusion)
+• Music AI that trains on copyrighted tracks — platforms like Suno/Udio have been sued by major labels; check their latest ToS
+• Commercial use of outputs from free-tier AI tools that retain rights (some ToSs claim license to outputs)
+• SG: Copyright Act (Cap. 63) protects "original works of fiction or non-fiction" — AI authorship is not recognised; the human arranger/composer must be identifiable
 
-🇸🇬 Singapore note: Under the PDPA, failing to protect personal data can result in fines up to S$1 million per breach. The PDPC has been actively investigating companies — including small ones — for data breaches.
+🇸🇬 Singapore note: No specific AI copyright law yet. The Copyright Act protects human-authored works. If you're composing with AI tools, keep records of your creative decisions. IRAS may also classify AI-generated income differently — keep your process documentation clean.
 
 🔗 Sources:
-• PDPC Overview: https://www.pdpc.gov.sg/Overview-of-PDPA
-• PDPA Full Text: https://sso.agc.gov.sg/Act/PDPA2012
-• Consumer Protection (Fair Trading Act): https://www.mti.gov.sg/legislation/consumer-protection-fair-trading-act
-• CSA Cybersecurity Guidelines: https://www.csa.gov.sg
+• US Copyright Office AI Policy: https://www.copyright.gov/ai/
+• UK IPO AI Consultation: https://www.gov.uk/government/consultations/artificial-intelligence-and-intellectual-property
+• SG Copyright Act (Cap. 63): https://sso.agc.gov.sg/Act/CopyrightAct1987
+• ⚠️ Note: Web search was blocked at time of writing — verify current platform ToS changes on Suno/Udio/Midjourney directly before publishing
+
+---
+*Law_agent — next update May 3, 2026*
