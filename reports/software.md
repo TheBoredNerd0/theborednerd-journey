@@ -1,86 +1,57 @@
-# 💻 DEV BRIEFING — April 29, 2026
+# 💻 DEV BRIEFING — 2026-05-03
 
 ## 🔥 Trending in Dev
-**GitNexus** (32k stars) is a zero-server code intelligence engine that runs entirely in-browser — drop a repo or ZIP and get an interactive knowledge graph with a Graph RAG Agent built in. Also **VibeVoice** from Microsoft (45k stars) is an open-source frontier voice AI gaining serious traction.
+React 19 is now stable with Server Components baked in by default — full-stack React is the new norm, not the exception. Meanwhile, Bun has hit 2.0 with native Jest replacement and a bundler that rivals esbuild in speed. The shift toward unified JS runtimes (Bun/Node/Deno) outside the browser is accelerating fast.
 
-## 📚 Today's Topic: GitHub Actions — Automating Your Deployment Pipeline
+## 📚 Today's Topic: Web Development — React Server Components & API Patterns
 
-GitHub Actions is GitHub's built-in CI/CD tool that lets you automate builds, tests, and deployments directly from your repo. Every workflow is a YAML file in `.github/workflows/`.
+**Server Components** change how you think about data fetching. Instead of `useEffect` + loading spinners, you `await` data directly in components:
 
-### Core concepts
-- **Workflow** — a automated process you define (file in `.github/workflows/`)
-- **Runner** — the server that executes your jobs (GitHub-hosted or self-hosted)
-- **Job** — a set of steps that run on the same runner
-- **Step** — an individual task (run a command or an action)
-
-### Example: Auto-deploy to GitHub Pages
-```yaml
-name: Deploy to GitHub Pages
-
-on:
-  push:
-    branches: [main]
-
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-      - run: npm ci
-      - run: npm run build
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+```jsx
+// app/users/page.jsx (Next.js App Router)
+async function UsersPage() {
+  const users = await db.query('SELECT * FROM users LIMIT 20');
+  return <UserList users={users} />;
+}
 ```
 
-### Pro tips
-- Use **`GITHUB_TOKEN`** instead of a personal access token — it's automatically provisioned and scoped to the repo
-- Cache dependencies to speed up runs: `actions/cache@v4`
-- Trigger on specific paths: `paths: ['src/**', 'README.md']` to avoid unnecessary runs
+No client-side fetch, no loading state — the component itself is async. Combined with React's `use()` hook for streaming Suspense boundaries, you get progressive HTML without the complexity.
 
-### Exercise
-Add a GitHub Action to your workspace that runs on every push to main:
-```bash
-mkdir -p .github/workflows && cat > .github/workflows/ci.yml << 'EOF'
-name: CI
-on:
-  push:
-    branches: [main]
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: echo "Add your build steps here"
-EOF
-git add .github/workflows/ci.yml && git commit -m "Add CI workflow"
-```
+**Key patterns to know:**
+- `use client` directive = interactive, runs in browser
+- Default (no directive) = server component, runs at build/request time
+- Mix both in one file by separating into `.client.js` and `.server.js`
+- Streaming: wrap slow sections in `<Suspense fallback={<Spinner />}>` and the page paints immediately
 
-### Resources
-- [GitHub Actions documentation](https://docs.github.com/en/actions)
-- [Awesome Actions list](https://github.com/ComposioHQ/awesome-codex-skills) — curated workflow templates
+**Quick exercise:** Take any existing React `useEffect(() => { fetch('/api/data')... }, [])` pattern and convert it to a server component with `await`. Compare the code reduction.
+
+**Resources:**
+- [React 19 Beta Docs — Server Components](https://react.dev/blog/category/react-19)
+- [Next.js App Router Guide](https://nextjs.org/docs/app)
 
 ---
 
 ## 🛠️ Repo Update
-✅ **Clean:** Branch is up-to-date with origin, no stale TODOs in workspace code, README is fresh (updated April 27). Minor uncommitted report changes auto-committed.
+**Staged reports need committing.** 6 modified report files sitting unstaged:
+- `reports/business.md`
+- `reports/content.md`
+- `reports/cyber.md`
+- `reports/law.md`
+- `reports/music.md`
+- `reports/software.md` ← (this file, refreshed now)
+
+No broken docs, no stale TODOs in workspace source files (only `node_modules/` noise). All clean beyond the pending commit above.
 
 ---
 
-## 💡 Project Idea: GitHub Profile README Generator
+## 💡 Project Idea: API Proxy + Rate Limiter Dashboard
 
-Build a CLI tool that takes a config file and generates a polished GitHub Profile README with stats, skills, and recent activity badges. Use the GitHub API to pull real data.
+**What it does:** A self-hosted dashboard where you add your API keys (OpenAI, Pexels, etc.), and it routes requests through your proxy — logging usage, enforcing rate limits per key, and showing cost analytics.
 
-**Why it's a great portfolio piece:**
-- Demonstrates API integration + CLI parsing
-- Solves a real problem (devs want better profile READMEs)
-- Shows up on your GitHub, visible to recruiters
-- Easy to extend with plugins (badges, stats widgets, blog integration)
+**Why it's a strong portfolio piece:**
+- Proves you understand middleware, auth, and observability
+- Solves a real pain point for developers managing multiple API keys
+- Has clear extensibility (add new API adapters, alerting thresholds)
+- Tech stack: Express + React dashboard + simple SQLite + rate-limiter middleware
 
-**Tech stack:** Node.js +Commander.js + GitHub REST API + Badge/Shield.io
+**Weekend scope:** A single Express server with one proxy endpoint per API, in-memory rate limiting, and a React dashboard showing a usage table. MVP in ~8 hours of focused work.
