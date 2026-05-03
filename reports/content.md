@@ -1,120 +1,102 @@
-# CONTENT PLAN — 2026-04-29
+# 🎬 CONTENT PLAN — 2026-05-04
 
-## Brand Voice: TheBoredNerd0
-Documenting the AI journey as a regular person. No corporate polish. Teach like you're showing a friend. Reference the agents, what broke, what surprised us.
+## Today's Angle
+GPT-5 just launched with autonomous agent capabilities. Apple Intelligence 2 can now control every app on your device. This is the biggest AI week of 2026 so far — perfect for educational content that explains what this means for regular people.
 
 ---
 
 ## 📱 Short #1 (TikTok/Reels/Shorts)
 
-**Title:** I Let AI Run My Whole Morning And It Didn't Mess Up Once
-
-**Hook:** "I handed my entire morning to an AI agent and waited for it to fail. It didn't."
-
-**Structure (3 beats):**
-1. **Set the stakes** — Show the chaos of a normal morning (emails, calendar, reminders)
-2. **The handoff** — Drop in a screen recording of setting up an AI agent to handle it all
-3. **The verdict** — AI handled it. What this actually means for how we'll work
-
-**CTA:** "If you haven't tried an AI agent yet, you're already behind. Drop a 🔥 if you want part 2."
+**Title:** AI can now do your job while you sleep
+**Hook:** "OpenAI just launched GPT-5 and it's honestly scary how good it is."
+**Structure:**
+- Beat 1: GPT-5 can browse the web, remember stuff across sessions, and complete tasks on its own — no human needed per step
+- Beat 2: Apple went further — their new AI can book your flight, update your calendar, AND email confirmation automatically
+- Beat 3: The people winning right now aren't fighting AI — they're using it as their 24/7 employee
+**CTA:** "Follow for daily AI breakdowns — no jargon, just what matters"
 
 ---
 
 ## 📱 Short #2
 
-**Title:** GPT-5.5 Has A Secret Mode You Haven't Used
-
-**Hook:** "Everyone's talking about GPT-5.5 but nobody's showing you THIS trick."
-
-**Structure (3 beats):**
-1. **The mystery** — "Everyone's paid $20 for ChatGPT Plus. Most people only use 10% of it."
-2. **The reveal** — Quick demo of 1 underutilized feature (agent mode / custom instructions / memory)
-3. **The hook** — "I'm building my whole workflow around this. Link in bio for the template."
-
-**CTA:** "Save this. Share it with the friend who's still copying prompts one by one."
+**Title:** Why Tunecore blocked my AI music (and what I switched to)
+**Hook:** "So Tunecore just rejected my entire music catalog. Here's what happened."
+**Structure:**
+- Beat 1: Uploaded 12 tracks to TuneCore — all rejected, 99% AI detection
+- Beat 2: They flagged anything from Suno. The music industry is cracking down hard.
+- Beat 3: Switched to Udio — licensed by Universal, Warner, Merlin. Uploaded same tracks, all went through.
+**CTA:** "Drop a 🔥 if you want a full tutorial on uploading AI music to Udio"
 
 ---
 
 ## 🎥 YouTube Video
 
-**Title:** The AI Agent Revolution Is HERE (And Most People Haven't Noticed)
-
-**Thumbnail:** Close-up of a robot hand reaching for a calendar, split screen — left side shows chaos (missed emails, crossed-out tasks), right side shows calm productivity (green checkmarks, done list). Bold white text overlay: "AI TOOK MY MEETINGS." Red arrow pointing to right.
-
-**Outline (5 sections):**
-
-1. **Opening — "I almost missed this" (0:00-0:45)**
-   - My agents found something interesting this week: AI agents are suddenly everywhere
-   - I didn't believe the hype until I tried it myself
-   - This video is what I wish someone told me 6 months ago
-
-2. **What even IS an AI agent? (0:45-3:00)**
-   - Plain English explanation — not the techbro version
-   - Analogy: It's like a really fast, really diligent intern who never sleeps
-   - Demo: Show my setup (simple: calendar + email + task agent)
-
-3. **The April 2026 AI Drop — What Matters (3:00-7:00)**
-   - GPT-5.5: The "super app" pivot — what it means for you
-   - Google Gemma 4 open source: why this changes everything for developers
-   - Claude Mythos 5 (Anthropic): the 1M token context is wild
-   - Don't overwhelm the audience — give them the 3 things that actually matter
-
-4. **I Tried It For A Week — Real Results (7:00-10:00)**
-   - Before/after: my morning routine, emails handled, tasks delegated
-   - What worked: scheduling, research summaries, draft writing
-   - What didn't: anything requiring actual judgment calls
-   - Honest verdict: it's not replacing me, it's buying me time
-
-5. **How To Start TODAY (10:00-12:00)**
-   - Step 1: Pick ONE task (not your whole job)
-   - Step 2: Use a simple agent (show ChatGPT agent mode or similar)
-   - Step 3: Review, adjust, repeat
-   - My template is linked below — start there, customize later
+**Title:** GPT-5 + Apple Intelligence 2 — I Tested Both So You Don't Have To
+**Thumbnail:** Split screen — left shows ChatGPT running autonomously, right shows iPhone controlling multiple apps. Bold text: "I TRIED BOTH"
+**Outline:**
+1. **Intro (0:00)** — "Two massive AI releases in 48 hours. Here's what actually changed."
+2. **What GPT-5 Actually Does (1:30)** — Agentic reasoning, memory across sessions, real web browsing. Demo: ask it to research + book something
+3. **Apple Intelligence 2 Deep Dive (4:00)** — Cross-app automation. The privacy concern nobody's talking about.
+4. **The Honest Verdict (7:00)** — Are these actually useful for regular people? My take after 48 hours of testing
+5. **What This Means For You (9:30)** — How to use these tools today, what jobs are at risk, what new opportunities exist
 
 ---
 
-## ✍️ Instagram / TikTok Caption Posts
+## ✍️ Instagram Post 1
 
-**Post 1:**
-> Everyone said AI would replace jobs.
->
-> Six months in, I think they got it wrong.
->
-> AI didn't replace my job. It replaced the PARTS of my job that made me want to quit.
->
-> The boring stuff. The repetitive stuff. The stuff that ate my mornings.
->
-> Now I do the interesting work. Every single day.
->
-> That wasn't the promise they sold us.
-> But it's the one I'm actually living.
->
-> #AI #ArtificialIntelligence #Tech #Productivity #BuildInPublic #TheBoredNerd0 #AIAgent #ChatGPT #FutureOfWork #AITools
+**Caption:**
+The AI news this week is actually insane 🤯
 
----
+OpenAI released GPT-5 with autonomous task completion. Apple gave their AI control of every app on your phone.
 
-**Post 2:**
-> Hot take: the best AI tool isn't a chatbot.
->
-> It's the one that works while you sleep.
->
-> (Agents. That's the answer. Agents.)
->
-> #AI #AIAgents #TechTrends #TheBoredNerd0 #MachineLearning #OpenAI #Anthropic #GoogleAI #GPT5 #ProductivityHacks
+We went from "AI answers questions" to "AI does entire workflows while you sleep."
+
+This is the shift everyone was predicting but few believed would happen this fast.
+
+The people who will win in this new era aren't the ones who learned to code — they're the ones who learned to delegate.
+
+What's the one task you'd automate first if you had an AI that actually worked? 👇
+
+**Hashtags:** #AI #ChatGPT #AppleIntelligence #AIRevolution #TechNews #FutureOfWork #BuildInPublic #TheBoredNerd0
 
 ---
 
-## ⏰ Best Posting Times (GMT+8)
+## ✍️ Instagram Post 2
+
+**Caption:**
+Hot take: AI workflow automation consulting is the highest-paying skill you can learn right now.
+
+Businesses are paying $75–$200/hr to automate the stuff that eats up their team's time.
+
+No degree required. No code required. Just understand AI tools + know how to connect them.
+
+The barrier to entry is literally a Zapier account and a willingness to learn.
+
+I'm building my own AI consulting skills right now — documenting the whole journey here.
+
+Following along = learning faster than if you tried alone.
+
+**Hashtags:** #AIbusiness #SideHustle #AIAutomation #Zapier #MakeAutomation #WorkSmarter #BuildInPublic #TheBoredNerd0
+
+---
+
+## ⏰ Best Times (GMT+8)
 
 | Platform | Best Time | Why |
-|---|---|---|
-| TikTok | 12:00 PM, 7:00 PM | Lunch break scroll, evening wind-down |
-| Instagram Reels | 11:00 AM, 8:00 PM | Same pattern, slightly earlier |
-| YouTube Shorts | 2:00 PM, 9:00 PM | Afternoon algorithm boost |
-| YouTube Long | Saturday 3:00 PM, Sunday 10:00 AM | Weekend watch sessions |
-| Twitter/X | 8:00 AM, 9:00 PM | Commute and post-dinner |
+|----------|-----------|-----|
+| TikTok | 12:00–13:00 | Lunch break scroll |
+| Instagram Reels | 18:00–20:00 | Evening wind-down |
+| YouTube Shorts | 07:00–09:00 | Morning commute |
+| YouTube Long | Sunday 14:00–16:00 | Peak viewership window |
 
 ---
 
-## 📌 Today's Angle for TheBoredNerd0
-The April 2026 AI drops are BIG but most people don't understand what an "AI agent" actually is. Your edge: explain it like a friend, show your actual setup, give real results not hype. The build-in-public angle is your differentiator — you're LIVING this, not just reporting it.
+## 🎯 Priority Actions for A
+
+1. **Post Short #1 today** — GPT-5/Apple news is hot right now, catches algorithm momentum
+2. **Short #2 is evergreen** — post whenever, AI music creators will find it via search
+3. **YouTube video this week** — the GPT-5 + Apple comparison is fresh, good SEO timing
+4. **Story series** — "Testing GPT-5 for 24 hours" build-in-public angle drives engagement
+
+---
+*Generated by content_agent · 2026-05-04 06:54 SGT*
