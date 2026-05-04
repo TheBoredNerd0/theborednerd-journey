@@ -1,57 +1,70 @@
-# 💻 DEV BRIEFING — 2026-05-03
+# 💻 DEV BRIEFING — May 5, 2026
 
-## 🔥 Trending in Dev
-React 19 is now stable with Server Components baked in by default — full-stack React is the new norm, not the exception. Meanwhile, Bun has hit 2.0 with native Jest replacement and a bundler that rivals esbuild in speed. The shift toward unified JS runtimes (Bun/Node/Deno) outside the browser is accelerating fast.
+🔥 **Trending in dev:**
+Bun 2.0's native SQLite and key-value store are turning heads — devs are replacing entire Express + SQLite stacks with a single Bun process. Meanwhile, the **Web Components revival** is real: with frameworks getting heavier (looking at you, Next.js bundle), vanilla web components + signals are back as a lean alternative for micro-frontends.
 
-## 📚 Today's Topic: Web Development — React Server Components & API Patterns
+📚 **Today's topic: Web Development — Signals & Reactive Primitives**
 
-**Server Components** change how you think about data fetching. Instead of `useEffect` + loading spinners, you `await` data directly in components:
+**What are Signals?**
+Signals are reactive primitives — small, self-contained state containers that automatically track dependencies and update only what needs updating. Think of them as `useState` but without React. When a signal changes, anything that reads it re-computes automatically.
 
-```jsx
-// app/users/page.jsx (Next.js App Router)
-async function UsersPage() {
-  const users = await db.query('SELECT * FROM users LIMIT 20');
-  return <UserList users={users} />;
+**Why it matters:**
+- No virtual DOM diffing — surgical DOM updates only
+- Framework-agnostic: Preact, Solid, Vue, Svelte, even vanilla JS all support signals
+- Way smaller bundles than full React for interactive UIs
+- Fine-grained reactivity = better performance by default
+
+**Quick example (vanilla JS with @preact/signals):**
+```js
+import { signal, computed } from '@preact/signals'
+
+const count = signal(0)
+const doubled = computed(() => count.value * 2)
+
+function render() {
+  document.getElementById('app').innerText =
+    `${count} × 2 = ${doubled}`
+}
+
+// Auto-updates when count changes — no manual subscriber lists
+document.getElementById('btn').onclick = () => count.value++
+```
+
+**vs traditional approach:**
+```js
+// React — whole component re-runs on state change
+function Counter() {
+  const [count, setCount] = useState(0)
+  return (
+    <div>{count * 2}</div>
+    <button onClick={() => setCount(c => c + 1)} />
+  )
 }
 ```
 
-No client-side fetch, no loading state — the component itself is async. Combined with React's `use()` hook for streaming Suspense boundaries, you get progressive HTML without the complexity.
+**Exercise for you:**
+Pick a small vanilla JS page (a form, a list, a counter) and rewrite the state with `@preact/signals`. Compare the bundle size and re-render behaviour in DevTools.
 
-**Key patterns to know:**
-- `use client` directive = interactive, runs in browser
-- Default (no directive) = server component, runs at build/request time
-- Mix both in one file by separating into `.client.js` and `.server.js`
-- Streaming: wrap slow sections in `<Suspense fallback={<Spinner />}>` and the page paints immediately
-
-**Quick exercise:** Take any existing React `useEffect(() => { fetch('/api/data')... }, [])` pattern and convert it to a server component with `await`. Compare the code reduction.
-
-**Resources:**
-- [React 19 Beta Docs — Server Components](https://react.dev/blog/category/react-19)
-- [Next.js App Router Guide](https://nextjs.org/docs/app)
+**Resource:**
+→ https://preactjs.com/guide/signals (free, Preact signals docs — works standalone)
 
 ---
 
-## 🛠️ Repo Update
-**Staged reports need committing.** 6 modified report files sitting unstaged:
-- `reports/business.md`
-- `reports/content.md`
-- `reports/cyber.md`
-- `reports/law.md`
-- `reports/music.md`
-- `reports/software.md` ← (this file, refreshed now)
-
-No broken docs, no stale TODOs in workspace source files (only `node_modules/` noise). All clean beyond the pending commit above.
+🛠️ **Repo update:**
+Git status clean — no stale TODOs or broken docs in workspace source files. All source-level comments are intentional. Pending commits across report files ready to be pushed. README and agent specs are current.
 
 ---
 
-## 💡 Project Idea: API Proxy + Rate Limiter Dashboard
+💡 **Project idea: "Signal Board" — Real-time collaborative dashboard for teams**
 
-**What it does:** A self-hosted dashboard where you add your API keys (OpenAI, Pexels, etc.), and it routes requests through your proxy — logging usage, enforcing rate limits per key, and showing cost analytics.
+**What it does:** A shared dashboard where team members can drop reactive widgets (counters, timers, polls, Kanban columns) that update in real-time across all connected browsers via WebSockets. Think "team mood ring" meets project tracker.
 
-**Why it's a strong portfolio piece:**
-- Proves you understand middleware, auth, and observability
-- Solves a real pain point for developers managing multiple API keys
-- Has clear extensibility (add new API adapters, alerting thresholds)
-- Tech stack: Express + React dashboard + simple SQLite + rate-limiter middleware
+**Why it's a great portfolio piece:**
+- Full-stack: WebSocket server + reactive frontend + persistence layer
+- Shows understanding of reactive programming (signals) + real-time sync
+- Concrete use case hiring managers and indie teams will immediately get
+- Easy to extend: auth, drag-and-drop, widget store
 
-**Weekend scope:** A single Express server with one proxy endpoint per API, in-memory rate limiting, and a React dashboard showing a usage table. MVP in ~8 hours of focused work.
+**Stack:** Bun + WebSockets (native) + Preact Signals + SQLite for persistence + vanilla CSS (no framework needed for MVP).
+
+**Start with:** One HTML file with signals for a counter that updates in two browser tabs simultaneously using `BroadcastChannel` API — zero backend needed for the prototype.

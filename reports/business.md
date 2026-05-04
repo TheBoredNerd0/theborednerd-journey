@@ -1,44 +1,27 @@
-# 💰 BUSINESS REPORT — 2026-05-04
+# 💰 BUSINESS REPORT — 2026-05-05
 
-## 🔥 Hottest right now: AI Workflow Automation Consulting
-Upwork's 2026 data shows AI-related freelance work grew 60% YoY, with AI freelancers earning **44% more than the platform average**. Businesses are drowning in manual processes and will pay $75–$200/hr to fix them. This is the highest-paying AI side hustle with near-zero startup cost — just Zapier/Make + ChatGPT + your brain.
+## 🔥 Hottest right now: AI Video Editing + Content Repurposing
 
----
+AI video editing skills are exploding at **329% YoY growth** on freelancing platforms. The combo of AI-generated voiceovers + stock footage + short-form video is the fastest path to monetisation for anyone with a Mac mini and video pipeline already set up.
 
-## 📈 3 Methods Worth Exploring
+## 📈 3 methods worth exploring
 
-**1. AI Automation Consulting (Zapier/Make + ChatGPT)**
-The gap is real: businesses have the tools but no one to integrate them. Real estate agencies, dental offices, e-commerce brands — each has unique workflows that need automation. $2K–$15K per project, $500–$2K/month retainers. Your Mac mini + these tools is all you need.
-**Income potential:** $75–$200/hr, $5K–$15K/month with 3–4 clients
+• **AI Content Repurposing Tool (Micro SaaS)** — Turn one blog/article into tweets, LinkedIn posts, newsletter + video script. Creators hate the repetitive work. $29–$99/month per user. No-code friendly with Bubble or similar. Build once, charge subscription.
 
-**2. AI Content Repurposing Micro SaaS**
-Creators hate manually turning one blog post into 10 tweets + 5 LinkedIn posts + newsletter. Build a tool (no-code, NxCode or similar) that does this automatically. $29–$99/month per user. Target: content creators, affiliate marketers.
-**Income potential:** $500–$5K/mo at 20–100 users
+• **AI Freelancing — Video/Prompt Engineering Niche** — Upwork data shows AI skills demand up 109% YoY. AI video editing up 329%. Your existing pipeline (stock footage + TTS + MoviePy) is a concretely sellable service. Offer "AI faceless video production" on Fiverr/Contra at $50–$150 per video.
 
-**3. AI Prompt Engineering for Enterprise**
-Companies know they should use AI better but their teams write bad prompts. Train teams + build custom GPTs for specific business processes. $200–$500/hr consulting, $2K–$5K per workshop. Zero startup cost — just a ChatGPT subscription and documented expertise.
-**Income potential:** $200–$500/hr
+• **YouTube Shorts Channel — AI News/Tech Digest** — YouTube Shorts pays ~$40–$80 per million views. Pool is split by view share. With your 8:30 AM video agent and AI pipeline, consistent daily AI tech news Shorts can stack subscribers + ad revenue + eventually brand deals. 1M views/month ≈ $40–80 from ads alone, but subscribers open sponsorship doors.
 
----
+## 💡 Best fit for A: Faceless AI Video Service on Fiverr/Contra
 
-## 💡 Best Fit for A
+A already has the full pipeline: Pexels API + macOS TTS voice + MoviePy assembly → finished video. Other freelancers charge $100–$300 for this. A can offer "AI-produced short video content" starting at $75/video or $500/month retainer for 4 videos. Low capital, uses existing tools, scales with time (not much needed per video once pipeline is smooth).
 
-**AI Workflow Automation Consulting** — matches your setup perfectly. You already have the Mac mini, AI tools, and you're building in public. Pick ONE niche (real estate agents, e-commerce sellers, coaches) and automate their repetitive tasks with Zapier/Make + ChatGPT. No code needed, can start this week.
+## ✅ Do this today (< 30 min)
 
----
-
-## ✅ Do This Today (< 30 min)
-
-1. Sign up for a free **Zapier** account (zapier.com)
-2. Complete the **Zapier Foundations** certification (free, ~20 min)
-3. Browse the template gallery — find 3 automation templates relevant to ONE specific niche (e.g., real estate)
-4. This validates whether the niche pain point is real before you pitch anyone
-
----
+**Post on Fiverr + Contra** a gig titled: *"I will create an AI-powered faceless short video for you"* — include 2–3 sample videos you've already made, turnaround time 24h, basic tier at $75, premium at $150. Use A's existing YouTube Shorts as portfolio samples.
 
 ## 🔗 Sources
 
-- Upwork 2026 freelancer earnings report: https://www.upwork.com/research/in-demand-skills-2026
-- GreyJournal — 11 AI Side Hustles That Actually Pay: https://greyjournal.net/hustle/grow/ai-side-hustles-2026/
-- NxCode — 50 Micro SaaS Ideas for 2026: https://www.nxcode.io/resources/news/micro-saas-ideas-2026
-- SelfEmployed — Upwork AI freelance skills demand doubles: https://www.selfemployed.com/news/upwork-ai-freelance-skills-2026/
+- Upwork In-Demand Skills 2026: https://www.upwork.com/research/in-demand-skills-2026
+- 50 Micro SaaS Ideas 2026: https://www.nxcode.io/resources/news/micro-saas-ideas-2026
+- YouTube Shorts vs TikTok Monetisation: https://creatorblade.com/blog/youtube-shorts-vs-tiktok-earnings-2026

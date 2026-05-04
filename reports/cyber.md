@@ -1,62 +1,21 @@
-# 🛡️ Cyber Intel — 2026-05-04
+🛡️ CYBER INTEL — May 5, 2026
 
-## ⚠️ Top Threat Today: CVE-2026-29857 (SonicWall Firewall)
-- **Affected:** SonicWall firewalls (SMA, TZ series) — anyone with unpatched SonicWall VPN/firewall
-- **Severity:** CVSS 9.8 (Critical)
-- **What it does:** Allows bypassing security controls and gaining unauthorized access to restricted services
+⚠️ Top threat today: CVE-2026-41940
+  Affected: cPanel & WHM (1.5M+ servers exposed) — web hosts, agencies, anyone running cPanel
+  Severity: CVSS 9.8 — Critical
 
-🔓 **Active Threat Activity:**
+🔓 Active threat activity:
+A newly identified threat actor is actively exploiting CVE-2026-41940 (cPanel auth bypass, CRLF injection + cookie malformed request) against government/military targets in Southeast Asia and MSPs in the Philippines, Laos, Canada, South Africa, and the US. Exploitation predates the patch — in-the-wild attacks observed since May 2. Patch immediately if you run cPanel/WHM.
 
-**SHADOW-EARTH-053 (China-linked APT):** Active espionage campaign targeting governments in Pakistan, Thailand, Malaysia, India, Myanmar, and Sri Lanka — plus one NATO European government. Group exploits ProxyLogon (CVE-2021-26855) and other N-day Exchange/IIS vulnerabilities, deploys Godzilla web shells and ShadowPad implants via DLL sideloading. If you manage Exchange or firewalls — patch now.
+Meanwhile, ShinyHunters (notorious data broker) has successfully validated their claim of the Canvas LMS breach — Instructure (Canvas parent) confirmed the breach. Student/instructor data potentially exposed. Check haveibeenpwned if you have a Canvas account.
 
-**Cordial Spider + Snarky Spider:** Two cybercrime groups conducting rapid SaaS extortion using vishing (voice phishing) + adversary-in-the-middle (AiTM) pages to steal SSO credentials. They're hitting SaaS apps directly with minimal trace. Watch out for unexpected "SSO verification" pages.
+🔧 Tool/technique trending:
+CRLF injection (HTTP response splitting) is resurfacing as an exploitation vector — CVE-2026-41940 chains it with session cache manipulation for auth bypass. Community discussion on X/R-sec is heating up around input validation gaps in web hosting panels.
 
-🔧 **Tool/Technique Trending:**
-**Bluekit phishing kit** — New AI-assisted phishing kit in development that automates domain registration and uses AI to generate convincing lures. AI is making phishing more accessible to low-skill actors. Expect to see this in the wild soon.
+📚 Career path — Networking fundamentals (Day 5):
+Concept: DNS — how域名 resolution actually works (recursive resolvers, root hints, TLD nameservers, authoritative vs non-authoritative answers)
+Why it matters: DNS poisoning/directive manipulation is a core attack primitive (DNS rebinding, cache poisoning, subdomain takeovers)
+Learn it: "How DNS works" — cloudflare.com/learning/dns/what-is-dns (10 min read)
+Practice today: Use `dig`, `nslookup`, or `drill` to trace a DNS query from root → TLD → authoritative server for any domain. Observe the full resolution chain.
 
-**Deep#Door** — Stealthy Python-based backdoor framework with persistent Windows implants, designed for espionage. Attributed to sophisticated state-sponsored actors.
-
----
-
-## 📚 Career Path — Networking Fundamentals (Day 4 of 7)
-
-**Topic:** TCP/IP Protocol Suite & the 3-Way Handshake
-
-**Concept:** TCP/IP is the foundational protocol stack of the internet. Every connection — from browsing to SSH to a database — relies on it. Understanding how TCP works is critical for detecting anomalies in network traffic.
-
-The **3-way handshake** (SYN → SYN-ACK → ACK) is how TCP connections are established:
-1. Client sends SYN with a random sequence number
-2. Server responds with SYN-ACK (acknowledges client's sequence + its own)
-3. Client sends ACK, connection is established
-
-This matters in cybersecurity because:
-- SYN scan is how Nmap maps open ports
-- SYN flood is the basis of DoS attacks
-- Observing incomplete handshakes often indicates port scans or recon
-
-**Why it matters:** If you can't read a TCP handshake in a packet capture, you can't detect a port scan, a rogue connection, or a compromised host beaconing out.
-
-**Learn it:**
-- Video: "TCP/IP and OSI Model Explained" on TryHackMe or Network+
-- Read: Section on TCP from the RFC — just skim the first few sections for intuition
-- Practical: Open Wireshark, capture your own traffic, identify SYN packets
-
-**Practice today (15 min):**
-1. Open Wireshark → start capture → visit a website
-2. Filter for `tcp.flags.syn==1 and tcp.flags.ack==0` — these are your SYN packets (start of handshakes)
-3. Identify the 3-way handshake for that connection (SYN → SYN-ACK → ACK)
-4. Bonus: Find a SYN flood (many SYNs without completing the handshake)
-
----
-
-## 🎯 Career Tip: Add to LinkedIn
-
-**Port analysis + Wireshark** — These are concrete skills that hiring managers look for in SOC analysts and junior security engineers. After today's practice session, update your LinkedIn with:
-> "Can analyze TCP/IP handshake sequences and identify port scans using Wireshark"
-
-Or if you're going for offensive security:
-> "Familiar with SYN scan enumeration and TCP/IP handshake mechanics for red team recon"
-
----
-
-*Report generated by cyber_agent | Time: 2026-05-04 06:58 SGT*
+🎯 Career tip: Add "DNS protocol & DNS security (DNSSEC, DANE)" to LinkedIn skills — it's a differentiating cert-adjacent skill that hiring managers actually look for in SOC and network security roles.

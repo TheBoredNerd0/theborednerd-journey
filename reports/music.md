@@ -1,90 +1,67 @@
-# 🎵 MUSIC INTEL — 2026-05-04
+# 🎵 MUSIC INTEL — 2026-05-05
 
 ## 🔥 Trending Right Now
 
-• **Lo-Fi Chill Beats** — Still dominating TikTok/YouTube study-music space. Algorithmic playlists (Sleep, Focus, Chill) keep evergreen traction. Low competition for AI-lo-fi because producers think it's "too simple."
-  • **Why it's hot:** Algorithm loves retention. Lo-fi tracks have 3-5 min average listen vs 30-sec跳跳.
+• **Afrofuturism** — African electronic sounds cross over to TikTok/Spotify global charts; artists like Burna Boy and Tyla driving mainstream discovery
+• **Rock resurgence (Gen Z)** — Classic and new rock bands finding new audiences via TikTok guitar riffs; The Beaches and Spiritbox getting hype
+• **Lo-fi / Ambient** — AI-generated versions dominating YouTube background music niche; Udio particularly strong here
+• **PluggnB** — Rising fast toward mainstream, blending trap, R&B, and melodic hooks
 
-• **Hyperpop / Hyperpop-Adjacent** — Surging on TikTok Reels. High-energy, glitchy, bass-heavy. Young demographic (13-22) drives shareability.
+### Example Prompts
 
-• **Synthwave / Retrowave** — Classic but steady. Used heavily in video essays, gaming content, and nostalgia posts. Reliable evergreen.
+**Suno V5 (vocal-forward genres):**
+```
+Upbeat Afrobeats with Yoruba vocals, cinematic synths, driving percussion, hopeful mood, 110 BPM
+```
+```
+Emotional country ballad, twangy guitar, storytelling verses, powerful chorus, male vocal
+```
+
+**Udio (production-heavy genres):**
+```
+Hard trap beat, 808 bass, aggressive hi-hats, dark cinematic strings, drill flow
+```
+```
+Lo-fi house, dusty kicks, warm analog pads, vinyl crackle, sunset vibes, 90 BPM
+```
 
 ---
 
-## 🎯 Platform: TikTok / Reels / YouTube Shorts
+## 📊 3 Monetizable Niches
 
-**Best prompt strategy for viral:**
-- Lead with mood + BPM + reference artist
-- Suno prompt: *"Hyperpop track, 140 BPM, aggressive 808s, female vocal, Charli XCX style, dark club energy, drop at 1:10"*
-- Udio prompt: *"Lo-fi hip hop beat, vinyl crackle, warm piano, 75 BPM, relaxing study music, no vocals, rain ambiance"*
+1. **Lo-fi / Study Beats** — YouTube, Spotify playlists → AI-generated lo-fi is flooding the "focus music" space; monetizable via YouTube Partner Program and playlist royalties. Est. CPM: $2-5 for high-retention videos.
 
----
+2. **Afrobeats / Dance** — TikTok virality engine → Tracks with strong percussive hooks and dance moves go viral; Suno excellent for this. Udio alternative for heavier electronic takes. High royalty potential on Spotify.
 
-## 💡 3 Monetizable Niches
-
-1. **Lo-Fi + Study Beats** — YouTube / Spotify
-   - Platform: YouTube (monetizable), Spotify (algorithmic)
-   - Est. potential: $50-300/month per track at 10K views
-   - Tip: Bundle 3 tracks as "album" for DistroKid distribution, keep 100% revenue
-
-2. **Cinematic Orchestral / Film Scores** — YouTube, game devs, podcasters
-   - Platform: Epidemic Sound, Artlist (both accept instrumental AI music)
-   - Est. potential: $0.15-0.50/callback (YouTube) + sync licensing
-   - Tip: Compose 90-second cue packs, batch upload
-
-3. **Hyperpop / Trending AI Vocals** — TikTok, Spotify, DistroKid
-   - Platform: TikTok (viral potential), DistroKid to Spotify/Apple Music
-   - Est. potential: Viral TikTok = streaming royalties, brand deals
-   - Tip: Post 15-30 sec clip with on-screen lyrics, link full track in bio
+3. **Cinematic / trailer music** — YouTube Shorts/Reels → Short-form video demand for dramatic orchestral + electronic hybrids exploding. Suno V5's 48kHz output is professional-grade for this use case.
 
 ---
 
 ## 📲 Upload Strategy
 
-- **Thumbnail:** Dark aesthetic + neon text. Use Canva. Font: "Impact" style.
-- **Title format:** `[Mood] • [Genre] • [BPM] • AI Music`
-  - Example: `"Late Night Drive • Lo-Fi Hip Hop • 75 BPM • AI Beats"`
-- **Tags:** `#lofi #studymusic #aibeats #chillbeats #ai music #focusmusic`
-- **Posting times:** 6-8 PM SG time (US morning/European afternoon overlap)
+- **Titles:** Blend keyword + vibe. e.g. "Lo-Fi Sunset Drive ☕ | Study Mix"
+- **Tags (YouTube):** lofi beats, study music, chill beats, lo-fi hip hop, focus music, ai music
+- **Thumbnails:** Soft gradients, warm tones, coffee/laptop aesthetic for lo-fi. Dark cinematic for trailer tracks.
+- **Posting times:** 6-8 PM SGT for maximum US morning traffic, or 12-2 PM for EU evening
+- **Frequency:** 3-5 tracks/week minimum for algorithmic growth
 
 ---
 
 ## ⚖️ Legal Corner
 
-**Current status (May 2026):**
-- **Suno:** Settled with Warner, active litigation with Sony — commercial rights granted on paid plans but training data contested. Risk: medium.
-- **Udio:** Cleanest legal posture — settled with Universal Music Group Oct 2025. UMG joint platform launching 2026.
-- **Stable Audio:** Licensed dataset (AudioSparx). Cleanest of all for commercial use.
-
-**Key rule:** The more human editing/mixing you do, the stronger your copyright claim. Raw AI output = weak claim. You edit it significantly = likely copyrightable.
-
-**Safe play:** Use Udio for vocal tracks, Stable Audio for instrumentals. Both have cleaner licensing stories.
+**Key points for using AI music commercially:**
+- Suno Pro ($10/mo) and Udio Standard ($10/mo) both grant **full commercial rights** on outputs
+- YouTube background use is safe — no Content ID claims on original AI tracks
+- Spotify/Apple Music allow distribution with meaningful human creative input (detailed prompts + curation = stronger claim)
+- The more you edit/arrange/mix in a DAW, the stronger your copyright position
+- **Do NOT** pass off AI music as fully human-performed on Spotify — it's against policies and can get your account banned
 
 ---
 
-## 🧪 Experiment: Try This and Document It
+## 💡 Experiment This Week
 
-**"Reverse-engineer a viral TikTok sound with AI"**
-
-1. Find a trending sound on TikTok (check Reels/TikTok trending sounds this week)
-2. Analyze: What genre? What mood? What tempo?
-3. Prompt Suno/Udio to recreate the vibe in a different key/style
-4. Post the AI version as "AI recreation of [viral sound]" — disclosure builds trust
-5. Track which version gets more saves
-
-This becomes content AND research. Document results in your log.
+**Try this:** Generate 3 versions of the same track concept — one on Suno, one on Udio, one with your own DAW arrangement of Suno stems. Upload all three to YouTube Shorts as a "which one sounds best?" poll. Best of both worlds: gets engagement + shows platform comparison content.
 
 ---
 
-## 📊 Platform Quick Reference
-
-| Platform | AI Vocals | Commercial License | Risk |
-|---|---|---|---|
-| Suno (Pro/Premier) | ✅ | ✅ (paid plans) | Medium (Sony case) |
-| Udio (Pro) | ✅ | ✅ (paid plans) | Low (UMG settled) |
-| Stable Audio | ❌ instrumental | ✅ | Very Low |
-| ElevenLabs Music | ✅ | ✅ | Low |
-
----
-
-*Next update: 2026-05-05 06:56 AM SGT*
+*Report generated by Music_agent | Sources: Oakgen AI, Hypenation.news, aimagicx.com*
