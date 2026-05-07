@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daily Brief — 2026-05-07</title>
+  <title>Daily Brief — 2026-05-08</title>
   <style>
     :root {
       --bg: #0a0a0f;
@@ -42,7 +42,6 @@
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-    /* NAV */
     nav {
       position: sticky;
       top: 0;
@@ -104,7 +103,6 @@
       color: var(--text);
     }
 
-    /* HERO */
     .hero {
       max-width: 1100px;
       margin: 0 auto;
@@ -137,7 +135,6 @@
       margin: 0 auto 2.5rem;
     }
 
-    /* MARKETS */
     .markets-bar {
       max-width: 900px;
       margin: 0 auto 4rem;
@@ -167,14 +164,12 @@
     .market-chip .up { color: var(--green); }
     .market-chip .neutral { color: var(--text-muted); }
 
-    /* CONTENT WRAPPER */
     .content {
       max-width: 1100px;
       margin: 0 auto;
       padding: 0 2rem 6rem;
     }
 
-    /* SECTION CARD */
     .card-section {
       margin-bottom: 4rem;
       border-radius: 20px;
@@ -247,7 +242,6 @@
       padding: 2rem 1.75rem;
     }
 
-    /* TRENDING BANNER */
     .trending-banner {
       background: linear-gradient(135deg, rgba(99,102,241,0.15), rgba(168,85,247,0.15));
       border: 1px solid rgba(99,102,241,0.3);
@@ -268,7 +262,6 @@
     }
     .trending-banner p { color: var(--text); font-size: 0.95rem; line-height: 1.6; }
 
-    /* THREAT BANNER */
     .threat-banner {
       background: linear-gradient(135deg, rgba(239,68,68,0.12), rgba(249,115,22,0.08));
       border: 1px solid rgba(239,68,68,0.3);
@@ -296,7 +289,6 @@
     }
     .threat-banner p { color: var(--text); font-size: 0.95rem; }
 
-    /* BODY CONTENT */
     .card-body h3 {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -340,7 +332,6 @@
       color: rgba(240,240,245,0.9);
     }
 
-    /* ACTION BOX */
     .action-box {
       background: linear-gradient(135deg, rgba(34,197,94,0.1), rgba(6,182,212,0.08));
       border: 1px solid rgba(34,197,94,0.25);
@@ -362,7 +353,45 @@
     .action-box p { color: var(--text); font-size: 0.9rem; margin-bottom: 0; }
     .action-box a { color: var(--accent); }
 
-    /* LESSON BOX */
+    .repo-box {
+      background: rgba(0,0,0,0.3);
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-top: 1.25rem;
+    }
+    .repo-box .branch-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--green);
+      color: #000;
+      padding: 0.2rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .repo-box p { font-size: 0.85rem; color: var(--text-muted); }
+    .repo-box .warning { color: var(--yellow) !important; }
+
+    .skills-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.75rem;
+    }
+    .skill-badge {
+      background: rgba(99,102,241,0.1);
+      border: 1px solid rgba(99,102,241,0.25);
+      color: #818cf8;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+    .skill-badge:hover { background: rgba(99,102,241,0.2); }
+
     .lesson-box {
       background: linear-gradient(135deg, rgba(168,85,247,0.1), rgba(59,130,246,0.08));
       border: 1px solid rgba(168,85,247,0.25);
@@ -383,7 +412,6 @@
     }
     .lesson-box p { color: var(--text); font-size: 0.9rem; margin-bottom: 0; }
 
-    /* TOPIC BOX */
     .topic-box {
       background: rgba(6,182,212,0.08);
       border: 1px solid rgba(6,182,212,0.2);
@@ -401,7 +429,6 @@
     }
     .topic-box p { color: var(--text); font-size: 0.9rem; margin-bottom: 0; }
 
-    /* FOOTER */
     footer {
       border-top: 1px solid var(--border);
       padding: 3rem 2rem;
@@ -418,7 +445,6 @@
     }
     footer .heart { color: var(--red); }
 
-    /* RESPONSIVE */
     @media (max-width: 700px) {
       nav .sections-nav { display: none; }
       .hero { padding: 3rem 1.5rem 2rem; }
@@ -428,7 +454,6 @@
       .market-chip { padding: 0.6rem 1rem; }
     }
 
-    /* ANIMATIONS */
     .fade-up {
       opacity: 0;
       transform: translateY(20px);
@@ -444,7 +469,6 @@
     .card-section:nth-child(5) { animation-delay: 0.5s; }
     .card-section:nth-child(6) { animation-delay: 0.6s; }
     .card-section:nth-child(7) { animation-delay: 0.7s; }
-    .card-section:nth-child(8) { animation-delay: 0.8s; }
   </style>
 </head>
 <body>
@@ -465,7 +489,7 @@
         <a href="#software">💻 Dev</a>
         <a href="#upgrade">⚙️ System</a>
       </div>
-      <div class="date-badge">Thu, May 7 · 2026</div>
+      <div class="date-badge">Fri, May 8 · 2026</div>
     </div>
   </nav>
 
@@ -473,7 +497,7 @@
   <section class="hero">
     <div class="eyebrow">🤖 Your AI Morning Digest</div>
     <h1>Daily Brief</h1>
-    <p class="sub">8 curated reports from your agent fleet — business, content, security, investing, music, dev, law, and system updates.</p>
+    <p class="sub">8 curated reports from your agent fleet — business, content, security, investing, music, dev, system, and legal.</p>
   </section>
 
   <!-- MARKETS -->
@@ -509,30 +533,30 @@
     <!-- BUSINESS -->
     <div class="card-section fade-up" id="business">
       <div class="card-header">
-        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1400&q=80" alt="AI video editing" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1677442135703-1787eea5ce01?w=1400&q=80" alt="AI workflow concept" loading="lazy">
         <div class="overlay"></div>
         <div class="header-content">
           <div class="section-tag tag-red">🔥 Trending</div>
-          <h2>AI Video Content for Short-Form</h2>
-          <p class="section-sub">329% YoY growth — the fastest-growing freelance skill</p>
+          <h2>AI Workflow Automation</h2>
+          <p class="section-sub">The hottest micro-niche nobody's talking about</p>
         </div>
       </div>
       <div class="card-body">
         <div class="trending-banner">
           <div class="trending-label">💡 What's Actually Hot Right Now</div>
-          <p>AI video editing demand grew <strong>329% YoY</strong> on Upwork — the single fastest-growing freelance skill. TikTok restructured its Creator Fund (May 2026) to a watch-time-weighted model — quality beats volume. YouTube Shorts RPMs are highest in tech/finance niches ($3–8 CPM vs $0.50–1.50 for entertainment). Solo founders building micro-SaaS AI tools are hitting <strong>$10K–$100K/month</strong>.</p>
+          <p><strong>addyosmani/agent-skills</strong> just hit <strong>32k GitHub stars</strong> — a massive open-source library of production-grade engineering skills for AI coding agents (shell scripts, git ops, code review, architecture patterns). AI-related freelance work grew <strong>60% YoY</strong>, with AI freelancers earning <strong>44% more</strong> than the platform average. The highest-paying niche nobody's talking about? <strong>AI workflow automation</strong> — connecting Gmail → CRM → Slack for businesses drowning in manual busywork.</p>
         </div>
 
         <h3>3 Methods Worth Exploring</h3>
         <ol>
-          <li><strong>AI YouTube Shorts Channel</strong> — A's pipeline already 80% built (Pexels + Samantha TTS + MoviePy + youtube-upload.js). Highest CPMs in tech/finance. $500–$3K/month potential.</li>
-          <li><strong>Micro-SaaS AI Wrapper</strong> — Narrow use case + AI + charge from day one. $59.6B market by 2030. 39% of successful SaaS founders are solo.</li>
-          <li><strong>AI Freelancing — Video Editing</strong> — AI-enabled freelancers earn <strong>40% more/hr</strong> than non-AI. Gigs: AI video editing, workflow automation, content pipeline setup. $30–$150/hr.</li>
+          <li><strong>AI Workflow Automation (Zapier/Make Specialist) — $75–200/hr</strong> — Connect apps with AI-powered routing. Real estate agencies, dental offices, e-commerce brands. Build 3–4 retainer clients at $500–$2,000/mo = $2,000–$8,000/mo passive-ish income.</li>
+          <li><strong>AI Contract Risk Scanner (Micro SaaS) — $29/mo</strong> — User pastes contract → AI highlights red flags (auto-renewal traps, liability caps, bad indemnification). Target: freelancers and small agencies. Build with ChatGPT API + simple frontend.</li>
+          <li><strong>Prompt Engineering Consulting — $200–500/hr</strong> — Companies know they should use AI but their teams don't know how. You train teams, build custom GPTs, create industry-specific prompt libraries. Zero startup cost.</li>
         </ol>
 
         <div class="action-box">
           <div class="action-label">✅ Do This Today — Under 30 Minutes</div>
-          <p>Run your existing pipeline with a test topic: <code>~/.venv/video/bin/python3 /Users/bored/.openclaw/workspace/scripts/video_pipeline.py --title "AI Just Changed Everything in 2026" --topic "artificial intelligence technology" --duration 90</code> — then review the output at <code>~/Videos/YouTube/</code>.</p>
+          <p>Create a 1-page "AI Workflow Audit" offer. Title: "I will automate [their tool stack] with AI — saving [X] hours/week." List 3 specific before/after examples. Add your rate ($499 audit → $1,500–3,000 implementation). Share it in 1 relevant community.</p>
         </div>
       </div>
     </div>
@@ -543,24 +567,30 @@
         <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=1400&q=80" alt="content creator studio" loading="lazy">
         <div class="overlay"></div>
         <div class="header-content">
-          <div class="section-tag tag-purple">🎬 Content Plan</div>
-          <h2>AI Video Editing as a Freelance Career</h2>
-          <p class="section-sub">Build in public — document the start, not the end</p>
+          <div class="section-tag tag-purple">💡 Week One Wrap</div>
+          <h2>Week One: Reflection Friday</h2>
+          <p class="section-sub">Document the messy week — not the highlight reel</p>
         </div>
       </div>
       <div class="card-body">
-        <h3>📱 Short #1 — "I Let AI Edit My YouTube Videos for Free"</h3>
-        <p>Hook: "So I used a free AI tool to edit my YouTube videos… and the quality genuinely shocked me." Structure: Raw footage → AI result (fast cuts, matching music, subtitles) → reveal it was free. CTA: "Drop a 👍 if you want part 2."</p>
+        <div class="trending-banner">
+          <div class="trending-label">💡 Theme of the Day</div>
+          <p>Week one wrap / reflection Friday. Authenticity = vulnerability. Show the messy week, not the highlight reel. People connect with real more than perfect — especially on Fridays when everyone's a little more honest.</p>
+        </div>
 
-        <h3>📱 Short #2 — "The AI Freelance Skill Getting Clients in 2026"</h3>
-        <p>Hook: "Everyone's panicking about AI replacing jobs, but here's what's actually happening: people with ONE AI skill are landing $500+ gigs on Fiverr." Call out the backlog problem — people want content, no one to make it.</p>
+        <h3>Today's Content Plan</h3>
+        <ul>
+          <li><strong>Short #1:</strong> "What I Got Wrong About AI Video Editing This Week" — mistake → realization → fix structure</li>
+          <li><strong>Short #2:</strong> "The Exact Fiverr Message That Got Me My First AI Video Client" — show the actual winning message</li>
+          <li><strong>YouTube:</strong> "I Documented Every Step of My First Week as an AI Video Freelancer" — 7-day vlog style with the $150 earned number front and center</li>
+        </ul>
 
-        <h3>🎥 YouTube — "I Used AI to Land My First Freelance Client"</h3>
-        <p>15-min step-by-step: Hook → why it works (329% demand spike) → exact pipeline → Fiverr profile setup → first outreach ($50–75 starting, scale fast) → mistakes. Thumbnail: messy desk left + viral clip + "$150 payment" right.</p>
+        <h3>The Numbers So Far</h3>
+        <p>Sent: 12 Fiverr messages → 1 reply → <strong>$150 earned in week 1</strong>. That $150 covers AI tool subscriptions for 6 months. Now it's pure profit on every new client. The hardest part isn't the skill — it's sending the first message and getting comfortable with silence.</p>
 
         <div class="action-box">
-          <div class="action-label">⏰ Best Posting Times (GMT+8)</div>
-          <p>TikTok/Reels: <strong>12:00–13:30</strong> · <strong>19:00–21:00</strong> · YouTube: <strong>15:00–17:00</strong> · Instagram: <strong>11:00–13:00</strong> · <strong>20:00–22:00</strong></p>
+          <div class="action-label">⏰ Best Times (GMT+8)</div>
+          <p>TikTok/Reels: 12:00–13:30 · 19:00–21:00 · Friday peak 20:00–22:00 · YouTube: 15:00–17:00 · Instagram: 11:00–13:00 · 20:00–22:00</p>
         </div>
       </div>
     </div>
@@ -572,26 +602,27 @@
         <div class="overlay"></div>
         <div class="header-content">
           <div class="section-tag tag-red">🔴 Critical Threat</div>
-          <h2>CVE-2026-0300</h2>
-          <p class="section-sub">Palo Alto PAN-OS — actively exploited, no patch yet</p>
+          <h2>CVE-2026-6973 — Ivanti EPMM</h2>
+          <p class="section-sub">850+ IPs exposed · Remote code execution · Patch now</p>
         </div>
       </div>
       <div class="card-body">
         <div class="threat-banner">
           <div class="threat-label">⚠️ Alert — Act Now</div>
-          <div class="cve">CVE-2026-0300 · Palo Alto Networks PAN-OS · No patch · Fix expected May 13</div>
-          <p><strong>Affected:</strong> PA-Series, VM-Series, CN-Series firewalls with User-ID Authentication Portal (Captive Portal) exposed to the internet. <strong>Severity:</strong> Remote code execution as root via buffer overflow — highest possible severity, actively exploited in the wild. <strong>Mitigation:</strong> Restrict portal access to trusted zones or disable it.</p>
+          <div class="cve">CVSS 8.2 · CVE-2026-6973 · Ivanti EPMM ≤ 12.8.0.0</div>
+          <p>Improper Input Validation leading to remote code execution via authenticated admin. <strong>850+ IPs exposed</strong> globally (EU & North America). <strong>Patch immediately</strong> to EPMM 12.6.1.1, 12.7.0.1, or 12.8.0.1.</p>
         </div>
 
-        <h3>🔓 Active Threat: MuddyWater</h3>
-        <p>Iranian MOIS-linked group using <strong>Chaos ransomware as a decoy</strong> for cyber-espionage. Attack chain: Microsoft Teams social engineering → fake Quick Assist phishing pages → credential harvest → MFA tampered → AnyDesk deployed. The ransomware was misdirection — goal was long-term network intrusion. Same group previously hit 100+ government orgs with Phoenix backdoor.</p>
+        <h3>Active Threat Activity</h3>
+        <p><strong>ShinyHunters</strong> struck Instructure (Canvas LMS) for the second time — defacing login portals for <strong>~330 educational institutions</strong>. Demanding ransom by May 12 or threatening to leak <strong>280 million student/staff records</strong> stolen last week.</p>
+        <p><strong>ClickFix attacks</strong> are actively distributing <strong>Vidar Stealer</strong> malware via compromised WordPress sites in Australia — using fake CAPTCHA prompts to trick users into running malicious PowerShell commands.</p>
 
-        <h3>🔧 Trending: vm2 Sandbox Escape (CVE-2026-26956)</h3>
-        <p>WebAssembly exception handling bypasses Node.js sandbox protections — arbitrary code execution on host. <strong>1.3M+ weekly npm downloads</strong> affected. Fix: upgrade to vm2 ≥3.10.5.</p>
+        <h3>📚 Today's Topic: Linux Command Line</h3>
+        <p>File permissions (chmod/chown), process management (ps/top/kill), and bash scripting are the bedrock of Linux security work. <strong>Practice:</strong> Run <code>ls -la</code> in your home dir — identify anything world-readable. Use <code>ps aux --sort=-%mem | head</code> to find top memory consumers. Write a bash script scanning <code>/var/log</code> for failed SSH attempts.</p>
 
         <div class="action-box">
-          <div class="action-label">💡 Career — DNS Fundamentals (Day 7)</div>
-          <p>DNS is the phonebook of the internet — it translates domain names to IP addresses (UDP port 53). Nearly every cyber attack involves DNS — phishing domains, DNS tunneling for C2, subdomain takeovers. <strong>Practice today:</strong> Run <code>dig google.com</code> and read the response — identify ANSWER section, TTL, nameservers.</p>
+          <div class="action-label">💡 Career Tip</div>
+          <p>Add <strong>"Linux System Administration"</strong> to LinkedIn if you've touched the command line — even homelab experience counts. Pair it with TryHackMe's "Linux Fundamentals" badge to show practical proof.</p>
         </div>
       </div>
     </div>
@@ -602,32 +633,30 @@
         <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1400&q=80" alt="stock market charts" loading="lazy">
         <div class="overlay"></div>
         <div class="header-content">
-          <div class="section-tag tag-green">📚 Lesson: Compound Interest</div>
-          <h2>The Eighth Wonder of the World</h2>
-          <p class="section-sub">Time is the multiplier — start now, even small</p>
+          <div class="section-tag tag-green">📚 Today's Lesson</div>
+          <h2>Compound Interest</h2>
+          <p class="section-sub">The eighth wonder of the world</p>
         </div>
       </div>
       <div class="card-body">
         <div class="topic-box">
           <div class="topic-label">📖 Concept</div>
-          <p>Compound interest: earn returns on your returns. Not just on your original money — on everything you've accumulated. Formula: A = P × (1 + r)ⁿ. A 25-year-old investing $200/month at 8% avg returns has ~$1.1M by 65. Start at 35 with same amounts? ~$487K. Same contribution, 20 extra years doubles the result.</p>
+          <p>Earn returns on your returns — not just on your original money, but on everything you've accumulated so far. <strong>The math:</strong> A = P × (1 + r)ⁿ · Time is the multiplier. A 25-year-old investing $200/month at 8% average returns has ~$1.1M by age 65. Start at 35 with the same amounts? ~$487K.</p>
         </div>
 
         <div class="lesson-box">
-          <div class="lesson-label">🧠 Key Lesson This Week</div>
-          <p><strong>Volatility is not the same as risk.</strong> A 3% daily crypto drop is just noise if you're investing with a 5–10 year horizon. True risk is: (1) investing money you can't afford to lose, (2) not diversifying, (3) panic-selling. A young investor shouldn't fear a 3% dip — they should see it as a buying opportunity.</p>
+          <div class="lesson-label">🧠 Key Lesson</div>
+          <p><strong>Volatility is not the same as risk.</strong> A crypto dip is just noise if you're investing with a 5–10 year horizon. True risk is: (1) investing money you can't afford to lose, (2) not diversifying, or (3) panic-selling.</p>
         </div>
 
-        <h3>🇸🇬 Singapore Context</h3>
-        <ul>
-          <li><strong>CPF Special Account</strong> earns ~4% p.a. — compound interest working for you automatically</li>
-          <li><strong>STI ETF (ES3.SI)</strong> has returned ~5–7% annually over long periods — reinvested dividends compound too</li>
-          <li>A 1% fee difference matters enormously over 30 years — a 0.1% fund vs 1.1% fund can cost tens of thousands in foregone growth</li>
-        </ul>
+        <div class="topic-box">
+          <div class="topic-label">🇸🇬 Singapore Context</div>
+          <p>CPF Special Account earns ~4% p.a. — compound interest working for you automatically. STI ETF (ES3.SI) has returned ~5–7% annually over long periods. Even a 1% difference in fees matters enormously over 30 years.</p>
+        </div>
 
         <div class="action-box">
-          <div class="action-label">🎯 Actionable</div>
-          <p>Use the <a href="https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" target="_blank">Investor.gov compound interest calculator</a> — plug in $200/month, 8% return, 30 years. Watch the number. That's why you invest early. <strong>Rule: You don't need a lot to get rich. You need time.</strong></p>
+          <div class="action-label">🎯 Try This Today</div>
+          <p>Use the <a href="https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator" target="_blank">Investor.gov compound interest calculator</a> — plug in $200/month, 8% return, 30 years. Watch the number. That's why you invest early.</p>
         </div>
       </div>
     </div>
@@ -638,30 +667,30 @@
         <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1400&q=80" alt="music production studio" loading="lazy">
         <div class="overlay"></div>
         <div class="header-content">
-          <div class="section-tag tag-orange">🎵 Trending</div>
-          <h2>AI Music Quality Gap Is Closed</h2>
-          <p class="section-sub">Suno v5.5 + Udio now fool casual listeners — monetization is real</p>
+          <div class="section-tag tag-orange">🔥 Trending</div>
+          <h2>Lo-Fi + Aesthetic Beats Dominate</h2>
+          <p class="section-sub">AI music channels printing millions of streams</p>
         </div>
       </div>
       <div class="card-body">
         <div class="trending-banner">
-          <div class="trending-label">🔥 What's Exploding Right Now</div>
-          <p><strong>Hyperpop/Synthwave Collab</strong> — Suno v5.5 dropped vocal harmony control and Udio matched it. AI tracks now fool casual listeners. <strong>Lo-fi Hip Hop + Ambient Pads</strong> dominates TikTok study/sleep niches — low competition, high playlist longevity. <strong>"Cottagecore Folk"</strong> AI-generated acoustic guitar surged on Pinterest audio + YouTube Shorts.</p>
+          <div class="trending-label">💡 What's Exploding Right Now</div>
+          <p>Lo-fi hip hop + Aesthetic beats still dominant on TikTok/YouTube study playlists. K-pop AI pop rising — <strong>BTS comeback driving K-pop streams up 39.5% YoY</strong> (HYBE record Q1). <strong>44% of Deezer's daily uploads are fully AI-generated</strong> — platforms WILL enforce disclosure.</p>
         </div>
 
         <h3>3 Monetizable Niches</h3>
         <ol>
-          <li><strong>Lo-fi Study Music</strong> — Spotify/YouTube Music — 500–2,000 streams/day possible with 50+ track catalog. Best via DistroKid (100% royalties).</li>
-          <li><strong>Cinematic/Corporate Background</strong> — Sync licensing via Musicbed, Artlist, Pond5 — $15–$2,000+ per track, repeatable passive income.</li>
-          <li><strong>AI Lo-fi + Rain Sounds Hybrid</strong> — YouTube Art Track pays ~$1.57/1,000 Content ID claims vs Spotify's ~$0.003–0.005/stream. YouTube is 3–5x better for AI music.</li>
+          <li><strong>Lo-fi/Aesthetic beats</strong> — YouTube AdSense + sync licensing. High volume, steady RPMs.</li>
+          <li><strong>K-pop inspired AI pop</strong> — Spotify + SoundCloud. BTS comeback driving streams up 39.5% YoY.</li>
+          <li><strong>Cinematic trailer music</strong> — Gaming/YouTube creators buy licenses. Low competition on Suno-Udio.</li>
         </ol>
 
-        <h3>⚖️ Legal Update</h3>
-        <p><strong>UMG settled with Udio (Oct 2025)</strong> — Udio tracks cleared for commercial distribution. Suno tracks still carry ambiguity — always check Suno's T&C before commercial use. For full commercial clearance: use Udio + Artlist for sync, DistroKid for streaming. Avoid Suno outputs in ads without explicit commercial license.</p>
+        <h3>Legal Note</h3>
+        <p>Major platforms now actively tagging AI content (Spotify AI Credits beta, Apple Music Transparency Tags, Deezer auto-detection). <strong>Always tag your tracks as AI-assisted.</strong> Avoid using recognizable artist names in prompts.</p>
 
         <div class="action-box">
           <div class="action-label">💡 Experiment This Week</div>
-          <p>Make a <strong>"soundtrack for your life" series</strong> — 10 short (30–60s) AI tracks: "Morning Coffee," "Late Night Code," "Rainy Window" — each as a YouTube Short with visualizer. Post 2/day, see which mood keywords drive the most search traffic. Best-performing track = your catalog anchor.</p>
+          <p>Try "ambient cinematic" on Suno — add orchestral swells + nature field recordings overlay in post. Post the "making of" as content on TikTok; it performs well and differentiates from pure AI uploads.</p>
         </div>
       </div>
     </div>
@@ -673,37 +702,38 @@
         <div class="overlay"></div>
         <div class="header-content">
           <div class="section-tag tag-blue">💻 Developer</div>
-          <h2>Agent Orchestration + CLI Mastery</h2>
-          <p class="section-sub">ruflo (45k stars), xargs pipelines, GitHub CLI dashboard</p>
+          <h2>Structured Logging + Config</h2>
+          <p class="section-sub">The boring skills that save you hours of pain</p>
         </div>
       </div>
       <div class="card-body">
-        <h3>🔥 What's Trending</h3>
-        <ul>
-          <li><strong>ruflo</strong> (45k stars, 2.2k today) — multi-agent swarm coordination is the hot new primitive</li>
-          <li><strong>InsForge</strong> (8.4k stars) — Postgres-based backend built for coding agents with auth, storage, compute, and AI gateway in one</li>
-        </ul>
+        <div class="trending-banner">
+          <div class="trending-label">💡 Trending Repos</div>
+          <p><strong>addyosmani/agent-skills</strong> hits <strong>32k stars</strong> (3k earned today alone) — production-grade engineering skills for AI coding agents. <strong>InsForge</strong> (8.8k stars) — Postgres-based backend with auth, storage, compute, hosting, and AI gateway built specifically for coding agents.</p>
+        </div>
 
-        <h3>📚 Topic: Process Pipelines & xargs Mastery</h3>
-        <p><code>xargs</code> is the glue that turns linear chains into parallel pipelines. Combined with <code>-P</code> (parallelism) and <code>-0</code> (null-separated, handles spaces in filenames), you can process thousands of files in seconds.</p>
-        <pre><code># Find all files modified in last 7 days, then act on them
-find . -mtime -7 -type f | xargs ls -la
+        <h3>🔥 Today's Topic: Structured Logging + Config Management</h3>
+        <p>The difference between a script you can debug in 30 seconds and one that leaves you guessing: <strong>structured logging + config files</strong>. <code>exc_info=True</code> on your error logs is the single most useful habit you can pick up.</p>
+        <pre><code>import logging
+from pathlib import Path
 
-# Parallel execution with xargs -P
-find . -name "*.log" | xargs -P 4 -I {} sh -c 'gzip {}'
+def load_config():
+    config_path = Path("config.json")
+    if not config_path.exists():
+        return {"debug": False, "max_workers": 4}
+    with open(config_path) as f:
+        return json.load(f)
 
-# Count lines in all .md files, sorted
-find . -name "*.md" -not -path "./node_modules/*" | xargs wc -l | sort -n
+# Use loguru for zero-config structured logging
+from loguru import logger
+logger.info("Script started")</code></pre>
 
-# Find the 5 largest files in a directory
-du -sh * | sort -rh | head -5</code></pre>
+        <h3>⭐ Portfolio Project: AI News Digest Scraper</h3>
+        <p>Scrape Hacker News, Reddit r/MachineLearning, and arxiv cs.AI. Deduplicate by topic, output ranked markdown digest. Great foundation for a "daily AI briefing" SaaS. Stack: Python + requests + BeautifulSoup + sqlite3. Ship as a single Python file + requirements.txt.</p>
 
-        <h3>⭐ Portfolio Project: GitHub Stats CLI Dashboard</h3>
-        <p>A terminal UI showing your GitHub activity — recent commits, PRs, stars, repo stats — all via <code>gh</code> CLI wrapper. Uses <code>gh api user --jq '.login, .public_repos, .followers'</code> as foundation. Stack: Shell + <code>gh</code> CLI + <code>cowsay</code> or <code>charm</code> for UI. Build it piece by piece.</p>
-
-        <div class="action-box">
-          <div class="action-label">🛠️ Resource</div>
-          <p><a href="https://explainshell.com" target="_blank">explainshell.com</a> — paste any command and get it annotated piece by piece. Also: <code>man xargs</code> — often overlooked, actually useful.</p>
+        <div class="repo-box">
+          <div class="branch-badge">● main</div>
+          <p>All clean. No TODO/FIXME comments found in workspace scripts. Uncommitted changes in report files are expected (daily digest regeneration).</p>
         </div>
       </div>
     </div>
@@ -716,23 +746,33 @@ du -sh * | sort -rh | head -5</code></pre>
         <div class="header-content">
           <div class="section-tag tag-indigo">⚙️ System</div>
           <h2>OpenClaw v2026.5.4 Available</h2>
-          <p class="section-sub">MiniMax-M2.7 still best value · Gateway healthy · No skill changes</p>
+          <p class="section-sub">1 minor version behind · MiniMax-M2.7 still best value</p>
         </div>
       </div>
       <div class="card-body">
-        <h3>🤖 LLM Benchmark</h3>
-        <p><strong>MiniMax-M2.7</strong> ($0.30/$1.20 per M tokens, 205K context) remains your best value for agentic workflows. Kimi K2.5 is higher quality (89 vs ~80) but costs 47% more input, 67% more output — not worth the premium. DeepSeek V3.2 cheaper but lower quality. Budget models (Groq, Xiaomi, Gemini Flash-Lite) not production-ready for multi-agent use cases.</p>
+        <div class="trending-banner">
+          <div class="trending-label">🤖 LLM Value Check</div>
+          <p><strong>MiniMax-M2.7</strong> remains best value for agentic workflows at $0.30/$1.20 per million tokens (205K context). Kimi K2.5 costs 47% more input but only marginal quality gains. No switch warranted. Gateway health: ✅ all clear.</p>
+        </div>
 
         <h3>🆕 OpenClaw v2026.5.4 Highlights</h3>
         <ul>
           <li>Google Meet/Voice Call improvements — realtime Gemini voice bridge, faster barge-in</li>
           <li>Gateway/Windows: improved listener binding</li>
-          <li><strong>Update available:</strong> v2026.4.22 → v2026.5.4 (1 minor version behind)</li>
+          <li>Full changelog: <a href="https://github.com/openclaw/openclaw/releases/tag/v2026.5.4" target="_blank">github.com/openclaw/openclaw/releases</a></li>
+        </ul>
+
+        <h3>Current Stack</h3>
+        <ul>
+          <li><strong>OpenClaw:</strong> 2026.4.22 → v2026.5.4 available (update recommended)</li>
+          <li><strong>LLM:</strong> MiniMax-M2.7 ✅ — best value for multi-agent</li>
+          <li><strong>Gateway:</strong> LaunchAgent running · Bind: loopback only</li>
+          <li><strong>Skills:</strong> 0 installed · 14 agents scheduled</li>
         </ul>
 
         <div class="action-box">
           <div class="action-label">🔧 Recommended Action</div>
-          <p>Run <code>npm i -g openclaw</code> to update to v2026.5.4. Gateway health is ✅ — LaunchAgent running, bind loopback only, no issues detected.</p>
+          <p>Run <code>npm i -g openclaw</code> to update to v2026.5.4. Quick win: OpenClaw v2026.5.4 is worth the update for Meet/Voice improvements alone.</p>
         </div>
       </div>
     </div>
@@ -743,7 +783,7 @@ du -sh * | sort -rh | head -5</code></pre>
     <div class="made">
       Built with <span class="heart">♥</span> by TheBoredNerd
     </div>
-    8 reports · 1 page · Generated May 7, 2026 at 7:30 AM SGT
+    8 reports · 1 page · Generated May 8, 2026 at 07:30 AM SGT
   </footer>
 
 </body>
